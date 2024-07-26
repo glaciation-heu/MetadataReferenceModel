@@ -1,4 +1,4 @@
-        
+
 
 The Metadata Reference Model for the EU GLACIATION Project
 
@@ -16,7 +16,7 @@ This version:
 
 Latest version:
 
-[https://glaciation-project.eu/MetadataReferenceModel/](https://glaciation-project.eu/MetadataReferenceModel/)
+[https://glaciation-project.eu/MetadataReferenceModel](https://glaciation-project.eu/MetadataReferenceModel)
 
 Revision:
 
@@ -64,66 +64,66 @@ This ontology has the following classes and properties.
 
 #### Classes
 
-*   [AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement")
-*   [Aspect](#Aspect "https://glaciation-project.eu/MetadataReferenceModel/Aspect")
-*   [AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask")
-*   [Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class")
-*   [Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel/Constraint")
-*   [HardConstraint](#HardConstraint "https://glaciation-project.eu/MetadataReferenceModel/HardConstraint")
-*   [Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement")
-*   [MeasurementProperty](#MeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty")
-*   [MeasurementUnit](#MeasurementUnit "https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit")
-*   [MeasuringResource](#MeasuringResource "https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource")
-*   [Monitor](#Monitor "https://glaciation-project.eu/MetadataReferenceModel/Monitor")
-*   [NonWorkProducingResource](#NonWorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource")
-*   [Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource")
-*   [Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel/Scheduler")
-*   [SoftConstraint](#SoftConstraint "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint")
-*   [SoftConstraintComposition](#SoftConstraintComposition "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition")
-*   [Status](#Status "https://glaciation-project.eu/MetadataReferenceModel/Status")
-*   [SubmittedTask](#SubmittedTask "https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask")
-*   [Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task")
-*   [WorkProducingResource](#WorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource")
+*   [AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement")
+*   [Aspect](#Aspect "https://glaciation-project.eu/MetadataReferenceModel#Aspect")
+*   [AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask")
+*   [Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class")
+*   [Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel#Constraint")
+*   [HardConstraint](#HardConstraint "https://glaciation-project.eu/MetadataReferenceModel#HardConstraint")
+*   [Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement")
+*   [MeasurementProperty](#MeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty")
+*   [MeasurementUnit](#MeasurementUnit "https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit")
+*   [MeasuringResource](#MeasuringResource "https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource")
+*   [Monitor](#Monitor "https://glaciation-project.eu/MetadataReferenceModel#Monitor")
+*   [NonWorkProducingResource](#NonWorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource")
+*   [Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource")
+*   [Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel#Scheduler")
+*   [SoftConstraint](#SoftConstraint "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint")
+*   [SoftConstraintComposition](#SoftConstraintComposition "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition")
+*   [Status](#Status "https://glaciation-project.eu/MetadataReferenceModel#Status")
+*   [SubmittedTask](#SubmittedTask "https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask")
+*   [Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task")
+*   [WorkProducingResource](#WorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource")
 
 #### Object Properties
 
-*   [assigns](#assigns "https://glaciation-project.eu/MetadataReferenceModel/assigns")
-*   [composedBy](#composedBy "https://glaciation-project.eu/MetadataReferenceModel/composedBy")
-*   [consumes](#consumes "https://glaciation-project.eu/MetadataReferenceModel/consumes")
-*   [hasAspect](#hasAspect "https://glaciation-project.eu/MetadataReferenceModel/hasAspect")
-*   [hasComposition](#hasComposition "https://glaciation-project.eu/MetadataReferenceModel/hasComposition")
-*   [hasConstraint](#hasConstraint "https://glaciation-project.eu/MetadataReferenceModel/hasConstraint")
-*   [hasResourceMeasurement](#hasResourceMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement")
-*   [hasStatus](#hasStatus "https://glaciation-project.eu/MetadataReferenceModel/hasStatus")
-*   [hasSubResource](#hasSubResource "https://glaciation-project.eu/MetadataReferenceModel/hasSubResource")
-*   [hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement")
-*   [hasTaskPredictedMeasurement](#hasTaskPredictedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement")
-*   [hasTaskRealizedMeasurement](#hasTaskRealizedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement")
-*   [makesMeasurement](#makesMeasurement "https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement")
-*   [manages](#manages "https://glaciation-project.eu/MetadataReferenceModel/manages")
-*   [measuredIn](#measuredIn "https://glaciation-project.eu/MetadataReferenceModel/measuredIn")
-*   [monitors](#monitors "https://glaciation-project.eu/MetadataReferenceModel/monitors")
-*   [produces](#produces "https://glaciation-project.eu/MetadataReferenceModel/produces")
-*   [relatesToConstraint](#relatesToConstraint "https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint")
-*   [relatesToMeasurementProperty](#relatesToMeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty")
-*   [reschedules](#reschedules "https://glaciation-project.eu/MetadataReferenceModel/reschedules")
-*   [scheduledBy](#scheduledBy "https://glaciation-project.eu/MetadataReferenceModel/scheduledBy")
-*   [triggersReschedule](#triggersReschedule "https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule")
+*   [assigns](#assigns "https://glaciation-project.eu/MetadataReferenceModel#assigns")
+*   [composedBy](#composedBy "https://glaciation-project.eu/MetadataReferenceModel#composedBy")
+*   [consumes](#consumes "https://glaciation-project.eu/MetadataReferenceModel#consumes")
+*   [hasAspect](#hasAspect "https://glaciation-project.eu/MetadataReferenceModel#hasAspect")
+*   [hasComposition](#hasComposition "https://glaciation-project.eu/MetadataReferenceModel#hasComposition")
+*   [hasConstraint](#hasConstraint "https://glaciation-project.eu/MetadataReferenceModel#hasConstraint")
+*   [hasResourceMeasurement](#hasResourceMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement")
+*   [hasStatus](#hasStatus "https://glaciation-project.eu/MetadataReferenceModel#hasStatus")
+*   [hasSubResource](#hasSubResource "https://glaciation-project.eu/MetadataReferenceModel#hasSubResource")
+*   [hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement")
+*   [hasTaskPredictedMeasurement](#hasTaskPredictedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement")
+*   [hasTaskRealizedMeasurement](#hasTaskRealizedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement")
+*   [makesMeasurement](#makesMeasurement "https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement")
+*   [manages](#manages "https://glaciation-project.eu/MetadataReferenceModel#manages")
+*   [measuredIn](#measuredIn "https://glaciation-project.eu/MetadataReferenceModel#measuredIn")
+*   [monitors](#monitors "https://glaciation-project.eu/MetadataReferenceModel#monitors")
+*   [produces](#produces "https://glaciation-project.eu/MetadataReferenceModel#produces")
+*   [relatesToConstraint](#relatesToConstraint "https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint")
+*   [relatesToMeasurementProperty](#relatesToMeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty")
+*   [reschedules](#reschedules "https://glaciation-project.eu/MetadataReferenceModel#reschedules")
+*   [scheduledBy](#scheduledBy "https://glaciation-project.eu/MetadataReferenceModel#scheduledBy")
+*   [triggersReschedule](#triggersReschedule "https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule")
 
 #### Data Properties
 
-*   [endingInterval](#endingInterval "https://glaciation-project.eu/MetadataReferenceModel/endingInterval")
-*   [endTime](#endTime "https://glaciation-project.eu/MetadataReferenceModel/endTime")
-*   [hasAggregatedFuntion](#hasAggregatedFuntion "https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion")
-*   [hasConfiguration](#hasConfiguration "https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration")
-*   [hasDescription](#hasDescription "https://glaciation-project.eu/MetadataReferenceModel/hasDescription")
-*   [hasID](#hasID "https://glaciation-project.eu/MetadataReferenceModel/hasID")
-*   [hasTimestamp](#hasTimestamp "https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp")
-*   [hasValue](#hasValue "https://glaciation-project.eu/MetadataReferenceModel/hasValue")
-*   [startingInterval](#startingInterval "https://glaciation-project.eu/MetadataReferenceModel/startingInterval")
-*   [startTime](#startTime "https://glaciation-project.eu/MetadataReferenceModel/startTime")
-*   [statusCode](#statusCode "https://glaciation-project.eu/MetadataReferenceModel/statusCode")
-*   [timeStepResolution](#timeStepResolution "https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution")
+*   [endingInterval](#endingInterval "https://glaciation-project.eu/MetadataReferenceModel#endingInterval")
+*   [endTime](#endTime "https://glaciation-project.eu/MetadataReferenceModel#endTime")
+*   [hasAggregatedFuntion](#hasAggregatedFuntion "https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion")
+*   [hasConfiguration](#hasConfiguration "https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration")
+*   [hasDescription](#hasDescription "https://glaciation-project.eu/MetadataReferenceModel#hasDescription")
+*   [hasID](#hasID "https://glaciation-project.eu/MetadataReferenceModel#hasID")
+*   [hasTimestamp](#hasTimestamp "https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp")
+*   [hasValue](#hasValue "https://glaciation-project.eu/MetadataReferenceModel#hasValue")
+*   [startingInterval](#startingInterval "https://glaciation-project.eu/MetadataReferenceModel#startingInterval")
+*   [startTime](#startTime "https://glaciation-project.eu/MetadataReferenceModel#startTime")
+*   [statusCode](#statusCode "https://glaciation-project.eu/MetadataReferenceModel#statusCode")
+*   [timeStepResolution](#timeStepResolution "https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution")
 
 #### Annotation Properties
 
@@ -151,379 +151,379 @@ This section provides details for each class and property defined by GLACIATION 
 
 ### Classes
 
-*   [AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement")
-*   [Aspect](#Aspect "https://glaciation-project.eu/MetadataReferenceModel/Aspect")
-*   [AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask")
-*   [Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class")
-*   [Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel/Constraint")
-*   [HardConstraint](#HardConstraint "https://glaciation-project.eu/MetadataReferenceModel/HardConstraint")
-*   [Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement")
-*   [MeasurementProperty](#MeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty")
-*   [MeasurementUnit](#MeasurementUnit "https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit")
-*   [MeasuringResource](#MeasuringResource "https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource")
-*   [Monitor](#Monitor "https://glaciation-project.eu/MetadataReferenceModel/Monitor")
-*   [NonWorkProducingResource](#NonWorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource")
-*   [Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource")
-*   [Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel/Scheduler")
-*   [SoftConstraint](#SoftConstraint "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint")
-*   [SoftConstraintComposition](#SoftConstraintComposition "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition")
-*   [Status](#Status "https://glaciation-project.eu/MetadataReferenceModel/Status")
-*   [SubmittedTask](#SubmittedTask "https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask")
-*   [Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task")
-*   [WorkProducingResource](#WorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource")
+*   [AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement")
+*   [Aspect](#Aspect "https://glaciation-project.eu/MetadataReferenceModel#Aspect")
+*   [AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask")
+*   [Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class")
+*   [Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel#Constraint")
+*   [HardConstraint](#HardConstraint "https://glaciation-project.eu/MetadataReferenceModel#HardConstraint")
+*   [Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement")
+*   [MeasurementProperty](#MeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty")
+*   [MeasurementUnit](#MeasurementUnit "https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit")
+*   [MeasuringResource](#MeasuringResource "https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource")
+*   [Monitor](#Monitor "https://glaciation-project.eu/MetadataReferenceModel#Monitor")
+*   [NonWorkProducingResource](#NonWorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource")
+*   [Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource")
+*   [Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel#Scheduler")
+*   [SoftConstraint](#SoftConstraint "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint")
+*   [SoftConstraintComposition](#SoftConstraintComposition "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition")
+*   [Status](#Status "https://glaciation-project.eu/MetadataReferenceModel#Status")
+*   [SubmittedTask](#SubmittedTask "https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask")
+*   [Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task")
+*   [WorkProducingResource](#WorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource")
 
-### AggregatedMeasurementc back to [ToC](#toc) or [Class ToC](#classes)
+### AggregatedMeasurement (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement
 
 Represents any AggregatedMeasurement, by using an AggregatedFunction, a time interval and time step resolution.
 
 has super-classes
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
 is in domain of
 
-[endingInterval](#endingInterval "https://glaciation-project.eu/MetadataReferenceModel/endingInterval") dp, [hasAggregatedFuntion](#hasAggregatedFuntion "https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion") dp, [startingInterval](#startingInterval "https://glaciation-project.eu/MetadataReferenceModel/startingInterval") dp, [timeStepResolution](#timeStepResolution "https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution") dp
+[endingInterval](#endingInterval "https://glaciation-project.eu/MetadataReferenceModel#endingInterval") dp, [hasAggregatedFuntion](#hasAggregatedFuntion "https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion") dp, [startingInterval](#startingInterval "https://glaciation-project.eu/MetadataReferenceModel#startingInterval") dp, [timeStepResolution](#timeStepResolution "https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution") dp
 
-### Aspectc back to [ToC](#toc) or [Class ToC](#classes)
+### Aspect (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/Aspect
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#Aspect
 
 It describes the Aspect of a Contstraint, e.g., time, power consumption.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 is in range of
 
-[hasAspect](#hasAspect "https://glaciation-project.eu/MetadataReferenceModel/hasAspect") op
+[hasAspect](#hasAspect "https://glaciation-project.eu/MetadataReferenceModel#hasAspect") op
 
-### AssignedTaskc back to [ToC](#toc) or [Class ToC](#classes)
+### AssignedTask (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/AssignedTask
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#AssignedTask
 
 An AssignedTask that will be performed by using some Resources and will be based on some Constraints.
 
 has super-classes
 
-[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task") c
+[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task") c
 
 is in domain of
 
-[consumes](#consumes "https://glaciation-project.eu/MetadataReferenceModel/consumes") op, [produces](#produces "https://glaciation-project.eu/MetadataReferenceModel/produces") op
+[consumes](#consumes "https://glaciation-project.eu/MetadataReferenceModel#consumes") op, [produces](#produces "https://glaciation-project.eu/MetadataReferenceModel#produces") op
 
 is in range of
 
-[assigns](#assigns "https://glaciation-project.eu/MetadataReferenceModel/assigns") op, [monitors](#monitors "https://glaciation-project.eu/MetadataReferenceModel/monitors") op, [reschedules](#reschedules "https://glaciation-project.eu/MetadataReferenceModel/reschedules") op
+[assigns](#assigns "https://glaciation-project.eu/MetadataReferenceModel#assigns") op, [monitors](#monitors "https://glaciation-project.eu/MetadataReferenceModel#monitors") op, [reschedules](#reschedules "https://glaciation-project.eu/MetadataReferenceModel#reschedules") op
 
-### Classc back to [ToC](#toc) or [Class ToC](#classes)
+### Class (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/Class
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#Class
 
 A generic Class for the GLACIATION project
 
 has sub-classes
 
-[Aspect](#Aspect "https://glaciation-project.eu/MetadataReferenceModel/Aspect") c, [Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel/Constraint") c, [Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c, [MeasurementProperty](#MeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty") c, [MeasurementUnit](#MeasurementUnit "https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit") c, [MeasuringResource](#MeasuringResource "https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource") c, [Monitor](#Monitor "https://glaciation-project.eu/MetadataReferenceModel/Monitor") c, [Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource") c, [Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel/Scheduler") c, [SoftConstraintComposition](#SoftConstraintComposition "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition") c, [Status](#Status "https://glaciation-project.eu/MetadataReferenceModel/Status") c, [Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task") c
+[Aspect](#Aspect "https://glaciation-project.eu/MetadataReferenceModel#Aspect") c, [Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel#Constraint") c, [Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c, [MeasurementProperty](#MeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty") c, [MeasurementUnit](#MeasurementUnit "https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit") c, [MeasuringResource](#MeasuringResource "https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource") c, [Monitor](#Monitor "https://glaciation-project.eu/MetadataReferenceModel#Monitor") c, [Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource") c, [Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel#Scheduler") c, [SoftConstraintComposition](#SoftConstraintComposition "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition") c, [Status](#Status "https://glaciation-project.eu/MetadataReferenceModel#Status") c, [Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task") c
 
 is in domain of
 
-[hasConfiguration](#hasConfiguration "https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration") dp, [hasDescription](#hasDescription "https://glaciation-project.eu/MetadataReferenceModel/hasDescription") dp, [hasID](#hasID "https://glaciation-project.eu/MetadataReferenceModel/hasID") dp, [hasStatus](#hasStatus "https://glaciation-project.eu/MetadataReferenceModel/hasStatus") op
+[hasConfiguration](#hasConfiguration "https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration") dp, [hasDescription](#hasDescription "https://glaciation-project.eu/MetadataReferenceModel#hasDescription") dp, [hasID](#hasID "https://glaciation-project.eu/MetadataReferenceModel#hasID") dp, [hasStatus](#hasStatus "https://glaciation-project.eu/MetadataReferenceModel#hasStatus") op
 
-### Constraintc back to [ToC](#toc) or [Class ToC](#classes)
+### Constraint (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/Constraint
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#Constraint
 
 For representing the Constraint(s) of a Task.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 has sub-classes
 
-[HardConstraint](#HardConstraint "https://glaciation-project.eu/MetadataReferenceModel/HardConstraint") c, [SoftConstraint](#SoftConstraint "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint") c
+[HardConstraint](#HardConstraint "https://glaciation-project.eu/MetadataReferenceModel#HardConstraint") c, [SoftConstraint](#SoftConstraint "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint") c
 
 is in domain of
 
-[hasAspect](#hasAspect "https://glaciation-project.eu/MetadataReferenceModel/hasAspect") op
+[hasAspect](#hasAspect "https://glaciation-project.eu/MetadataReferenceModel#hasAspect") op
 
 is in range of
 
-[hasConstraint](#hasConstraint "https://glaciation-project.eu/MetadataReferenceModel/hasConstraint") op, [relatesToConstraint](#relatesToConstraint "https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint") op
+[hasConstraint](#hasConstraint "https://glaciation-project.eu/MetadataReferenceModel#hasConstraint") op, [relatesToConstraint](#relatesToConstraint "https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint") op
 
-### HardConstraintc back to [ToC](#toc) or [Class ToC](#classes)
+### HardConstraint (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/HardConstraint
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#HardConstraint
 
 For representing the HardConstraints of a Task.
 
 has super-classes
 
-[Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel/Constraint") c
+[Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel#Constraint") c
 
-### Measurementc back to [ToC](#toc) or [Class ToC](#classes)
+### Measurement (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/Measurement
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#Measurement
 
 Represents any Measurement, e.g., for energy.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 has sub-classes
 
-[AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement") c
+[AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement") c
 
 is in domain of
 
-[hasTimestamp](#hasTimestamp "https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp") dp, [hasValue](#hasValue "https://glaciation-project.eu/MetadataReferenceModel/hasValue") dp, [measuredIn](#measuredIn "https://glaciation-project.eu/MetadataReferenceModel/measuredIn") op, [relatesToConstraint](#relatesToConstraint "https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint") op, [relatesToMeasurementProperty](#relatesToMeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty") op
+[hasTimestamp](#hasTimestamp "https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp") dp, [hasValue](#hasValue "https://glaciation-project.eu/MetadataReferenceModel#hasValue") dp, [measuredIn](#measuredIn "https://glaciation-project.eu/MetadataReferenceModel#measuredIn") op, [relatesToConstraint](#relatesToConstraint "https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint") op, [relatesToMeasurementProperty](#relatesToMeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty") op
 
 is in range of
 
-[hasResourceMeasurement](#hasResourceMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement") op, [hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement") op, [hasTaskPredictedMeasurement](#hasTaskPredictedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement") op, [hasTaskRealizedMeasurement](#hasTaskRealizedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement") op, [makesMeasurement](#makesMeasurement "https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement") op
+[hasResourceMeasurement](#hasResourceMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement") op, [hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement") op, [hasTaskPredictedMeasurement](#hasTaskPredictedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement") op, [hasTaskRealizedMeasurement](#hasTaskRealizedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement") op, [makesMeasurement](#makesMeasurement "https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement") op
 
-### MeasurementPropertyc back to [ToC](#toc) or [Class ToC](#classes)
+### MeasurementProperty (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty
 
 Represents a MeasurementProperty, e.g., allocated CPU, energy, etc.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 is in range of
 
-[relatesToMeasurementProperty](#relatesToMeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty") op
+[relatesToMeasurementProperty](#relatesToMeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty") op
 
-### MeasurementUnitc back to [ToC](#toc) or [Class ToC](#classes)
+### MeasurementUnit (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit
 
 Represents a MeasurementUnit, e.g., Kwh.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 is in range of
 
-[measuredIn](#measuredIn "https://glaciation-project.eu/MetadataReferenceModel/measuredIn") op
+[measuredIn](#measuredIn "https://glaciation-project.eu/MetadataReferenceModel#measuredIn") op
 
-### MeasuringResourcec back to [ToC](#toc) or [Class ToC](#classes)
+### MeasuringResource (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource
 
 It represents any WorkProducingResource that can perform Measurements.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c, [WorkProducingResource](#WorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c, [WorkProducingResource](#WorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource") c
 
 is in domain of
 
-[makesMeasurement](#makesMeasurement "https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement") op
+[makesMeasurement](#makesMeasurement "https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement") op
 
-### Monitorc back to [ToC](#toc) or [Class ToC](#classes)
+### Monitor (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/Monitor
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#Monitor
 
 Represents an entity that monitors an AssignedTask.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 is in domain of
 
-[monitors](#monitors "https://glaciation-project.eu/MetadataReferenceModel/monitors") op, [triggersReschedule](#triggersReschedule "https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule") op
+[monitors](#monitors "https://glaciation-project.eu/MetadataReferenceModel#monitors") op, [triggersReschedule](#triggersReschedule "https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule") op
 
-### NonWorkProducingResourcec back to [ToC](#toc) or [Class ToC](#classes)
+### NonWorkProducingResource (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource
 
 It represents any NonWorkProducingResource (e.g., dataset).
 
 has super-classes
 
-[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource") c
+[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource") c
 
-### Resourcec back to [ToC](#toc) or [Class ToC](#classes)
+### Resource (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/Resource
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#Resource
 
 It represents any Resource.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 has sub-classes
 
-[NonWorkProducingResource](#NonWorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource") c, [WorkProducingResource](#WorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource") c
+[NonWorkProducingResource](#NonWorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource") c, [WorkProducingResource](#WorkProducingResource "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource") c
 
 is in domain of
 
-[hasResourceMeasurement](#hasResourceMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement") op, [hasSubResource](#hasSubResource "https://glaciation-project.eu/MetadataReferenceModel/hasSubResource") op
+[hasResourceMeasurement](#hasResourceMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement") op, [hasSubResource](#hasSubResource "https://glaciation-project.eu/MetadataReferenceModel#hasSubResource") op
 
 is in range of
 
-[consumes](#consumes "https://glaciation-project.eu/MetadataReferenceModel/consumes") op, [hasSubResource](#hasSubResource "https://glaciation-project.eu/MetadataReferenceModel/hasSubResource") op, [manages](#manages "https://glaciation-project.eu/MetadataReferenceModel/manages") op, [produces](#produces "https://glaciation-project.eu/MetadataReferenceModel/produces") op
+[consumes](#consumes "https://glaciation-project.eu/MetadataReferenceModel#consumes") op, [hasSubResource](#hasSubResource "https://glaciation-project.eu/MetadataReferenceModel#hasSubResource") op, [manages](#manages "https://glaciation-project.eu/MetadataReferenceModel#manages") op, [produces](#produces "https://glaciation-project.eu/MetadataReferenceModel#produces") op
 
 is disjoint with
 
-[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task") c
+[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task") c
 
-### Schedulerc back to [ToC](#toc) or [Class ToC](#classes)
+### Scheduler (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/Scheduler
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#Scheduler
 
 Responsible for Scheduling a SubmittedTask and for managing the Resources.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 is in domain of
 
-[assigns](#assigns "https://glaciation-project.eu/MetadataReferenceModel/assigns") op, [manages](#manages "https://glaciation-project.eu/MetadataReferenceModel/manages") op, [reschedules](#reschedules "https://glaciation-project.eu/MetadataReferenceModel/reschedules") op
+[assigns](#assigns "https://glaciation-project.eu/MetadataReferenceModel#assigns") op, [manages](#manages "https://glaciation-project.eu/MetadataReferenceModel#manages") op, [reschedules](#reschedules "https://glaciation-project.eu/MetadataReferenceModel#reschedules") op
 
 is in range of
 
-[scheduledBy](#scheduledBy "https://glaciation-project.eu/MetadataReferenceModel/scheduledBy") op, [triggersReschedule](#triggersReschedule "https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule") op
+[scheduledBy](#scheduledBy "https://glaciation-project.eu/MetadataReferenceModel#scheduledBy") op, [triggersReschedule](#triggersReschedule "https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule") op
 
-### SoftConstraintc back to [ToC](#toc) or [Class ToC](#classes)
+### SoftConstraint (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint
 
 For representing the SoftConstraints of a Task.
 
 has super-classes
 
-[Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel/Constraint") c
+[Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel#Constraint") c
 
 is in range of
 
-[composedBy](#composedBy "https://glaciation-project.eu/MetadataReferenceModel/composedBy") op
+[composedBy](#composedBy "https://glaciation-project.eu/MetadataReferenceModel#composedBy") op
 
-### SoftConstraintCompositionc back to [ToC](#toc) or [Class ToC](#classes)
+### SoftConstraintComposition (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition
 
 It describes the composition of SoftConstraints, e.g., the order of soft constraings according to a given preference priority, Pareto, Pareto optimal, etc.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 is in domain of
 
-[composedBy](#composedBy "https://glaciation-project.eu/MetadataReferenceModel/composedBy") op
+[composedBy](#composedBy "https://glaciation-project.eu/MetadataReferenceModel#composedBy") op
 
 is in range of
 
-[hasComposition](#hasComposition "https://glaciation-project.eu/MetadataReferenceModel/hasComposition") op
+[hasComposition](#hasComposition "https://glaciation-project.eu/MetadataReferenceModel#hasComposition") op
 
-### Statusc back to [ToC](#toc) or [Class ToC](#classes)
+### Status (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/Status
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#Status
 
 Represents information about a specific Status over a given time interval.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 is in domain of
 
-[endTime](#endTime "https://glaciation-project.eu/MetadataReferenceModel/endTime") dp, [startTime](#startTime "https://glaciation-project.eu/MetadataReferenceModel/startTime") dp, [statusCode](#statusCode "https://glaciation-project.eu/MetadataReferenceModel/statusCode") dp
+[endTime](#endTime "https://glaciation-project.eu/MetadataReferenceModel#endTime") dp, [startTime](#startTime "https://glaciation-project.eu/MetadataReferenceModel#startTime") dp, [statusCode](#statusCode "https://glaciation-project.eu/MetadataReferenceModel#statusCode") dp
 
 is in range of
 
-[hasStatus](#hasStatus "https://glaciation-project.eu/MetadataReferenceModel/hasStatus") op
+[hasStatus](#hasStatus "https://glaciation-project.eu/MetadataReferenceModel#hasStatus") op
 
-### SubmittedTaskc back to [ToC](#toc) or [Class ToC](#classes)
+### SubmittedTask (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask
 
 A Submitted Task that will be processed by a Scheduler.
 
 has super-classes
 
-[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task") c
+[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task") c
 
 is in domain of
 
-[scheduledBy](#scheduledBy "https://glaciation-project.eu/MetadataReferenceModel/scheduledBy") op
+[scheduledBy](#scheduledBy "https://glaciation-project.eu/MetadataReferenceModel#scheduledBy") op
 
-### Taskc back to [ToC](#toc) or [Class ToC](#classes)
+### Task (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/Task
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#Task
 
 It describes any Task that has Constraints and a Status.
 
 has super-classes
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 has sub-classes
 
-[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask") c, [SubmittedTask](#SubmittedTask "https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask") c
+[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask") c, [SubmittedTask](#SubmittedTask "https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask") c
 
 is in domain of
 
-[hasComposition](#hasComposition "https://glaciation-project.eu/MetadataReferenceModel/hasComposition") op, [hasConstraint](#hasConstraint "https://glaciation-project.eu/MetadataReferenceModel/hasConstraint") op, [hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement") op, [hasTaskPredictedMeasurement](#hasTaskPredictedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement") op, [hasTaskRealizedMeasurement](#hasTaskRealizedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement") op
+[hasComposition](#hasComposition "https://glaciation-project.eu/MetadataReferenceModel#hasComposition") op, [hasConstraint](#hasConstraint "https://glaciation-project.eu/MetadataReferenceModel#hasConstraint") op, [hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement") op, [hasTaskPredictedMeasurement](#hasTaskPredictedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement") op, [hasTaskRealizedMeasurement](#hasTaskRealizedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement") op
 
 is disjoint with
 
-[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource") c
+[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource") c
 
-### WorkProducingResourcec back to [ToC](#toc) or [Class ToC](#classes)
+### WorkProducingResource (c) back to [ToC](#toc) or [Class ToC](#classes)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource
 
 It represents any WorkProducingResource, e.g., a node, a CPU, etc.
 
 has super-classes
 
-[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource") c
+[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource") c
 
 has sub-classes
 
-[MeasuringResource](#MeasuringResource "https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource") c
+[MeasuringResource](#MeasuringResource "https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource") c
 
 ### Object Properties
 
-*   [assigns](#assigns "https://glaciation-project.eu/MetadataReferenceModel/assigns")
-*   [composedBy](#composedBy "https://glaciation-project.eu/MetadataReferenceModel/composedBy")
-*   [consumes](#consumes "https://glaciation-project.eu/MetadataReferenceModel/consumes")
-*   [hasAspect](#hasAspect "https://glaciation-project.eu/MetadataReferenceModel/hasAspect")
-*   [hasComposition](#hasComposition "https://glaciation-project.eu/MetadataReferenceModel/hasComposition")
-*   [hasConstraint](#hasConstraint "https://glaciation-project.eu/MetadataReferenceModel/hasConstraint")
-*   [hasResourceMeasurement](#hasResourceMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement")
-*   [hasStatus](#hasStatus "https://glaciation-project.eu/MetadataReferenceModel/hasStatus")
-*   [hasSubResource](#hasSubResource "https://glaciation-project.eu/MetadataReferenceModel/hasSubResource")
-*   [hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement")
-*   [hasTaskPredictedMeasurement](#hasTaskPredictedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement")
-*   [hasTaskRealizedMeasurement](#hasTaskRealizedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement")
-*   [makesMeasurement](#makesMeasurement "https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement")
-*   [manages](#manages "https://glaciation-project.eu/MetadataReferenceModel/manages")
-*   [measuredIn](#measuredIn "https://glaciation-project.eu/MetadataReferenceModel/measuredIn")
-*   [monitors](#monitors "https://glaciation-project.eu/MetadataReferenceModel/monitors")
-*   [produces](#produces "https://glaciation-project.eu/MetadataReferenceModel/produces")
-*   [relatesToConstraint](#relatesToConstraint "https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint")
-*   [relatesToMeasurementProperty](#relatesToMeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty")
-*   [reschedules](#reschedules "https://glaciation-project.eu/MetadataReferenceModel/reschedules")
-*   [scheduledBy](#scheduledBy "https://glaciation-project.eu/MetadataReferenceModel/scheduledBy")
-*   [triggersReschedule](#triggersReschedule "https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule")
+*   [assigns](#assigns "https://glaciation-project.eu/MetadataReferenceModel#assigns")
+*   [composedBy](#composedBy "https://glaciation-project.eu/MetadataReferenceModel#composedBy")
+*   [consumes](#consumes "https://glaciation-project.eu/MetadataReferenceModel#consumes")
+*   [hasAspect](#hasAspect "https://glaciation-project.eu/MetadataReferenceModel#hasAspect")
+*   [hasComposition](#hasComposition "https://glaciation-project.eu/MetadataReferenceModel#hasComposition")
+*   [hasConstraint](#hasConstraint "https://glaciation-project.eu/MetadataReferenceModel#hasConstraint")
+*   [hasResourceMeasurement](#hasResourceMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement")
+*   [hasStatus](#hasStatus "https://glaciation-project.eu/MetadataReferenceModel#hasStatus")
+*   [hasSubResource](#hasSubResource "https://glaciation-project.eu/MetadataReferenceModel#hasSubResource")
+*   [hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement")
+*   [hasTaskPredictedMeasurement](#hasTaskPredictedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement")
+*   [hasTaskRealizedMeasurement](#hasTaskRealizedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement")
+*   [makesMeasurement](#makesMeasurement "https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement")
+*   [manages](#manages "https://glaciation-project.eu/MetadataReferenceModel#manages")
+*   [measuredIn](#measuredIn "https://glaciation-project.eu/MetadataReferenceModel#measuredIn")
+*   [monitors](#monitors "https://glaciation-project.eu/MetadataReferenceModel#monitors")
+*   [produces](#produces "https://glaciation-project.eu/MetadataReferenceModel#produces")
+*   [relatesToConstraint](#relatesToConstraint "https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint")
+*   [relatesToMeasurementProperty](#relatesToMeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty")
+*   [reschedules](#reschedules "https://glaciation-project.eu/MetadataReferenceModel#reschedules")
+*   [scheduledBy](#scheduledBy "https://glaciation-project.eu/MetadataReferenceModel#scheduledBy")
+*   [triggersReschedule](#triggersReschedule "https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule")
 
-### assignsop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### assigns (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/assigns
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#assigns
 
 A relationship between a Scheduler and an AssignedTask.
 
@@ -533,15 +533,15 @@ has super-properties
 
 has domain
 
-[Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel/Scheduler") c
+[Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel#Scheduler") c
 
 has range
 
-[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask") c
+[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask") c
 
-### composedByop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### composedBy (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/composedBy
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#composedBy
 
 For keeping information about the SoftConstraints that are included in a Composition.
 
@@ -551,15 +551,15 @@ has super-properties
 
 has domain
 
-[SoftConstraintComposition](#SoftConstraintComposition "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition") c
+[SoftConstraintComposition](#SoftConstraintComposition "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition") c
 
 has range
 
-[SoftConstraint](#SoftConstraint "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint") c
+[SoftConstraint](#SoftConstraint "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint") c
 
-### consumesop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### consumes (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/consumes
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#consumes
 
 A property for recording the Resource(s) of each AssignedTask.
 
@@ -569,15 +569,15 @@ has super-properties
 
 has domain
 
-[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask") c
+[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask") c
 
 has range
 
-[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource") c
+[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource") c
 
-### hasAspectop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### hasAspect (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasAspect
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasAspect
 
 For keeping information about the Aspect of each Constraint, e.g., time, power consumption.
 
@@ -587,15 +587,15 @@ has super-properties
 
 has domain
 
-[Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel/Constraint") c
+[Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel#Constraint") c
 
 has range
 
-[Aspect](#Aspect "https://glaciation-project.eu/MetadataReferenceModel/Aspect") c
+[Aspect](#Aspect "https://glaciation-project.eu/MetadataReferenceModel#Aspect") c
 
-### hasCompositionop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### hasComposition (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasComposition
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasComposition
 
 For keeping information about the Composition of the SoftConstraints of a Task.
 
@@ -605,15 +605,15 @@ has super-properties
 
 has domain
 
-[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task") c
+[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task") c
 
 has range
 
-[SoftConstraintComposition](#SoftConstraintComposition "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition") c
+[SoftConstraintComposition](#SoftConstraintComposition "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition") c
 
-### hasConstraintop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### hasConstraint (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasConstraint
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasConstraint
 
 A relationship for recording all the Constraints of a Task.
 
@@ -623,15 +623,15 @@ has super-properties
 
 has domain
 
-[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task") c
+[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task") c
 
 has range
 
-[Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel/Constraint") c
+[Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel#Constraint") c
 
-### hasResourceMeasurementop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### hasResourceMeasurement (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement
 
 A relationship between a Resource and a Measurement.
 
@@ -641,15 +641,15 @@ has super-properties
 
 has domain
 
-[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource") c
+[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource") c
 
 has range
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
-### hasStatusop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### hasStatus (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasStatus
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasStatus
 
 A relationship between any Class and its Status.
 
@@ -659,15 +659,15 @@ has super-properties
 
 has domain
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 has range
 
-[Status](#Status "https://glaciation-project.eu/MetadataReferenceModel/Status") c
+[Status](#Status "https://glaciation-project.eu/MetadataReferenceModel#Status") c
 
-### hasSubResourceop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### hasSubResource (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasSubResource
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasSubResource
 
 Relationships for recording the SubResource(s) of each Resource (e.g, the hardware of a node).
 
@@ -677,15 +677,15 @@ has super-properties
 
 has domain
 
-[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource") c
+[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource") c
 
 has range
 
-[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource") c
+[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource") c
 
-### hasTaskMeasurementop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### hasTaskMeasurement (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement
 
 A relationship between a Task and a Measurement.
 
@@ -695,55 +695,55 @@ has super-properties
 
 has sub-properties
 
-[hasTaskPredictedMeasurement](#hasTaskPredictedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement") op, [hasTaskRealizedMeasurement](#hasTaskRealizedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement") op
+[hasTaskPredictedMeasurement](#hasTaskPredictedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement") op, [hasTaskRealizedMeasurement](#hasTaskRealizedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement") op
 
 has domain
 
-[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task") c
+[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task") c
 
 has range
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
-### hasTaskPredictedMeasurementop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### hasTaskPredictedMeasurement (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement
 
 A relationship for recording the PredictedMeasurements of a Task.
 
 has super-properties
 
-[hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement") op
+[hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement") op
 
 has domain
 
-[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task") c
+[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task") c
 
 has range
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
-### hasTaskRealizedMeasurementop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### hasTaskRealizedMeasurement (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement
 
 A relationship for recording the RealizedMeasurements (actual measurements) of a Task.
 
 has super-properties
 
-[hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement") op
+[hasTaskMeasurement](#hasTaskMeasurement "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement") op
 
 has domain
 
-[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel/Task") c
+[Task](#Task "https://glaciation-project.eu/MetadataReferenceModel#Task") c
 
 has range
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
-### makesMeasurementop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### makesMeasurement (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement
 
 A relationship between a MeasuringResource and a Measurement.
 
@@ -753,15 +753,15 @@ has super-properties
 
 has domain
 
-[MeasuringResource](#MeasuringResource "https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource") c
+[MeasuringResource](#MeasuringResource "https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource") c
 
 has range
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
-### managesop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### manages (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/manages
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#manages
 
 A relationship between a Scheduler and a Resource.
 
@@ -771,15 +771,15 @@ has super-properties
 
 has domain
 
-[Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel/Scheduler") c
+[Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel#Scheduler") c
 
 has range
 
-[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource") c
+[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource") c
 
-### measuredInop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### measuredIn (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/measuredIn
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#measuredIn
 
 For recording the MeasurimentUnit of each Measurement.
 
@@ -789,15 +789,15 @@ has super-properties
 
 has domain
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
 has range
 
-[MeasurementUnit](#MeasurementUnit "https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit") c
+[MeasurementUnit](#MeasurementUnit "https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit") c
 
-### monitorsop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### monitors (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/monitors
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#monitors
 
 For recording which Monitor tracks an AssignedTask.
 
@@ -807,15 +807,15 @@ has super-properties
 
 has domain
 
-[Monitor](#Monitor "https://glaciation-project.eu/MetadataReferenceModel/Monitor") c
+[Monitor](#Monitor "https://glaciation-project.eu/MetadataReferenceModel#Monitor") c
 
 has range
 
-[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask") c
+[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask") c
 
-### producesop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### produces (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/produces
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#produces
 
 For keeping information about the production Resource, e.g., the output, of an AssignedTask.
 
@@ -825,15 +825,15 @@ has super-properties
 
 has domain
 
-[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask") c
+[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask") c
 
 has range
 
-[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel/Resource") c
+[Resource](#Resource "https://glaciation-project.eu/MetadataReferenceModel#Resource") c
 
-### relatesToConstraintop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### relatesToConstraint (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint
 
 For keeping information about the Constraint that each Measurement relates to.
 
@@ -843,15 +843,15 @@ has super-properties
 
 has domain
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
 has range
 
-[Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel/Constraint") c
+[Constraint](#Constraint "https://glaciation-project.eu/MetadataReferenceModel#Constraint") c
 
-### relatesToMeasurementPropertyop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### relatesToMeasurementProperty (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty
 
 For recording the MeasurementProperty of each Measurement.
 
@@ -861,15 +861,15 @@ has super-properties
 
 has domain
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
 has range
 
-[MeasurementProperty](#MeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty") c
+[MeasurementProperty](#MeasurementProperty "https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty") c
 
-### reschedulesop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### reschedules (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/reschedules
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#reschedules
 
 A relationship between a Scheduler and an AssignedTask that concerns rescheduling.
 
@@ -879,15 +879,15 @@ has super-properties
 
 has domain
 
-[Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel/Scheduler") c
+[Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel#Scheduler") c
 
 has range
 
-[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask") c
+[AssignedTask](#AssignedTask "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask") c
 
-### scheduledByop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### scheduledBy (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/scheduledBy
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#scheduledBy
 
 A relationship between a SubmittedTask and a Scheduler.
 
@@ -897,15 +897,15 @@ has super-properties
 
 has domain
 
-[SubmittedTask](#SubmittedTask "https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask") c
+[SubmittedTask](#SubmittedTask "https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask") c
 
 has range
 
-[Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel/Scheduler") c
+[Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel#Scheduler") c
 
-### triggersRescheduleop back to [ToC](#toc) or [Object Property ToC](#objectproperties)
+### triggersReschedule (op) back to [ToC](#toc) or [Object Property ToC](#objectproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule
 
 A triggered event relationship about Rescheduling from a Monitor.
 
@@ -915,30 +915,30 @@ has super-properties
 
 has domain
 
-[Monitor](#Monitor "https://glaciation-project.eu/MetadataReferenceModel/Monitor") c
+[Monitor](#Monitor "https://glaciation-project.eu/MetadataReferenceModel#Monitor") c
 
 has range
 
-[Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel/Scheduler") c
+[Scheduler](#Scheduler "https://glaciation-project.eu/MetadataReferenceModel#Scheduler") c
 
 ### Data Properties
 
-*   [endingInterval](#endingInterval "https://glaciation-project.eu/MetadataReferenceModel/endingInterval")
-*   [endTime](#endTime "https://glaciation-project.eu/MetadataReferenceModel/endTime")
-*   [hasAggregatedFuntion](#hasAggregatedFuntion "https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion")
-*   [hasConfiguration](#hasConfiguration "https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration")
-*   [hasDescription](#hasDescription "https://glaciation-project.eu/MetadataReferenceModel/hasDescription")
-*   [hasID](#hasID "https://glaciation-project.eu/MetadataReferenceModel/hasID")
-*   [hasTimestamp](#hasTimestamp "https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp")
-*   [hasValue](#hasValue "https://glaciation-project.eu/MetadataReferenceModel/hasValue")
-*   [startingInterval](#startingInterval "https://glaciation-project.eu/MetadataReferenceModel/startingInterval")
-*   [startTime](#startTime "https://glaciation-project.eu/MetadataReferenceModel/startTime")
-*   [statusCode](#statusCode "https://glaciation-project.eu/MetadataReferenceModel/statusCode")
-*   [timeStepResolution](#timeStepResolution "https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution")
+*   [endingInterval](#endingInterval "https://glaciation-project.eu/MetadataReferenceModel#endingInterval")
+*   [endTime](#endTime "https://glaciation-project.eu/MetadataReferenceModel#endTime")
+*   [hasAggregatedFuntion](#hasAggregatedFuntion "https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion")
+*   [hasConfiguration](#hasConfiguration "https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration")
+*   [hasDescription](#hasDescription "https://glaciation-project.eu/MetadataReferenceModel#hasDescription")
+*   [hasID](#hasID "https://glaciation-project.eu/MetadataReferenceModel#hasID")
+*   [hasTimestamp](#hasTimestamp "https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp")
+*   [hasValue](#hasValue "https://glaciation-project.eu/MetadataReferenceModel#hasValue")
+*   [startingInterval](#startingInterval "https://glaciation-project.eu/MetadataReferenceModel#startingInterval")
+*   [startTime](#startTime "https://glaciation-project.eu/MetadataReferenceModel#startTime")
+*   [statusCode](#statusCode "https://glaciation-project.eu/MetadataReferenceModel#statusCode")
+*   [timeStepResolution](#timeStepResolution "https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution")
 
-### endingIntervaldp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### endingInterval (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/endingInterval
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#endingInterval
 
 The ending interval time of an AggregatedMeasurement.
 
@@ -948,15 +948,15 @@ has super-properties
 
 has domain
 
-[AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement") c
+[AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement") c
 
 has range
 
 [date Time Stamp](http://www.w3.org/2001/XMLSchema#dateTimeStamp "http://www.w3.org/2001/XMLSchema#dateTimeStamp")
 
-### endTimedp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### endTime (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/endTime
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#endTime
 
 The end time of a Status of any Class.
 
@@ -966,15 +966,15 @@ has super-properties
 
 has domain
 
-[Status](#Status "https://glaciation-project.eu/MetadataReferenceModel/Status") c
+[Status](#Status "https://glaciation-project.eu/MetadataReferenceModel#Status") c
 
 has range
 
 [date Time Stamp](http://www.w3.org/2001/XMLSchema#dateTimeStamp "http://www.w3.org/2001/XMLSchema#dateTimeStamp")
 
-### hasAggregatedFuntiondp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### hasAggregatedFuntion (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion
 
 The AggregatedFunction of an AggregatedMeasurement.
 
@@ -984,15 +984,15 @@ has super-properties
 
 has domain
 
-[AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement") c
+[AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement") c
 
 has range
 
 [string](http://www.w3.org/2001/XMLSchema#string "http://www.w3.org/2001/XMLSchema#string")
 
-### hasConfigurationdp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### hasConfiguration (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration
 
 The Configuration of any instance of a Class, e.g., Task, Resource, etc.
 
@@ -1002,15 +1002,15 @@ has super-properties
 
 has domain
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 has range
 
 [string](http://www.w3.org/2001/XMLSchema#string "http://www.w3.org/2001/XMLSchema#string")
 
-### hasDescriptiondp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### hasDescription (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasDescription
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasDescription
 
 The Description of any entity.
 
@@ -1020,15 +1020,15 @@ has super-properties
 
 has domain
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 has range
 
 [string](http://www.w3.org/2001/XMLSchema#string "http://www.w3.org/2001/XMLSchema#string")
 
-### hasIDdp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### hasID (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasID
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasID
 
 The ID of any entity.
 
@@ -1038,15 +1038,15 @@ has super-properties
 
 has domain
 
-[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel/Class") c
+[Class](#Class "https://glaciation-project.eu/MetadataReferenceModel#Class") c
 
 has range
 
 [string](http://www.w3.org/2001/XMLSchema#string "http://www.w3.org/2001/XMLSchema#string")
 
-### hasTimestampdp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### hasTimestamp (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp
 
 The date and time of a Measurement.
 
@@ -1056,15 +1056,15 @@ has super-properties
 
 has domain
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
 has range
 
 [date Time Stamp](http://www.w3.org/2001/XMLSchema#dateTimeStamp "http://www.w3.org/2001/XMLSchema#dateTimeStamp")
 
-### hasValuedp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### hasValue (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/hasValue
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#hasValue
 
 The Value of a Measurement.
 
@@ -1074,15 +1074,15 @@ has super-properties
 
 has domain
 
-[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel/Measurement") c
+[Measurement](#Measurement "https://glaciation-project.eu/MetadataReferenceModel#Measurement") c
 
 has range
 
 [string](http://www.w3.org/2001/XMLSchema#string "http://www.w3.org/2001/XMLSchema#string")
 
-### startingIntervaldp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### startingInterval (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/startingInterval
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#startingInterval
 
 The starting interval time of an AggregatedMeasurement.
 
@@ -1092,15 +1092,15 @@ has super-properties
 
 has domain
 
-[AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement") c
+[AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement") c
 
 has range
 
 [date Time Stamp](http://www.w3.org/2001/XMLSchema#dateTimeStamp "http://www.w3.org/2001/XMLSchema#dateTimeStamp")
 
-### startTimedp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### startTime (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/startTime
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#startTime
 
 The date and time of a Status.
 
@@ -1110,15 +1110,15 @@ has super-properties
 
 has domain
 
-[Status](#Status "https://glaciation-project.eu/MetadataReferenceModel/Status") c
+[Status](#Status "https://glaciation-project.eu/MetadataReferenceModel#Status") c
 
 has range
 
 [date Time Stamp](http://www.w3.org/2001/XMLSchema#dateTimeStamp "http://www.w3.org/2001/XMLSchema#dateTimeStamp")
 
-### statusCodedp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### statusCode (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/statusCode
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#statusCode
 
 The status code of a Status.
 
@@ -1128,15 +1128,15 @@ has super-properties
 
 has domain
 
-[Status](#Status "https://glaciation-project.eu/MetadataReferenceModel/Status") c
+[Status](#Status "https://glaciation-project.eu/MetadataReferenceModel#Status") c
 
 has range
 
 [integer](http://www.w3.org/2001/XMLSchema#integer "http://www.w3.org/2001/XMLSchema#integer")
 
-### timeStepResolutiondp back to [ToC](#toc) or [Data Property ToC](#dataproperties)
+### timeStepResolution (dp) back to [ToC](#toc) or [Data Property ToC](#dataproperties)
 
-**IRI:** https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution
+**IRI:** https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution
 
 The time step resolution of an AggregatedMeasurement.
 
@@ -1146,7 +1146,7 @@ has super-properties
 
 has domain
 
-[AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement") c
+[AggregatedMeasurement](#AggregatedMeasurement "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement") c
 
 has range
 
@@ -1166,56 +1166,56 @@ has range
 *   [status](#http://purl.org/ontology/bibo/status "http://purl.org/ontology/bibo/status")
 *   [title](#http://purl.org/dc/terms/title "http://purl.org/dc/terms/title")
 
-### abstractap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### abstract (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/dc/terms/abstract
 
-### contributorap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### contributor (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/dc/elements/1.1/contributor
 
-### createdap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### created (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/dc/terms/created
 
-### creatorap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### creator (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/dc/elements/1.1/creator
 
-### descriptionap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### description (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/dc/terms/description
 
-### issuedap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### issued (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/dc/elements/1.1/issued
 
-### licenseap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### license (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/dc/terms/license
 
-### preferred Namespace Uriap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### preferred Namespace Uri  (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/vocab/vann/preferredNamespaceUri
 
-### preffered Namespace Prefixap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### preffered Namespace Prefix  (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/vocab/vann/prefferedNamespacePrefix
 
-### statusap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### status  (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/ontology/bibo/status
 
-### titleap back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
+### title (ap) back to [ToC](#toc) or [Annotation Property ToC](#annotationproperties)
 
 **IRI:** http://purl.org/dc/terms/title
 
 Legend back to [ToC](#toc)
 --------------------------
 
-c: Classes  
-op: Object Properties  
-dp: Data Properties  
+c: Classes
+op: Object Properties
+dp: Data Properties
 
 Acknowledgments back to [ToC](#toc)
 -----------------------------------

@@ -7,7 +7,7 @@
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:specializationOf <https://glaciation-project.eu/MetadataReferenceModel/>;
+	 prov:specializationOf <https://glaciation-project.eu/MetadataReferenceModel>;
 	 prov:wasGeneratedAt ""2024-07-20"";
 .
 :agent0 a prov:Agent; foaf:name ""Michalis Mountantonakis", "Panagiotis Papadakos", "Rigo Wenning"".

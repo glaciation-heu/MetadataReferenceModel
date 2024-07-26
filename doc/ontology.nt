@@ -9,7 +9,7 @@
 <https://glaciation-project.eu/MetadataReferenceModel> <http://purl.org/dc/terms/license> <https://www.apache.org/licenses/LICENSE-2.0> .
 <https://glaciation-project.eu/MetadataReferenceModel> <http://purl.org/dc/terms/title> "The Metadata Reference Model for the EU GLACIATION Project"@en .
 <https://glaciation-project.eu/MetadataReferenceModel> <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/peerReviewed> .
-<https://glaciation-project.eu/MetadataReferenceModel> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://glaciation-project.eu/MetadataReferenceModel/> .
+<https://glaciation-project.eu/MetadataReferenceModel> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://glaciation-project.eu/MetadataReferenceModel> .
 <https://glaciation-project.eu/MetadataReferenceModel> <http://purl.org/vocab/vann/prefferedNamespacePrefix> "glc" .
 <https://glaciation-project.eu/MetadataReferenceModel> <http://www.w3.org/2000/01/rdf-schema#label> "GLACIATION Metadata Reference Model"@en .
 <https://glaciation-project.eu/MetadataReferenceModel> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
@@ -64,181 +64,181 @@
 # #################################################################
 # 
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/assigns
-<https://glaciation-project.eu/MetadataReferenceModel/assigns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/assigns> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/assigns> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Scheduler> .
-<https://glaciation-project.eu/MetadataReferenceModel/assigns> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> .
-<https://glaciation-project.eu/MetadataReferenceModel/assigns> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Scheduler and an AssignedTask." .
-<https://glaciation-project.eu/MetadataReferenceModel/assigns> <http://www.w3.org/2000/01/rdf-schema#label> "assigns" .
+# https://glaciation-project.eu/MetadataReferenceModel#assigns
+<https://glaciation-project.eu/MetadataReferenceModel#assigns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#assigns> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#assigns> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Scheduler> .
+<https://glaciation-project.eu/MetadataReferenceModel#assigns> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> .
+<https://glaciation-project.eu/MetadataReferenceModel#assigns> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Scheduler and an AssignedTask." .
+<https://glaciation-project.eu/MetadataReferenceModel#assigns> <http://www.w3.org/2000/01/rdf-schema#label> "assigns" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/composedBy
-<https://glaciation-project.eu/MetadataReferenceModel/composedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/composedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/composedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition> .
-<https://glaciation-project.eu/MetadataReferenceModel/composedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint> .
-<https://glaciation-project.eu/MetadataReferenceModel/composedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "For keeping information about the SoftConstraints that are included in a Composition." .
-<https://glaciation-project.eu/MetadataReferenceModel/composedBy> <http://www.w3.org/2000/01/rdf-schema#label> "composedBy" .
+# https://glaciation-project.eu/MetadataReferenceModel#composedBy
+<https://glaciation-project.eu/MetadataReferenceModel#composedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#composedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#composedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition> .
+<https://glaciation-project.eu/MetadataReferenceModel#composedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint> .
+<https://glaciation-project.eu/MetadataReferenceModel#composedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "For keeping information about the SoftConstraints that are included in a Composition." .
+<https://glaciation-project.eu/MetadataReferenceModel#composedBy> <http://www.w3.org/2000/01/rdf-schema#label> "composedBy" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/consumes
-<https://glaciation-project.eu/MetadataReferenceModel/consumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/consumes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/consumes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> .
-<https://glaciation-project.eu/MetadataReferenceModel/consumes> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Resource> .
-<https://glaciation-project.eu/MetadataReferenceModel/consumes> <http://www.w3.org/2000/01/rdf-schema#comment> "A property for recording the Resource(s) of each AssignedTask." .
-<https://glaciation-project.eu/MetadataReferenceModel/consumes> <http://www.w3.org/2000/01/rdf-schema#label> "consumes" .
+# https://glaciation-project.eu/MetadataReferenceModel#consumes
+<https://glaciation-project.eu/MetadataReferenceModel#consumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#consumes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#consumes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> .
+<https://glaciation-project.eu/MetadataReferenceModel#consumes> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel#consumes> <http://www.w3.org/2000/01/rdf-schema#comment> "A property for recording the Resource(s) of each AssignedTask." .
+<https://glaciation-project.eu/MetadataReferenceModel#consumes> <http://www.w3.org/2000/01/rdf-schema#label> "consumes" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasAspect
-<https://glaciation-project.eu/MetadataReferenceModel/hasAspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasAspect> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasAspect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Constraint> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasAspect> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Aspect> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasAspect> <http://www.w3.org/2000/01/rdf-schema#comment> "For keeping information about the Aspect of each Constraint, e.g., time, power consumption." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasAspect> <http://www.w3.org/2000/01/rdf-schema#label> "hasAspect" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasAspect
+<https://glaciation-project.eu/MetadataReferenceModel#hasAspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasAspect> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasAspect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Constraint> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasAspect> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Aspect> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasAspect> <http://www.w3.org/2000/01/rdf-schema#comment> "For keeping information about the Aspect of each Constraint, e.g., time, power consumption." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasAspect> <http://www.w3.org/2000/01/rdf-schema#label> "hasAspect" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasComposition
-<https://glaciation-project.eu/MetadataReferenceModel/hasComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasComposition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasComposition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Task> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasComposition> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasComposition> <http://www.w3.org/2000/01/rdf-schema#comment> "For keeping information about the Composition of the SoftConstraints of a Task." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasComposition> <http://www.w3.org/2000/01/rdf-schema#label> "hasComposition" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasComposition
+<https://glaciation-project.eu/MetadataReferenceModel#hasComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasComposition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasComposition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Task> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasComposition> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasComposition> <http://www.w3.org/2000/01/rdf-schema#comment> "For keeping information about the Composition of the SoftConstraints of a Task." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasComposition> <http://www.w3.org/2000/01/rdf-schema#label> "hasComposition" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasConstraint
-<https://glaciation-project.eu/MetadataReferenceModel/hasConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasConstraint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Task> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasConstraint> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Constraint> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship for recording all the Constraints of a Task." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "hasConstraint" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasConstraint
+<https://glaciation-project.eu/MetadataReferenceModel#hasConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Task> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Constraint> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship for recording all the Constraints of a Task." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "hasConstraint" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Resource> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Resource and a Measurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "hasResourceMeasurement" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement
+<https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Resource and a Measurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "hasResourceMeasurement" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasStatus
-<https://glaciation-project.eu/MetadataReferenceModel/hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Status> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between any Class and its Status." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "hasStatus" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasStatus
+<https://glaciation-project.eu/MetadataReferenceModel#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Status> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between any Class and its Status." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "hasStatus" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasSubResource
-<https://glaciation-project.eu/MetadataReferenceModel/hasSubResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasSubResource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasSubResource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Resource> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasSubResource> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Resource> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasSubResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationships for recording the SubResource(s) of each Resource (e.g, the hardware of a node)." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasSubResource> <http://www.w3.org/2000/01/rdf-schema#label> "hasSubResource" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasSubResource
+<https://glaciation-project.eu/MetadataReferenceModel#hasSubResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasSubResource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasSubResource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasSubResource> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasSubResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationships for recording the SubResource(s) of each Resource (e.g, the hardware of a node)." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasSubResource> <http://www.w3.org/2000/01/rdf-schema#label> "hasSubResource" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Task> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Task and a Measurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "hasTaskMeasurement" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Task> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Task and a Measurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "hasTaskMeasurement" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Task> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship for recording the PredictedMeasurements of a Task." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "hasTaskPredictedMeasurement" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Task> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship for recording the PredictedMeasurements of a Task." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "hasTaskPredictedMeasurement" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Task> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship for recording the RealizedMeasurements (actual measurements) of a Task." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "hasTaskRealizedMeasurement" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Task> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship for recording the RealizedMeasurements (actual measurements) of a Task." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "hasTaskRealizedMeasurement" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource> .
-<https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a MeasuringResource and a Measurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "makesMeasurement" .
+# https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement
+<https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource> .
+<https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a MeasuringResource and a Measurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "makesMeasurement" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/manages
-<https://glaciation-project.eu/MetadataReferenceModel/manages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/manages> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/manages> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Scheduler> .
-<https://glaciation-project.eu/MetadataReferenceModel/manages> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Resource> .
-<https://glaciation-project.eu/MetadataReferenceModel/manages> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Scheduler and a Resource." .
-<https://glaciation-project.eu/MetadataReferenceModel/manages> <http://www.w3.org/2000/01/rdf-schema#label> "manages" .
+# https://glaciation-project.eu/MetadataReferenceModel#manages
+<https://glaciation-project.eu/MetadataReferenceModel#manages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#manages> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#manages> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Scheduler> .
+<https://glaciation-project.eu/MetadataReferenceModel#manages> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel#manages> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Scheduler and a Resource." .
+<https://glaciation-project.eu/MetadataReferenceModel#manages> <http://www.w3.org/2000/01/rdf-schema#label> "manages" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/measuredIn
-<https://glaciation-project.eu/MetadataReferenceModel/measuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/measuredIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/measuredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/measuredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit> .
-<https://glaciation-project.eu/MetadataReferenceModel/measuredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "For recording the MeasurimentUnit of each Measurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/measuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "measuredIn" .
+# https://glaciation-project.eu/MetadataReferenceModel#measuredIn
+<https://glaciation-project.eu/MetadataReferenceModel#measuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#measuredIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#measuredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#measuredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit> .
+<https://glaciation-project.eu/MetadataReferenceModel#measuredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "For recording the MeasurimentUnit of each Measurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#measuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "measuredIn" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/monitors
-<https://glaciation-project.eu/MetadataReferenceModel/monitors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/monitors> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/monitors> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Monitor> .
-<https://glaciation-project.eu/MetadataReferenceModel/monitors> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> .
-<https://glaciation-project.eu/MetadataReferenceModel/monitors> <http://www.w3.org/2000/01/rdf-schema#comment> "For recording which Monitor tracks an AssignedTask." .
-<https://glaciation-project.eu/MetadataReferenceModel/monitors> <http://www.w3.org/2000/01/rdf-schema#label> "monitors" .
+# https://glaciation-project.eu/MetadataReferenceModel#monitors
+<https://glaciation-project.eu/MetadataReferenceModel#monitors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#monitors> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#monitors> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Monitor> .
+<https://glaciation-project.eu/MetadataReferenceModel#monitors> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> .
+<https://glaciation-project.eu/MetadataReferenceModel#monitors> <http://www.w3.org/2000/01/rdf-schema#comment> "For recording which Monitor tracks an AssignedTask." .
+<https://glaciation-project.eu/MetadataReferenceModel#monitors> <http://www.w3.org/2000/01/rdf-schema#label> "monitors" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/produces
-<https://glaciation-project.eu/MetadataReferenceModel/produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/produces> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/produces> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> .
-<https://glaciation-project.eu/MetadataReferenceModel/produces> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Resource> .
-<https://glaciation-project.eu/MetadataReferenceModel/produces> <http://www.w3.org/2000/01/rdf-schema#comment> "For keeping information about the production Resource, e.g., the output, of an AssignedTask." .
-<https://glaciation-project.eu/MetadataReferenceModel/produces> <http://www.w3.org/2000/01/rdf-schema#label> "produces" .
+# https://glaciation-project.eu/MetadataReferenceModel#produces
+<https://glaciation-project.eu/MetadataReferenceModel#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#produces> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#produces> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> .
+<https://glaciation-project.eu/MetadataReferenceModel#produces> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel#produces> <http://www.w3.org/2000/01/rdf-schema#comment> "For keeping information about the production Resource, e.g., the output, of an AssignedTask." .
+<https://glaciation-project.eu/MetadataReferenceModel#produces> <http://www.w3.org/2000/01/rdf-schema#label> "produces" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Constraint> .
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "For keeping information about the Constraint that each Measurement relates to." .
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "relatesToConstraint" .
+# https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Constraint> .
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "For keeping information about the Constraint that each Measurement relates to." .
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "relatesToConstraint" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "For recording the MeasurementProperty of each Measurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#label> "relatesToMeasurementProperty" .
+# https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "For recording the MeasurementProperty of each Measurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#label> "relatesToMeasurementProperty" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/reschedules
-<https://glaciation-project.eu/MetadataReferenceModel/reschedules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/reschedules> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/reschedules> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Scheduler> .
-<https://glaciation-project.eu/MetadataReferenceModel/reschedules> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> .
-<https://glaciation-project.eu/MetadataReferenceModel/reschedules> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Scheduler and an AssignedTask that concerns rescheduling." .
-<https://glaciation-project.eu/MetadataReferenceModel/reschedules> <http://www.w3.org/2000/01/rdf-schema#label> "reschedules" .
+# https://glaciation-project.eu/MetadataReferenceModel#reschedules
+<https://glaciation-project.eu/MetadataReferenceModel#reschedules> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#reschedules> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#reschedules> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Scheduler> .
+<https://glaciation-project.eu/MetadataReferenceModel#reschedules> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> .
+<https://glaciation-project.eu/MetadataReferenceModel#reschedules> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a Scheduler and an AssignedTask that concerns rescheduling." .
+<https://glaciation-project.eu/MetadataReferenceModel#reschedules> <http://www.w3.org/2000/01/rdf-schema#label> "reschedules" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/scheduledBy
-<https://glaciation-project.eu/MetadataReferenceModel/scheduledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/scheduledBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/scheduledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask> .
-<https://glaciation-project.eu/MetadataReferenceModel/scheduledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Scheduler> .
-<https://glaciation-project.eu/MetadataReferenceModel/scheduledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a SubmittedTask and a Scheduler." .
-<https://glaciation-project.eu/MetadataReferenceModel/scheduledBy> <http://www.w3.org/2000/01/rdf-schema#label> "scheduledBy" .
+# https://glaciation-project.eu/MetadataReferenceModel#scheduledBy
+<https://glaciation-project.eu/MetadataReferenceModel#scheduledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#scheduledBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#scheduledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask> .
+<https://glaciation-project.eu/MetadataReferenceModel#scheduledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Scheduler> .
+<https://glaciation-project.eu/MetadataReferenceModel#scheduledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a SubmittedTask and a Scheduler." .
+<https://glaciation-project.eu/MetadataReferenceModel#scheduledBy> <http://www.w3.org/2000/01/rdf-schema#label> "scheduledBy" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule
-<https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Monitor> .
-<https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/Scheduler> .
-<https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule> <http://www.w3.org/2000/01/rdf-schema#comment> "A triggered event relationship about Rescheduling from a Monitor." .
-<https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule> <http://www.w3.org/2000/01/rdf-schema#label> "triggersReschedule" .
+# https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule
+<https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Monitor> .
+<https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel#Scheduler> .
+<https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule> <http://www.w3.org/2000/01/rdf-schema#comment> "A triggered event relationship about Rescheduling from a Monitor." .
+<https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule> <http://www.w3.org/2000/01/rdf-schema#label> "triggersReschedule" .
 # 
 # 
 # 
@@ -249,101 +249,101 @@
 # #################################################################
 # 
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/endTime
-<https://glaciation-project.eu/MetadataReferenceModel/endTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/endTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/endTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Status> .
-<https://glaciation-project.eu/MetadataReferenceModel/endTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
-<https://glaciation-project.eu/MetadataReferenceModel/endTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The end time of a Status of any Class." .
-<https://glaciation-project.eu/MetadataReferenceModel/endTime> <http://www.w3.org/2000/01/rdf-schema#label> "endTime" .
+# https://glaciation-project.eu/MetadataReferenceModel#endTime
+<https://glaciation-project.eu/MetadataReferenceModel#endTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#endTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#endTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Status> .
+<https://glaciation-project.eu/MetadataReferenceModel#endTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<https://glaciation-project.eu/MetadataReferenceModel#endTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The end time of a Status of any Class." .
+<https://glaciation-project.eu/MetadataReferenceModel#endTime> <http://www.w3.org/2000/01/rdf-schema#label> "endTime" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/endingInterval
-<https://glaciation-project.eu/MetadataReferenceModel/endingInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/endingInterval> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/endingInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/endingInterval> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
-<https://glaciation-project.eu/MetadataReferenceModel/endingInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "The ending interval time of an AggregatedMeasurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/endingInterval> <http://www.w3.org/2000/01/rdf-schema#label> "endingInterval" .
+# https://glaciation-project.eu/MetadataReferenceModel#endingInterval
+<https://glaciation-project.eu/MetadataReferenceModel#endingInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#endingInterval> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#endingInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#endingInterval> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<https://glaciation-project.eu/MetadataReferenceModel#endingInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "The ending interval time of an AggregatedMeasurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#endingInterval> <http://www.w3.org/2000/01/rdf-schema#label> "endingInterval" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion
-<https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion> <http://www.w3.org/2000/01/rdf-schema#comment> "The AggregatedFunction of an AggregatedMeasurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion> <http://www.w3.org/2000/01/rdf-schema#label> "hasAggregatedFuntion" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion
+<https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion> <http://www.w3.org/2000/01/rdf-schema#comment> "The AggregatedFunction of an AggregatedMeasurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion> <http://www.w3.org/2000/01/rdf-schema#label> "hasAggregatedFuntion" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration
-<https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "The Configuration of any instance of a Class, e.g., Task, Resource, etc." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "hasConfiguration" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration
+<https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#comment> "The Configuration of any instance of a Class, e.g., Task, Resource, etc." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "hasConfiguration" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasDescription
-<https://glaciation-project.eu/MetadataReferenceModel/hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "The Description of any entity." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "hasDescription" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasDescription
+<https://glaciation-project.eu/MetadataReferenceModel#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasDescription> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "The Description of any entity." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "hasDescription" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasID
-<https://glaciation-project.eu/MetadataReferenceModel/hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasID> <http://www.w3.org/2000/01/rdf-schema#comment> "The ID of any entity." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasID> <http://www.w3.org/2000/01/rdf-schema#label> "hasID" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasID
+<https://glaciation-project.eu/MetadataReferenceModel#hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasID> <http://www.w3.org/2000/01/rdf-schema#comment> "The ID of any entity." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasID> <http://www.w3.org/2000/01/rdf-schema#label> "hasID" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp
-<https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "The date and time of a Measurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimestamp" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp
+<https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "The date and time of a Measurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimestamp" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/hasValue
-<https://glaciation-project.eu/MetadataReferenceModel/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://glaciation-project.eu/MetadataReferenceModel/hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The Value of a Measurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue" .
+# https://glaciation-project.eu/MetadataReferenceModel#hasValue
+<https://glaciation-project.eu/MetadataReferenceModel#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The Value of a Measurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/startTime
-<https://glaciation-project.eu/MetadataReferenceModel/startTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/startTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/startTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Status> .
-<https://glaciation-project.eu/MetadataReferenceModel/startTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
-<https://glaciation-project.eu/MetadataReferenceModel/startTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The date and time of a Status." .
-<https://glaciation-project.eu/MetadataReferenceModel/startTime> <http://www.w3.org/2000/01/rdf-schema#label> "startTime" .
+# https://glaciation-project.eu/MetadataReferenceModel#startTime
+<https://glaciation-project.eu/MetadataReferenceModel#startTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#startTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#startTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Status> .
+<https://glaciation-project.eu/MetadataReferenceModel#startTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<https://glaciation-project.eu/MetadataReferenceModel#startTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The date and time of a Status." .
+<https://glaciation-project.eu/MetadataReferenceModel#startTime> <http://www.w3.org/2000/01/rdf-schema#label> "startTime" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/startingInterval
-<https://glaciation-project.eu/MetadataReferenceModel/startingInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/startingInterval> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/startingInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/startingInterval> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
-<https://glaciation-project.eu/MetadataReferenceModel/startingInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "The starting interval time of an AggregatedMeasurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/startingInterval> <http://www.w3.org/2000/01/rdf-schema#label> "startingInterval" .
+# https://glaciation-project.eu/MetadataReferenceModel#startingInterval
+<https://glaciation-project.eu/MetadataReferenceModel#startingInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#startingInterval> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#startingInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#startingInterval> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<https://glaciation-project.eu/MetadataReferenceModel#startingInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "The starting interval time of an AggregatedMeasurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#startingInterval> <http://www.w3.org/2000/01/rdf-schema#label> "startingInterval" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/statusCode
-<https://glaciation-project.eu/MetadataReferenceModel/statusCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/statusCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/statusCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/Status> .
-<https://glaciation-project.eu/MetadataReferenceModel/statusCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://glaciation-project.eu/MetadataReferenceModel/statusCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The status code of a Status." .
-<https://glaciation-project.eu/MetadataReferenceModel/statusCode> <http://www.w3.org/2000/01/rdf-schema#label> "statusCode" .
+# https://glaciation-project.eu/MetadataReferenceModel#statusCode
+<https://glaciation-project.eu/MetadataReferenceModel#statusCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#statusCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#statusCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#Status> .
+<https://glaciation-project.eu/MetadataReferenceModel#statusCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://glaciation-project.eu/MetadataReferenceModel#statusCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The status code of a Status." .
+<https://glaciation-project.eu/MetadataReferenceModel#statusCode> <http://www.w3.org/2000/01/rdf-schema#label> "statusCode" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution
-<https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution> <http://www.w3.org/2000/01/rdf-schema#comment> "The time step resolution of an AggregatedMeasurement." .
-<https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution> <http://www.w3.org/2000/01/rdf-schema#label> "timeStepResolution" .
+# https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution
+<https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution> <http://www.w3.org/2000/01/rdf-schema#comment> "The time step resolution of an AggregatedMeasurement." .
+<https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution> <http://www.w3.org/2000/01/rdf-schema#label> "timeStepResolution" .
 # 
 # 
 # 
@@ -354,125 +354,125 @@
 # #################################################################
 # 
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Measurement> .
-<https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any AggregatedMeasurement, by using an AggregatedFunction, a time interval and time step resolution." .
-<https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "AggregatedMeasurement" .
+# https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement
+<https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Measurement> .
+<https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any AggregatedMeasurement, by using an AggregatedFunction, a time interval and time step resolution." .
+<https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "AggregatedMeasurement" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/Aspect
-<https://glaciation-project.eu/MetadataReferenceModel/Aspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Aspect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Aspect> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes the Aspect of a Contstraint, e.g., time, power consumption." .
-<https://glaciation-project.eu/MetadataReferenceModel/Aspect> <http://www.w3.org/2000/01/rdf-schema#label> "Aspect" .
+# https://glaciation-project.eu/MetadataReferenceModel#Aspect
+<https://glaciation-project.eu/MetadataReferenceModel#Aspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Aspect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Aspect> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes the Aspect of a Contstraint, e.g., time, power consumption." .
+<https://glaciation-project.eu/MetadataReferenceModel#Aspect> <http://www.w3.org/2000/01/rdf-schema#label> "Aspect" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/AssignedTask
-<https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Task> .
-<https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> <http://www.w3.org/2000/01/rdf-schema#comment> "An AssignedTask that will be performed by using some Resources and will be based on some Constraints." .
-<https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> <http://www.w3.org/2000/01/rdf-schema#label> "AssignedTask" .
+# https://glaciation-project.eu/MetadataReferenceModel#AssignedTask
+<https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Task> .
+<https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> <http://www.w3.org/2000/01/rdf-schema#comment> "An AssignedTask that will be performed by using some Resources and will be based on some Constraints." .
+<https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> <http://www.w3.org/2000/01/rdf-schema#label> "AssignedTask" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/Class
-<https://glaciation-project.eu/MetadataReferenceModel/Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Class> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic Class for the GLACIATION project" .
-<https://glaciation-project.eu/MetadataReferenceModel/Class> <http://www.w3.org/2000/01/rdf-schema#label> "Class" .
+# https://glaciation-project.eu/MetadataReferenceModel#Class
+<https://glaciation-project.eu/MetadataReferenceModel#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Class> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic Class for the GLACIATION project" .
+<https://glaciation-project.eu/MetadataReferenceModel#Class> <http://www.w3.org/2000/01/rdf-schema#label> "Class" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/Constraint
-<https://glaciation-project.eu/MetadataReferenceModel/Constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Constraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Constraint> <http://www.w3.org/2000/01/rdf-schema#comment> "For representing the Constraint(s) of a Task." .
-<https://glaciation-project.eu/MetadataReferenceModel/Constraint> <http://www.w3.org/2000/01/rdf-schema#label> "Constraint" .
+# https://glaciation-project.eu/MetadataReferenceModel#Constraint
+<https://glaciation-project.eu/MetadataReferenceModel#Constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Constraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Constraint> <http://www.w3.org/2000/01/rdf-schema#comment> "For representing the Constraint(s) of a Task." .
+<https://glaciation-project.eu/MetadataReferenceModel#Constraint> <http://www.w3.org/2000/01/rdf-schema#label> "Constraint" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/HardConstraint
-<https://glaciation-project.eu/MetadataReferenceModel/HardConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/HardConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Constraint> .
-<https://glaciation-project.eu/MetadataReferenceModel/HardConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "For representing the HardConstraints of a Task." .
-<https://glaciation-project.eu/MetadataReferenceModel/HardConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "HardConstraint" .
+# https://glaciation-project.eu/MetadataReferenceModel#HardConstraint
+<https://glaciation-project.eu/MetadataReferenceModel#HardConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#HardConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Constraint> .
+<https://glaciation-project.eu/MetadataReferenceModel#HardConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "For representing the HardConstraints of a Task." .
+<https://glaciation-project.eu/MetadataReferenceModel#HardConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "HardConstraint" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/Measurement
-<https://glaciation-project.eu/MetadataReferenceModel/Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any Measurement, e.g., for energy." .
-<https://glaciation-project.eu/MetadataReferenceModel/Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement" .
+# https://glaciation-project.eu/MetadataReferenceModel#Measurement
+<https://glaciation-project.eu/MetadataReferenceModel#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents any Measurement, e.g., for energy." .
+<https://glaciation-project.eu/MetadataReferenceModel#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty
-<https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a MeasurementProperty, e.g., allocated CPU, energy, etc." .
-<https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#label> "MeasurementProperty" .
+# https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty
+<https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a MeasurementProperty, e.g., allocated CPU, energy, etc." .
+<https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty> <http://www.w3.org/2000/01/rdf-schema#label> "MeasurementProperty" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit
-<https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a MeasurementUnit, e.g., Kwh." .
-<https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#label> "MeasurementUnit" .
+# https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit
+<https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a MeasurementUnit, e.g., Kwh." .
+<https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#label> "MeasurementUnit" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource
-<https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource> .
-<https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents any WorkProducingResource that can perform Measurements." .
-<https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource> <http://www.w3.org/2000/01/rdf-schema#label> "MeasuringResource" .
+# https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource
+<https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents any WorkProducingResource that can perform Measurements." .
+<https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource> <http://www.w3.org/2000/01/rdf-schema#label> "MeasuringResource" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/Monitor
-<https://glaciation-project.eu/MetadataReferenceModel/Monitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Monitor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Monitor> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an entity that monitors an AssignedTask." .
-<https://glaciation-project.eu/MetadataReferenceModel/Monitor> <http://www.w3.org/2000/01/rdf-schema#label> "Monitor" .
+# https://glaciation-project.eu/MetadataReferenceModel#Monitor
+<https://glaciation-project.eu/MetadataReferenceModel#Monitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Monitor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Monitor> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an entity that monitors an AssignedTask." .
+<https://glaciation-project.eu/MetadataReferenceModel#Monitor> <http://www.w3.org/2000/01/rdf-schema#label> "Monitor" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource
-<https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Resource> .
-<https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents any NonWorkProducingResource (e.g., dataset)." .
-<https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#label> "NonWorkProducingResource" .
+# https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource
+<https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents any NonWorkProducingResource (e.g., dataset)." .
+<https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#label> "NonWorkProducingResource" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/Resource
-<https://glaciation-project.eu/MetadataReferenceModel/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Resource> <http://www.w3.org/2002/07/owl#disjointWith> <https://glaciation-project.eu/MetadataReferenceModel/Task> .
-<https://glaciation-project.eu/MetadataReferenceModel/Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents any Resource." .
-<https://glaciation-project.eu/MetadataReferenceModel/Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource" .
+# https://glaciation-project.eu/MetadataReferenceModel#Resource
+<https://glaciation-project.eu/MetadataReferenceModel#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Resource> <http://www.w3.org/2002/07/owl#disjointWith> <https://glaciation-project.eu/MetadataReferenceModel#Task> .
+<https://glaciation-project.eu/MetadataReferenceModel#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents any Resource." .
+<https://glaciation-project.eu/MetadataReferenceModel#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/Scheduler
-<https://glaciation-project.eu/MetadataReferenceModel/Scheduler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Scheduler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Scheduler> <http://www.w3.org/2000/01/rdf-schema#comment> "Responsible for Scheduling a SubmittedTask and for managing the Resources." .
-<https://glaciation-project.eu/MetadataReferenceModel/Scheduler> <http://www.w3.org/2000/01/rdf-schema#label> "Scheduler" .
+# https://glaciation-project.eu/MetadataReferenceModel#Scheduler
+<https://glaciation-project.eu/MetadataReferenceModel#Scheduler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Scheduler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Scheduler> <http://www.w3.org/2000/01/rdf-schema#comment> "Responsible for Scheduling a SubmittedTask and for managing the Resources." .
+<https://glaciation-project.eu/MetadataReferenceModel#Scheduler> <http://www.w3.org/2000/01/rdf-schema#label> "Scheduler" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint
-<https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Constraint> .
-<https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "For representing the SoftConstraints of a Task." .
-<https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "SoftConstraint" .
+# https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint
+<https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Constraint> .
+<https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "For representing the SoftConstraints of a Task." .
+<https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "SoftConstraint" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition
-<https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes the composition of SoftConstraints, e.g., the order of soft constraings according to a given preference priority, Pareto, Pareto optimal, etc." .
-<https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition> <http://www.w3.org/2000/01/rdf-schema#label> "SoftConstraintComposition" .
+# https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition
+<https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes the composition of SoftConstraints, e.g., the order of soft constraings according to a given preference priority, Pareto, Pareto optimal, etc." .
+<https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition> <http://www.w3.org/2000/01/rdf-schema#label> "SoftConstraintComposition" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/Status
-<https://glaciation-project.eu/MetadataReferenceModel/Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Status> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Status> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents information about a specific Status over a given time interval." .
-<https://glaciation-project.eu/MetadataReferenceModel/Status> <http://www.w3.org/2000/01/rdf-schema#label> "Status" .
+# https://glaciation-project.eu/MetadataReferenceModel#Status
+<https://glaciation-project.eu/MetadataReferenceModel#Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Status> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Status> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents information about a specific Status over a given time interval." .
+<https://glaciation-project.eu/MetadataReferenceModel#Status> <http://www.w3.org/2000/01/rdf-schema#label> "Status" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask
-<https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Task> .
-<https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask> <http://www.w3.org/2000/01/rdf-schema#comment> "A Submitted Task that will be processed by a Scheduler." .
-<https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask> <http://www.w3.org/2000/01/rdf-schema#label> "SubmittedTask" .
+# https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask
+<https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Task> .
+<https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask> <http://www.w3.org/2000/01/rdf-schema#comment> "A Submitted Task that will be processed by a Scheduler." .
+<https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask> <http://www.w3.org/2000/01/rdf-schema#label> "SubmittedTask" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/Task
-<https://glaciation-project.eu/MetadataReferenceModel/Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/Task> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes any Task that has Constraints and a Status." .
-<https://glaciation-project.eu/MetadataReferenceModel/Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task" .
+# https://glaciation-project.eu/MetadataReferenceModel#Task
+<https://glaciation-project.eu/MetadataReferenceModel#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "It describes any Task that has Constraints and a Status." .
+<https://glaciation-project.eu/MetadataReferenceModel#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task" .
 # 
-# https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource
-<https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/Resource> .
-<https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents any WorkProducingResource, e.g., a node, a CPU, etc." .
-<https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#label> "WorkProducingResource" .
+# https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource
+<https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents any WorkProducingResource, e.g., a node, a CPU, etc." .
+<https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> <http://www.w3.org/2000/01/rdf-schema#label> "WorkProducingResource" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

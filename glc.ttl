@@ -30,7 +30,7 @@ The model is generic, by being both domain and application independent, describi
                                                         dct:license <https://www.apache.org/licenses/LICENSE-2.0> ;
                                                         dct:title "The Metadata Reference Model for the EU GLACIATION Project"@en ;
                                                         <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/peerReviewed> ;
-                                                        vann:preferredNamespaceUri <https://glaciation-project.eu/MetadataReferenceModel/> ;
+                                                        vann:preferredNamespaceUri <https://glaciation-project.eu/MetadataReferenceModel> ;
                                                         vann:prefferedNamespacePrefix "glc" ;
                                                         rdfs:label "GLACIATION Metadata Reference Model"@en ;
                                                         owl:versionInfo "1.0.0" .
@@ -87,200 +87,200 @@ vann:prefferedNamespacePrefix rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://glaciation-project.eu/MetadataReferenceModel/assigns
-<https://glaciation-project.eu/MetadataReferenceModel/assigns> rdf:type owl:ObjectProperty ;
+###  glc:assigns
+glc:assigns rdf:type owl:ObjectProperty ;
                                                                rdfs:subPropertyOf owl:topObjectProperty ;
-                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Scheduler> ;
-                                                               rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> ;
+                                                               rdfs:domain glc:Scheduler ;
+                                                               rdfs:range glc:AssignedTask ;
                                                                rdfs:comment "A relationship between a Scheduler and an AssignedTask." ;
                                                                rdfs:label "assigns" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/composedBy
-<https://glaciation-project.eu/MetadataReferenceModel/composedBy> rdf:type owl:ObjectProperty ;
+###  glc:composedBy
+glc:composedBy rdf:type owl:ObjectProperty ;
                                                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                  rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition> ;
-                                                                  rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint> ;
+                                                                  rdfs:domain glc:SoftConstraintComposition ;
+                                                                  rdfs:range glc:SoftConstraint ;
                                                                   rdfs:comment "For keeping information about the SoftConstraints that are included in a Composition." ;
                                                                   rdfs:label "composedBy" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/consumes
-<https://glaciation-project.eu/MetadataReferenceModel/consumes> rdf:type owl:ObjectProperty ;
+###  glc:consumes
+glc:consumes rdf:type owl:ObjectProperty ;
                                                                 rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> ;
-                                                                rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Resource> ;
+                                                                rdfs:domain glc:AssignedTask ;
+                                                                rdfs:range glc:Resource ;
                                                                 rdfs:comment "A property for recording the Resource(s) of each AssignedTask." ;
                                                                 rdfs:label "consumes" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasAspect
-<https://glaciation-project.eu/MetadataReferenceModel/hasAspect> rdf:type owl:ObjectProperty ;
+###  glc:hasAspect
+glc:hasAspect rdf:type owl:ObjectProperty ;
                                                                  rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                 rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Constraint> ;
-                                                                 rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Aspect> ;
+                                                                 rdfs:domain glc:Constraint ;
+                                                                 rdfs:range glc:Aspect ;
                                                                  rdfs:comment "For keeping information about the Aspect of each Constraint, e.g., time, power consumption." ;
                                                                  rdfs:label "hasAspect" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasComposition
-<https://glaciation-project.eu/MetadataReferenceModel/hasComposition> rdf:type owl:ObjectProperty ;
+###  glc:hasComposition
+glc:hasComposition rdf:type owl:ObjectProperty ;
                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                      rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Task> ;
-                                                                      rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition> ;
+                                                                      rdfs:domain glc:Task ;
+                                                                      rdfs:range glc:SoftConstraintComposition ;
                                                                       rdfs:comment "For keeping information about the Composition of the SoftConstraints of a Task." ;
                                                                       rdfs:label "hasComposition" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasConstraint
-<https://glaciation-project.eu/MetadataReferenceModel/hasConstraint> rdf:type owl:ObjectProperty ;
+###  glc:hasConstraint
+glc:hasConstraint rdf:type owl:ObjectProperty ;
                                                                      rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                     rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Task> ;
-                                                                     rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Constraint> ;
+                                                                     rdfs:domain glc:Task ;
+                                                                     rdfs:range glc:Constraint ;
                                                                      rdfs:comment "A relationship for recording all the Constraints of a Task." ;
                                                                      rdfs:label "hasConstraint" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> rdf:type owl:ObjectProperty ;
+###  glc:hasTaskMeasurement
+glc:hasTaskMeasurement rdf:type owl:ObjectProperty ;
                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                      rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Task>;
-                                                                      rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
+                                                                      rdfs:domain glc:Task ;
+                                                                      rdfs:range glc:Measurement ;
                                                                       rdfs:comment "A relationship between a Task and a Measurement." ;
                                                                       rdfs:label "hasTaskMeasurement" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement> rdf:type owl:ObjectProperty ;
-                                                                               rdfs:subPropertyOf <https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> ;
-                                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Task> ;
-                                                                               rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
+###  glc:hasTaskPredictedMeasurement
+glc:hasTaskPredictedMeasurement rdf:type owl:ObjectProperty ;
+                                                                               rdfs:subPropertyOf glc:hasTaskMeasurement ;
+                                                                               rdfs:domain glc:Task ;
+                                                                               rdfs:range glc:Measurement ;
                                                                                rdfs:comment "A relationship for recording the PredictedMeasurements of a Task." ;
                                                                                rdfs:label "hasTaskPredictedMeasurement" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement> rdf:type owl:ObjectProperty ;
-                                                                              rdfs:subPropertyOf <https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement> ;
-                                                                              rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Task> ;
-                                                                              rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
+###  glc:hasTaskRealizedMeasurement
+glc:hasTaskRealizedMeasurement rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf glc:hasTaskMeasurement ;
+                                                                              rdfs:domain glc:Task ;
+                                                                              rdfs:range glc:Measurement ;
                                                                               rdfs:comment "A relationship for recording the RealizedMeasurements (actual measurements) of a Task." ;
                                                                               rdfs:label "hasTaskRealizedMeasurement" .
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement> rdf:type owl:ObjectProperty ;
+###  glc:hasResourceMeasurement
+glc:hasResourceMeasurement rdf:type owl:ObjectProperty ;
                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                      rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Resource>;
-                                                                      rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
+                                                                      rdfs:domain glc:Resource ;
+                                                                      rdfs:range glc:Measurement ;
                                                                       rdfs:comment "A relationship between a Resource and a Measurement." ;
                                                                       rdfs:label "hasResourceMeasurement" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasStatus
-<https://glaciation-project.eu/MetadataReferenceModel/hasStatus> rdf:type owl:ObjectProperty ;
+###  glc:hasStatus
+glc:hasStatus rdf:type owl:ObjectProperty ;
                                                                  rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                 rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
-                                                                 rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Status> ;
+                                                                 rdfs:domain glc:Class ;
+                                                                 rdfs:range glc:Status ;
                                                                  rdfs:comment "A relationship between any Class and its Status." ;
                                                                  rdfs:label "hasStatus" .
 
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasSubResource
-<https://glaciation-project.eu/MetadataReferenceModel/hasSubResource> rdf:type owl:ObjectProperty ;
+###  glc:hasSubResource
+glc:hasSubResource rdf:type owl:ObjectProperty ;
                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                      rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Resource> ;
-                                                                      rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Resource> ;
+                                                                      rdfs:domain glc:Resource ;
+                                                                      rdfs:range glc:Resource ;
                                                                       rdfs:comment "Relationships for recording the SubResource(s) of each Resource (e.g, the hardware of a node)." ;
                                                                       rdfs:label "hasSubResource" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement> rdf:type owl:ObjectProperty ;
+###  glc:makesMeasurement
+glc:makesMeasurement rdf:type owl:ObjectProperty ;
                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                        rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource> ;
-                                                                        rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
+                                                                        rdfs:domain glc:MeasuringResource ;
+                                                                        rdfs:range glc:Measurement ;
                                                                         rdfs:comment "A relationship between a MeasuringResource and a Measurement." ;
                                                                         rdfs:label "makesMeasurement" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/manages
-<https://glaciation-project.eu/MetadataReferenceModel/manages> rdf:type owl:ObjectProperty ;
+###  glc:manages
+glc:manages rdf:type owl:ObjectProperty ;
                                                                rdfs:subPropertyOf owl:topObjectProperty ;
-                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Scheduler> ;
-                                                               rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Resource> ;
+                                                               rdfs:domain glc:Scheduler ;
+                                                               rdfs:range glc:Resource ;
                                                                rdfs:comment "A relationship between a Scheduler and a Resource." ;
                                                                rdfs:label "manages" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/measuredIn
-<https://glaciation-project.eu/MetadataReferenceModel/measuredIn> rdf:type owl:ObjectProperty ;
+###  glc:measuredIn
+glc:measuredIn rdf:type owl:ObjectProperty ;
                                                                   rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                  rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
-                                                                  rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit> ;
+                                                                  rdfs:domain glc:Measurement ;
+                                                                  rdfs:range glc:MeasurementUnit ;
                                                                   rdfs:comment "For recording the MeasurimentUnit of each Measurement." ;
 																  rdfs:label "measuredIn" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/monitors
-<https://glaciation-project.eu/MetadataReferenceModel/monitors> rdf:type owl:ObjectProperty ;
+###  glc:monitors
+glc:monitors rdf:type owl:ObjectProperty ;
                                                                 rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Monitor> ;
-                                                                rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> ;
+                                                                rdfs:domain glc:Monitor ;
+                                                                rdfs:range glc:AssignedTask ;
                                                                 rdfs:comment "For recording which Monitor tracks an AssignedTask." ;
                                                                 rdfs:label "monitors" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/produces
-<https://glaciation-project.eu/MetadataReferenceModel/produces> rdf:type owl:ObjectProperty ;
+###  glc:produces
+glc:produces rdf:type owl:ObjectProperty ;
                                                                 rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> ;
-                                                                rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Resource> ;
+                                                                rdfs:domain glc:AssignedTask ;
+                                                                rdfs:range glc:Resource ;
                                                                 rdfs:comment "For keeping information about the production Resource, e.g., the output, of an AssignedTask." ;
                                                                 rdfs:label "produces" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint> rdf:type owl:ObjectProperty ;
+###  glc:relatesToConstraint
+glc:relatesToConstraint rdf:type owl:ObjectProperty ;
                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                           rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
-                                                                           rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Constraint> ;
+                                                                           rdfs:domain glc:Measurement ;
+                                                                           rdfs:range glc:Constraint ;
                                                                            rdfs:comment "For keeping information about the Constraint that each Measurement relates to." ;
                                                                            rdfs:label "relatesToConstraint" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty
-<https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty> rdf:type owl:ObjectProperty ;
+###  glc:relatesToMeasurementProperty
+glc:relatesToMeasurementProperty rdf:type owl:ObjectProperty ;
                                                                                     rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                                    rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
-                                                                                    rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty> ;
+                                                                                    rdfs:domain glc:Measurement ;
+                                                                                    rdfs:range glc:MeasurementProperty ;
 																					rdfs:comment "For recording the MeasurementProperty of each Measurement." ;
                                                                                     rdfs:label "relatesToMeasurementProperty" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/reschedules
-<https://glaciation-project.eu/MetadataReferenceModel/reschedules> rdf:type owl:ObjectProperty ;
+###  glc:reschedules
+glc:reschedules rdf:type owl:ObjectProperty ;
                                                                    rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                   rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Scheduler> ;
-                                                                   rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> ;
+                                                                   rdfs:domain glc:Scheduler ;
+                                                                   rdfs:range glc:AssignedTask ;
                                                                    rdfs:comment "A relationship between a Scheduler and an AssignedTask that concerns rescheduling." ;
                                                                    rdfs:label "reschedules" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/scheduledBy
-<https://glaciation-project.eu/MetadataReferenceModel/scheduledBy> rdf:type owl:ObjectProperty ;
+###  glc:scheduledBy
+glc:scheduledBy rdf:type owl:ObjectProperty ;
                                                                    rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                   rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask> ;
-                                                                   rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Scheduler> ;
+                                                                   rdfs:domain glc:SubmittedTask ;
+                                                                   rdfs:range glc:Scheduler ;
                                                                    rdfs:comment "A relationship between a SubmittedTask and a Scheduler." ;
                                                                    rdfs:label "scheduledBy" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule
-<https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule> rdf:type owl:ObjectProperty ;
+###  glc:triggersReschedule
+glc:triggersReschedule rdf:type owl:ObjectProperty ;
                                                                           rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                          rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Monitor> ;
-                                                                          rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/Scheduler> ;
+                                                                          rdfs:domain glc:Monitor ;
+                                                                          rdfs:range glc:Scheduler ;
                                                                           rdfs:comment "A triggered event relationship about Rescheduling from a Monitor." ;
                                                                           rdfs:label "triggersReschedule" .
 
@@ -289,98 +289,98 @@ vann:prefferedNamespacePrefix rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  https://glaciation-project.eu/MetadataReferenceModel/endTime
-<https://glaciation-project.eu/MetadataReferenceModel/endTime> rdf:type owl:DatatypeProperty ;
+###  glc:endTime
+glc:endTime rdf:type owl:DatatypeProperty ;
                                                                rdfs:subPropertyOf owl:topDataProperty ;
-                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Status> ;
+                                                               rdfs:domain glc:Status ;
                                                                rdfs:range xsd:dateTimeStamp ;
                                                                rdfs:comment "The end time of a Status of any Class." ;
                                                                rdfs:label "endTime" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/endingInterval
-<https://glaciation-project.eu/MetadataReferenceModel/endingInterval> rdf:type owl:DatatypeProperty ;
+###  glc:endingInterval
+glc:endingInterval rdf:type owl:DatatypeProperty ;
                                                                       rdfs:subPropertyOf owl:topDataProperty ;
-                                                                      rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> ;
+                                                                      rdfs:domain glc:AggregatedMeasurement ;
                                                                       rdfs:range xsd:dateTimeStamp ;
                                                                       rdfs:comment "The ending interval time of an AggregatedMeasurement." ;
                                                                       rdfs:label "endingInterval" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion
-<https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion> rdf:type owl:DatatypeProperty ;
+###  glc:hasAggregatedFuntion
+glc:hasAggregatedFuntion rdf:type owl:DatatypeProperty ;
                                                                             rdfs:subPropertyOf owl:topDataProperty ;
-                                                                            rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> ;
+                                                                            rdfs:domain glc:AggregatedMeasurement ;
                                                                             rdfs:range xsd:string ;
                                                                             rdfs:comment "The AggregatedFunction of an AggregatedMeasurement." ;
                                                                             rdfs:label "hasAggregatedFuntion" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasDescription
-<https://glaciation-project.eu/MetadataReferenceModel/hasDescription> rdf:type owl:DatatypeProperty ;
+###  glc:hasDescription
+glc:hasDescription rdf:type owl:DatatypeProperty ;
                                                                       rdfs:subPropertyOf owl:topDataProperty ;
-                                                                      rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+                                                                      rdfs:domain glc:Class ;
                                                                       rdfs:range xsd:string ;
                                                                       rdfs:comment "The Description of any entity." ;
                                                                       rdfs:label "hasDescription" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasID
-<https://glaciation-project.eu/MetadataReferenceModel/hasID> rdf:type owl:DatatypeProperty ;
+###  glc:hasID
+glc:hasID rdf:type owl:DatatypeProperty ;
                                                              rdfs:subPropertyOf owl:topDataProperty ;
-                                                             rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+                                                             rdfs:domain glc:Class ;
                                                              rdfs:range xsd:string ;
                                                              rdfs:comment "The ID of any entity." ;
                                                              rdfs:label "hasID" .
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration
-<https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration> rdf:type owl:DatatypeProperty ;
+###  glc:hasConfiguration
+glc:hasConfiguration rdf:type owl:DatatypeProperty ;
                                                              rdfs:subPropertyOf owl:topDataProperty ;
-                                                             rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+                                                             rdfs:domain glc:Class ;
                                                              rdfs:range xsd:string ;
                                                              rdfs:comment "The Configuration of any instance of a Class, e.g., Task, Resource, etc." ;
                                                              rdfs:label "hasConfiguration" .
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp
-<https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp> rdf:type owl:DatatypeProperty ;
+###  glc:hasTimestamp
+glc:hasTimestamp rdf:type owl:DatatypeProperty ;
                                                                     rdfs:subPropertyOf owl:topDataProperty ;
-                                                                    rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
+                                                                    rdfs:domain glc:Measurement ;
                                                                     rdfs:range xsd:dateTimeStamp ;
 																	rdfs:comment "The date and time of a Measurement." ;
                                                                     rdfs:label "hasTimestamp" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/hasValue
-<https://glaciation-project.eu/MetadataReferenceModel/hasValue> rdf:type owl:DatatypeProperty ;
+###  glc:hasValue
+glc:hasValue rdf:type owl:DatatypeProperty ;
                                                                 rdfs:subPropertyOf owl:topDataProperty ;
-                                                                rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
+                                                                rdfs:domain glc:Measurement ;
                                                                 rdfs:range xsd:string ;
 																rdfs:comment "The Value of a Measurement." ;
                                                                 rdfs:label "hasValue" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/startTime
-<https://glaciation-project.eu/MetadataReferenceModel/startTime> rdf:type owl:DatatypeProperty ;
+###  glc:startTime
+glc:startTime rdf:type owl:DatatypeProperty ;
                                                                  rdfs:subPropertyOf owl:topDataProperty ;
-                                                                 rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Status> ;
+                                                                 rdfs:domain glc:Status ;
                                                                  rdfs:range xsd:dateTimeStamp ;
                                                                  rdfs:comment "The date and time of a Status." ;
                                                                  rdfs:label "startTime" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/startingInterval
-<https://glaciation-project.eu/MetadataReferenceModel/startingInterval> rdf:type owl:DatatypeProperty ;
+###  glc:startingInterval
+glc:startingInterval rdf:type owl:DatatypeProperty ;
                                                                         rdfs:subPropertyOf owl:topDataProperty ;
-                                                                        rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> ;
+                                                                        rdfs:domain glc:AggregatedMeasurement ;
                                                                         rdfs:range xsd:dateTimeStamp ;
                                                                         rdfs:comment "The starting interval time of an AggregatedMeasurement." ;
                                                                         rdfs:label "startingInterval" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/statusCode
-<https://glaciation-project.eu/MetadataReferenceModel/statusCode> rdf:type owl:DatatypeProperty ;
+###  glc:statusCode
+glc:statusCode rdf:type owl:DatatypeProperty ;
                                                                   rdfs:subPropertyOf owl:topDataProperty ;
-                                                                  rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/Status> ;
+                                                                  rdfs:domain glc:Status ;
                                                                   rdfs:range xsd:integer ;
                                                                   rdfs:comment "The status code of a Status." ;
                                                                   rdfs:label "statusCode" .
@@ -388,10 +388,10 @@ vann:prefferedNamespacePrefix rdf:type owl:AnnotationProperty .
 
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution
-<https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution> rdf:type owl:DatatypeProperty ;
+###  glc:timeStepResolution
+glc:timeStepResolution rdf:type owl:DatatypeProperty ;
                                                                           rdfs:subPropertyOf owl:topDataProperty ;
-                                                                          rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> ;
+                                                                          rdfs:domain glc:AggregatedMeasurement ;
                                                                           rdfs:range xsd:string ;
                                                                           rdfs:comment "The time step resolution of an AggregatedMeasurement." ;
                                                                           rdfs:label "timeStepResolution" .
@@ -401,143 +401,143 @@ vann:prefferedNamespacePrefix rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement
-<https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement> rdf:type owl:Class ;
-                                                                             rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Measurement> ;
+###  glc:AggregatedMeasurement
+glc:AggregatedMeasurement rdf:type owl:Class ;
+                                                                             rdfs:subClassOf glc:Measurement ;
                                                                              rdfs:comment "Represents any AggregatedMeasurement, by using an AggregatedFunction, a time interval and time step resolution." ;
                                                                              rdfs:label "AggregatedMeasurement" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/Aspect
-<https://glaciation-project.eu/MetadataReferenceModel/Aspect> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+###  glc:Aspect
+glc:Aspect rdf:type owl:Class ;
+                                                              rdfs:subClassOf glc:Class ;
                                                               rdfs:comment "It describes the Aspect of a Contstraint, e.g., time, power consumption." ;
                                                               rdfs:label "Aspect" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/AssignedTask
-<https://glaciation-project.eu/MetadataReferenceModel/AssignedTask> rdf:type owl:Class ;
-                                                                    rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Task> ;
+###  glc:AssignedTask
+glc:AssignedTask rdf:type owl:Class ;
+                                                                    rdfs:subClassOf glc:Task ;
                                                                     rdfs:comment "An AssignedTask that will be performed by using some Resources and will be based on some Constraints." ;
                                                                     rdfs:label "AssignedTask" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/Class
-<https://glaciation-project.eu/MetadataReferenceModel/Class> rdf:type owl:Class ;
+###  glc:Class
+glc:Class rdf:type owl:Class ;
                                                              rdfs:comment "A generic Class for the GLACIATION project" ;
                                                              rdfs:label "Class" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/Constraint
-<https://glaciation-project.eu/MetadataReferenceModel/Constraint> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+###  glc:Constraint
+glc:Constraint rdf:type owl:Class ;
+                                                                  rdfs:subClassOf glc:Class ;
                                                                   rdfs:comment "For representing the Constraint(s) of a Task." ;
                                                                   rdfs:label "Constraint" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/HardConstraint
-<https://glaciation-project.eu/MetadataReferenceModel/HardConstraint> rdf:type owl:Class ;
-                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Constraint> ;
+###  glc:HardConstraint
+glc:HardConstraint rdf:type owl:Class ;
+                                                                      rdfs:subClassOf glc:Constraint ;
                                                                       rdfs:comment "For representing the HardConstraints of a Task." ;
                                                                       rdfs:label "HardConstraint" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/Measurement
-<https://glaciation-project.eu/MetadataReferenceModel/Measurement> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+###  glc:Measurement
+glc:Measurement rdf:type owl:Class ;
+                                                                   rdfs:subClassOf glc:Class ;
                                                                    rdfs:comment "Represents any Measurement, e.g., for energy." ;
                                                                    rdfs:label "Measurement" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty
-<https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty> rdf:type owl:Class ;
-                                                                           rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+###  glc:MeasurementProperty
+glc:MeasurementProperty rdf:type owl:Class ;
+                                                                           rdfs:subClassOf glc:Class ;
                                                                            rdfs:comment "Represents a MeasurementProperty, e.g., allocated CPU, energy, etc." ;
 																		   rdfs:label "MeasurementProperty" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit
-<https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit> rdf:type owl:Class ;
-                                                                       rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+###  glc:MeasurementUnit
+glc:MeasurementUnit rdf:type owl:Class ;
+                                                                       rdfs:subClassOf glc:Class ;
 																	   rdfs:comment "Represents a MeasurementUnit, e.g., Kwh." ;
                                                                        rdfs:label "MeasurementUnit" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource
-<https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource> rdf:type owl:Class ;
-                                                                         rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ,
-                                                                                         <https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource> ;
+###  glc:MeasuringResource
+glc:MeasuringResource rdf:type owl:Class ;
+                                                                         rdfs:subClassOf glc:Class ,
+                                                                                         glc:WorkProducingResource ;
                                                                          rdfs:comment "It represents any WorkProducingResource that can perform Measurements." ;
                                                                          rdfs:label "MeasuringResource" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/Monitor
-<https://glaciation-project.eu/MetadataReferenceModel/Monitor> rdf:type owl:Class ;
-                                                               rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+###  glc:Monitor
+glc:Monitor rdf:type owl:Class ;
+                                                               rdfs:subClassOf glc:Class ;
                                                                rdfs:comment "Represents an entity that monitors an AssignedTask." ;
                                                                rdfs:label "Monitor" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource
-<https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource> rdf:type owl:Class ;
-                                                                                rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Resource> ;
+###  glc:NonWorkProducingResource
+glc:NonWorkProducingResource rdf:type owl:Class ;
+                                                                                rdfs:subClassOf glc:Resource ;
                                                                                 rdfs:comment "It represents any NonWorkProducingResource (e.g., dataset)." ;
                                                                                 rdfs:label "NonWorkProducingResource" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/Resource
-<https://glaciation-project.eu/MetadataReferenceModel/Resource> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
-                                                                owl:disjointWith <https://glaciation-project.eu/MetadataReferenceModel/Task> ;
+###  glc:Resource
+glc:Resource rdf:type owl:Class ;
+                                                                rdfs:subClassOf glc:Class ;
+                                                                owl:disjointWith glc:Task ;
                                                                 rdfs:comment "It represents any Resource." ;
                                                                 rdfs:label "Resource" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/Scheduler
-<https://glaciation-project.eu/MetadataReferenceModel/Scheduler> rdf:type owl:Class ;
-                                                                 rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+###  glc:Scheduler
+glc:Scheduler rdf:type owl:Class ;
+                                                                 rdfs:subClassOf glc:Class ;
                                                                  rdfs:comment "Responsible for Scheduling a SubmittedTask and for managing the Resources." ;
                                                                  rdfs:label "Scheduler" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint
-<https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint> rdf:type owl:Class ;
-                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Constraint> ;
+###  glc:SoftConstraint
+glc:SoftConstraint rdf:type owl:Class ;
+                                                                      rdfs:subClassOf glc:Constraint ;
                                                                       rdfs:comment "For representing the SoftConstraints of a Task." ;
                                                                       rdfs:label "SoftConstraint" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition
-<https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition> rdf:type owl:Class ;
-                                                                                 rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+###  glc:SoftConstraintComposition
+glc:SoftConstraintComposition rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf glc:Class ;
                                                                                  rdfs:comment "It describes the composition of SoftConstraints, e.g., the order of soft constraings according to a given preference priority, Pareto, Pareto optimal, etc." ;
                                                                                  rdfs:label "SoftConstraintComposition" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/Status
-<https://glaciation-project.eu/MetadataReferenceModel/Status> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+###  glc:Status
+glc:Status rdf:type owl:Class ;
+                                                              rdfs:subClassOf glc:Class ;
                                                               rdfs:comment "Represents information about a specific Status over a given time interval." ;
                                                               rdfs:label "Status" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask
-<https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask> rdf:type owl:Class ;
-                                                                     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Task> ;
+###  glc:SubmittedTask
+glc:SubmittedTask rdf:type owl:Class ;
+                                                                     rdfs:subClassOf glc:Task ;
                                                                      rdfs:comment "A Submitted Task that will be processed by a Scheduler." ;
                                                                      rdfs:label "SubmittedTask" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/Task
-<https://glaciation-project.eu/MetadataReferenceModel/Task> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Class> ;
+###  glc:Task
+glc:Task rdf:type owl:Class ;
+                                                            rdfs:subClassOf glc:Class ;
                                                             rdfs:comment "It describes any Task that has Constraints and a Status." ;
                                                             rdfs:label "Task" .
 
 
-###  https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource
-<https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource> rdf:type owl:Class ;
-                                                                             rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/Resource> ;
+###  glc:WorkProducingResource
+glc:WorkProducingResource rdf:type owl:Class ;
+                                                                             rdfs:subClassOf glc:Resource ;
                                                                              rdfs:comment "It represents any WorkProducingResource, e.g., a node, a CPU, etc." ;
                                                                              rdfs:label "WorkProducingResource" .
 

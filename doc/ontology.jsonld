@@ -67,7 +67,7 @@
     "@id" : "http://purl.org/ontology/bibo/status/peerReviewed"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel"
   } ],
   "http://purl.org/vocab/vann/prefferedNamespacePrefix" : [ {
     "@value" : "glc"
@@ -83,7 +83,7 @@
     "@value" : "1.0.0"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents any AggregatedMeasurement, by using an AggregatedFunction, a time interval and time step resolution."
@@ -92,10 +92,10 @@
     "@value" : "AggregatedMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Aspect",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Aspect",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "It describes the Aspect of a Contstraint, e.g., time, power consumption."
@@ -104,10 +104,10 @@
     "@value" : "Aspect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An AssignedTask that will be performed by using some Resources and will be based on some Constraints."
@@ -116,10 +116,10 @@
     "@value" : "AssignedTask"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Task"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Task"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A generic Class for the GLACIATION project"
@@ -128,7 +128,7 @@
     "@value" : "Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Constraint",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Constraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For representing the Constraint(s) of a Task."
@@ -137,10 +137,10 @@
     "@value" : "Constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/HardConstraint",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#HardConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For representing the HardConstraints of a Task."
@@ -149,10 +149,10 @@
     "@value" : "HardConstraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Constraint"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Constraint"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents any Measurement, e.g., for energy."
@@ -161,10 +161,10 @@
     "@value" : "Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents a MeasurementProperty, e.g., allocated CPU, energy, etc."
@@ -173,10 +173,10 @@
     "@value" : "MeasurementProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents a MeasurementUnit, e.g., Kwh."
@@ -185,10 +185,10 @@
     "@value" : "MeasurementUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "It represents any WorkProducingResource that can perform Measurements."
@@ -197,12 +197,12 @@
     "@value" : "MeasuringResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   }, {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Monitor",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Monitor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents an entity that monitors an AssignedTask."
@@ -211,10 +211,10 @@
     "@value" : "Monitor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "It represents any NonWorkProducingResource (e.g., dataset)."
@@ -223,10 +223,10 @@
     "@value" : "NonWorkProducingResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Resource"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Resource"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Resource",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Resource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "It represents any Resource."
@@ -235,13 +235,13 @@
     "@value" : "Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Task"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Task"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Scheduler",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Scheduler",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Responsible for Scheduling a SubmittedTask and for managing the Resources."
@@ -250,10 +250,10 @@
     "@value" : "Scheduler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For representing the SoftConstraints of a Task."
@@ -262,10 +262,10 @@
     "@value" : "SoftConstraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Constraint"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Constraint"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "It describes the composition of SoftConstraints, e.g., the order of soft constraings according to a given preference priority, Pareto, Pareto optimal, etc."
@@ -274,10 +274,10 @@
     "@value" : "SoftConstraintComposition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Status",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Status",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Represents information about a specific Status over a given time interval."
@@ -286,10 +286,10 @@
     "@value" : "Status"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A Submitted Task that will be processed by a Scheduler."
@@ -298,10 +298,10 @@
     "@value" : "SubmittedTask"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Task"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Task"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Task",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Task",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "It describes any Task that has Constraints and a Status."
@@ -310,10 +310,10 @@
     "@value" : "Task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "It represents any WorkProducingResource, e.g., a node, a CPU, etc."
@@ -322,70 +322,70 @@
     "@value" : "WorkProducingResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Resource"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Resource"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/assigns",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#assigns",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship between a Scheduler and an AssignedTask."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Scheduler"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Scheduler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "assigns"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/composedBy",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#composedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For keeping information about the SoftConstraints that are included in a Composition."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "composedBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/consumes",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#consumes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A property for recording the Resource(s) of each AssignedTask."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "consumes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Resource"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/endTime",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#endTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The end time of a Status of any Class."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Status"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Status"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "endTime"
@@ -397,13 +397,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/endingInterval",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#endingInterval",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The ending interval time of an AggregatedMeasurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "endingInterval"
@@ -415,13 +415,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The AggregatedFunction of an AggregatedMeasurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasAggregatedFuntion"
@@ -433,49 +433,49 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasAspect",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasAspect",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For keeping information about the Aspect of each Constraint, e.g., time, power consumption."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Constraint"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasAspect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Aspect"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Aspect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasComposition",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasComposition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For keeping information about the Composition of the SoftConstraints of a Task."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Task"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasComposition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Configuration of any instance of a Class, e.g., Task, Resource, etc."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasConfiguration"
@@ -487,31 +487,31 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasConstraint",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship for recording all the Constraints of a Task."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Task"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasConstraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Constraint"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasDescription",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Description of any entity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasDescription"
@@ -523,13 +523,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasID",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasID",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The ID of any entity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasID"
@@ -541,121 +541,121 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship between a Resource and a Measurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Resource"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasResourceMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasStatus",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship between any Class and its Status."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Class"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasStatus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Status"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Status"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasSubResource",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasSubResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relationships for recording the SubResource(s) of each Resource (e.g, the hardware of a node)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Resource"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasSubResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Resource"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship between a Task and a Measurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Task"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasTaskMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship for recording the PredictedMeasurements of a Task."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Task"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasTaskPredictedMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship for recording the RealizedMeasurements (actual measurements) of a Task."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Task"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasTaskRealizedMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The date and time of a Measurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasTimestamp"
@@ -667,13 +667,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/hasValue",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#hasValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Value of a Measurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasValue"
@@ -685,175 +685,175 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship between a MeasuringResource and a Measurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "makesMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/manages",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#manages",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship between a Scheduler and a Resource."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Scheduler"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Scheduler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "manages"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Resource"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/measuredIn",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#measuredIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For recording the MeasurimentUnit of each Measurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "measuredIn"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/monitors",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#monitors",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For recording which Monitor tracks an AssignedTask."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Monitor"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Monitor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "monitors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/produces",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#produces",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For keeping information about the production Resource, e.g., the output, of an AssignedTask."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "produces"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Resource"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For keeping information about the Constraint that each Measurement relates to."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "relatesToConstraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Constraint"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "For recording the MeasurementProperty of each Measurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Measurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "relatesToMeasurementProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/reschedules",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#reschedules",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship between a Scheduler and an AssignedTask that concerns rescheduling."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Scheduler"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Scheduler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "reschedules"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AssignedTask"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/scheduledBy",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#scheduledBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A relationship between a SubmittedTask and a Scheduler."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "scheduledBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Scheduler"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Scheduler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/startTime",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#startTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The date and time of a Status."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Status"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Status"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "startTime"
@@ -865,13 +865,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/startingInterval",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#startingInterval",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The starting interval time of an AggregatedMeasurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "startingInterval"
@@ -883,13 +883,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/statusCode",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#statusCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The status code of a Status."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Status"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Status"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "statusCode"
@@ -901,13 +901,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The time step resolution of an AggregatedMeasurement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#AggregatedMeasurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "timeStepResolution"
@@ -919,19 +919,19 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule",
+  "@id" : "https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A triggered event relationship about Rescheduling from a Monitor."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Monitor"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Monitor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "triggersReschedule"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://glaciation-project.eu/MetadataReferenceModel/Scheduler"
+    "@id" : "https://glaciation-project.eu/MetadataReferenceModel#Scheduler"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
