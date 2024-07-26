@@ -1,0 +1,137 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://glaciation-project.eu/MetadataReferenceModel/uc1#> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc1#readBadge
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#readBadge> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> ;
+                                                        rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> ;
+                                                        rdfs:comment "A task when a badge read" ;
+                                                        rdfs:label "readBadge" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc1#usedTurnstileReader
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#usedTurnstileReader> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> ;
+                                                        rdfs:range <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> ;
+                                                        rdfs:comment "The used Turnstile Reader for a given scanning task" ;
+                                                        rdfs:label "usedTurnstileReader" .
+
+#################################################################
+#    Data Properties
+#################################################################
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderCode> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Reader Code of TurnstileReader" ;
+                                                               rdfs:label "hasReaderCode" .															   
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasActivationDate> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader>,
+							       <https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge>;
+						               rdfs:range  xsd:date;
+                                                               rdfs:comment "Reader activation date" ;
+                                                               rdfs:label "hasReaderActivationDate" .
+															   															   
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderType> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Use of the Reader, e.g., presence detection or canteen access." ;
+                                                               rdfs:label "hasReaderType" .
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderHead> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Has unique Reader identifier used in timestamp XML." ;
+                                                               rdfs:label "hasReaderHead" .
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasDataConcentratorServer> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Server hosted in CED that collects data from remote readers" ;
+                                                               rdfs:label "hasDataConcentratorServer" .
+															   
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasRegion> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Geographical region where the reader is installed" ;
+                                                               rdfs:label "hasDataConcentratorServer" .
+															   
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestamp> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader>,
+							       <https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask>, 
+							       <https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge>;
+                                                               rdfs:range xsd:dateTimeStamp;
+                                                               rdfs:comment "Unique timestamp" ;
+                                                               rdfs:label "hasTimestampIdentifier" .
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestampDirection> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask>;
+                                                               rdfs:range xsd:string;
+                                                               rdfs:comment "Direction of the timestamp, left to right or right to left" ;
+                                                               rdfs:label "hasTimestampDirection" .
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#badgeEnabled> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask>;
+                                                               rdfs:range xsd:boolean;
+                                                               rdfs:comment "Boolean value for storing if the badge enabled from the turnstile reader" ;
+                                                               rdfs:label "badgeEnabled" .														   
+															   
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeIdentifier> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Identifier Badge" ;
+                                                               rdfs:label "hasBadgeIdentifier" .
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeType> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Badge Type" ;
+                                                               rdfs:label "hasBadgeType" .
+
+
+                                                         
+#################################################################
+#    Classes
+#################################################################
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#Resource> ;
+                                                                      rdfs:comment "A turnstile reader" ;
+                                                                      rdfs:label "TurnstileReader" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#Resource> ;
+                                                                      rdfs:comment "A badge for being read from a turnstile reader" ;
+                                                                      rdfs:label "Badge" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> ;
+                                                                      rdfs:comment "A scanning task where a badge is read from a turnstile reader" ;
+                                                                      rdfs:label "ScanningTask" .

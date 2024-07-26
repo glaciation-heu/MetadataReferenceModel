@@ -1,0 +1,2034 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>The Metadata Reference Model for the EU GLACIATION Project</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://glaciation-project.eu/MetadataReferenceModel/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://glaciation-project.eu/MetadataReferenceModel/","name":"The Metadata Reference Model for the EU GLACIATION Project", "headline":"The Glaciation Reference Metadata Model (GLC-MRM) provides a conceptual model that allows making data ingestion and data processing interoperable for all the use cases of the Glaciation project. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources.", "dateReleased":""2024-07-20"", "version":"1.0.0", "license":"https://www.apache.org/licenses/LICENSE-2.0", "author":[{"@type":"Person","name":""Michalis Mountantonakis", "Panagiotis Papadakos", "Rigo Wenning""}], "contributor":[{"@type":"Person","name":""Konstantin Tatarnikov", "Guangyuan Piao", "Alessio Chellini", "Paolo Tartara", "Péter Forgács", " Jonas Böhler""}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>The Metadata Reference Model for the EU GLACIATION Project</h1>
+<h2>Release: "2024-07-20"</h2>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="https://glaciation-project.eu/MetadataReferenceModel/1.0.0/">https://glaciation-project.eu/MetadataReferenceModel/1.0.0/</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="https://glaciation-project.eu/MetadataReferenceModel/">https://glaciation-project.eu/MetadataReferenceModel/</a></dd>
+<dt>Revision:</dt>
+<dd>1.0.0</dd>
+<dt>Authors:</dt>
+<dd>"Michalis Mountantonakis", "Panagiotis Papadakos", "Rigo Wenning"</dd>
+
+<dt>Contributors:</dt>
+<dd>"Konstantin Tatarnikov", "Guangyuan Piao", "Alessio Chellini", "Paolo Tartara", "Péter Forgács", " Jonas Böhler"</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank"><img src="https://img.shields.io/badge/License-https://www.apache.org/licenses/LICENSE_2.0-blue.svg" alt="https://www.apache.org/licenses/LICENSE-2.0" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>"Michalis Mountantonakis", "Panagiotis Papadakos", "Rigo Wenning". The Metadata Reference Model for the EU GLACIATION Project. Revision: 1.0.0. Retrieved from: https://glaciation-project.eu/MetadataReferenceModel/1.0.0/</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>peerReviewed</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+The Glaciation Reference Metadata Model (GLC-MRM) provides a conceptual model that allows making data ingestion and data processing interoperable for all the use cases of the Glaciation project. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources.</span>
+</div>
+<div id="toc"></div>  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">GLACIATION Metadata Reference Model: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AggregatedMeasurement"
+         title="https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement">AggregatedMeasurement</a>
+   </li>
+   <li>
+      <a href="#Aspect"
+         title="https://glaciation-project.eu/MetadataReferenceModel/Aspect">Aspect</a>
+   </li>
+   <li>
+      <a href="#AssignedTask"
+         title="https://glaciation-project.eu/MetadataReferenceModel/AssignedTask">AssignedTask</a>
+   </li>
+   <li>
+      <a href="#Class"
+         title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a>
+   </li>
+   <li>
+      <a href="#Constraint"
+         title="https://glaciation-project.eu/MetadataReferenceModel/Constraint">Constraint</a>
+   </li>
+   <li>
+      <a href="#HardConstraint"
+         title="https://glaciation-project.eu/MetadataReferenceModel/HardConstraint">HardConstraint</a>
+   </li>
+   <li>
+      <a href="#Measurement"
+         title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a>
+   </li>
+   <li>
+      <a href="#MeasurementProperty"
+         title="https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty">MeasurementProperty</a>
+   </li>
+   <li>
+      <a href="#MeasurementUnit"
+         title="https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit">MeasurementUnit</a>
+   </li>
+   <li>
+      <a href="#MeasuringResource"
+         title="https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource">MeasuringResource</a>
+   </li>
+   <li>
+      <a href="#Monitor"
+         title="https://glaciation-project.eu/MetadataReferenceModel/Monitor">Monitor</a>
+   </li>
+   <li>
+      <a href="#NonWorkProducingResource"
+         title="https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource">NonWorkProducingResource</a>
+   </li>
+   <li>
+      <a href="#Resource"
+         title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a>
+   </li>
+   <li>
+      <a href="#Scheduler"
+         title="https://glaciation-project.eu/MetadataReferenceModel/Scheduler">Scheduler</a>
+   </li>
+   <li>
+      <a href="#SoftConstraint"
+         title="https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint">SoftConstraint</a>
+   </li>
+   <li>
+      <a href="#SoftConstraintComposition"
+         title="https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition">SoftConstraintComposition</a>
+   </li>
+   <li>
+      <a href="#Status"
+         title="https://glaciation-project.eu/MetadataReferenceModel/Status">Status</a>
+   </li>
+   <li>
+      <a href="#SubmittedTask"
+         title="https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask">SubmittedTask</a>
+   </li>
+   <li>
+      <a href="#Task"
+         title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a>
+   </li>
+   <li>
+      <a href="#WorkProducingResource"
+         title="https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource">WorkProducingResource</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#assigns"
+         title="https://glaciation-project.eu/MetadataReferenceModel/assigns">assigns</a>
+   </li>
+   <li>
+      <a href="#composedBy"
+         title="https://glaciation-project.eu/MetadataReferenceModel/composedBy">composedBy</a>
+   </li>
+   <li>
+      <a href="#consumes"
+         title="https://glaciation-project.eu/MetadataReferenceModel/consumes">consumes</a>
+   </li>
+   <li>
+      <a href="#hasAspect"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasAspect">hasAspect</a>
+   </li>
+   <li>
+      <a href="#hasComposition"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasComposition">hasComposition</a>
+   </li>
+   <li>
+      <a href="#hasConstraint"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasConstraint">hasConstraint</a>
+   </li>
+   <li>
+      <a href="#hasResourceMeasurement"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement">hasResourceMeasurement</a>
+   </li>
+   <li>
+      <a href="#hasStatus"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasStatus">hasStatus</a>
+   </li>
+   <li>
+      <a href="#hasSubResource"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasSubResource">hasSubResource</a>
+   </li>
+   <li>
+      <a href="#hasTaskMeasurement"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement">hasTaskMeasurement</a>
+   </li>
+   <li>
+      <a href="#hasTaskPredictedMeasurement"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement">hasTaskPredictedMeasurement</a>
+   </li>
+   <li>
+      <a href="#hasTaskRealizedMeasurement"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement">hasTaskRealizedMeasurement</a>
+   </li>
+   <li>
+      <a href="#makesMeasurement"
+         title="https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement">makesMeasurement</a>
+   </li>
+   <li>
+      <a href="#manages"
+         title="https://glaciation-project.eu/MetadataReferenceModel/manages">manages</a>
+   </li>
+   <li>
+      <a href="#measuredIn"
+         title="https://glaciation-project.eu/MetadataReferenceModel/measuredIn">measuredIn</a>
+   </li>
+   <li>
+      <a href="#monitors"
+         title="https://glaciation-project.eu/MetadataReferenceModel/monitors">monitors</a>
+   </li>
+   <li>
+      <a href="#produces"
+         title="https://glaciation-project.eu/MetadataReferenceModel/produces">produces</a>
+   </li>
+   <li>
+      <a href="#relatesToConstraint"
+         title="https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint">relatesToConstraint</a>
+   </li>
+   <li>
+      <a href="#relatesToMeasurementProperty"
+         title="https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty">relatesToMeasurementProperty</a>
+   </li>
+   <li>
+      <a href="#reschedules"
+         title="https://glaciation-project.eu/MetadataReferenceModel/reschedules">reschedules</a>
+   </li>
+   <li>
+      <a href="#scheduledBy"
+         title="https://glaciation-project.eu/MetadataReferenceModel/scheduledBy">scheduledBy</a>
+   </li>
+   <li>
+      <a href="#triggersReschedule"
+         title="https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule">triggersReschedule</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#endingInterval"
+         title="https://glaciation-project.eu/MetadataReferenceModel/endingInterval">endingInterval</a>
+   </li>
+   <li>
+      <a href="#endTime"
+         title="https://glaciation-project.eu/MetadataReferenceModel/endTime">endTime</a>
+   </li>
+   <li>
+      <a href="#hasAggregatedFuntion"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion">hasAggregatedFuntion</a>
+   </li>
+   <li>
+      <a href="#hasConfiguration"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration">hasConfiguration</a>
+   </li>
+   <li>
+      <a href="#hasDescription"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasDescription">hasDescription</a>
+   </li>
+   <li>
+      <a href="#hasID"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasID">hasID</a>
+   </li>
+   <li>
+      <a href="#hasTimestamp"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp">hasTimestamp</a>
+   </li>
+   <li>
+      <a href="#hasValue"
+         title="https://glaciation-project.eu/MetadataReferenceModel/hasValue">hasValue</a>
+   </li>
+   <li>
+      <a href="#startingInterval"
+         title="https://glaciation-project.eu/MetadataReferenceModel/startingInterval">startingInterval</a>
+   </li>
+   <li>
+      <a href="#startTime"
+         title="https://glaciation-project.eu/MetadataReferenceModel/startTime">startTime</a>
+   </li>
+   <li>
+      <a href="#statusCode"
+         title="https://glaciation-project.eu/MetadataReferenceModel/statusCode">statusCode</a>
+   </li>
+   <li>
+      <a href="#timeStepResolution"
+         title="https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution">timeStepResolution</a>
+   </li>
+</ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
+         <span>abstract</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/contributor" title="http://purl.org/dc/elements/1.1/contributor">
+         <span>contributor</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
+         <span>created</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+         <span>description</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/issued" title="http://purl.org/dc/elements/1.1/issued">
+         <span>issued</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
+         <span>preferred Namespace Uri</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/prefferedNamespacePrefix"
+         title="http://purl.org/vocab/vann/prefferedNamespacePrefix">
+         <span>preffered Namespace Prefix</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/ontology/bibo/status" title="http://purl.org/ontology/bibo/status">
+         <span>status</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">GLACIATION Metadata Reference Model: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">The GLACIATION platform develops a novel Distributed Knowledge Graph (DKG) that stretches across the edge-core-cloud architecture to reduce energy consumption, improving data processing and optimizing data movement operations. Towards this aim, the platform needs to consume the data and metadata that are fed into the DKG. The metadata can affect and inform the decision-making processes in the GLACIATION architecture and introduces the GLACIATION Metadata Reference Model that will be used for modelling the metadata in the DKG.
+
+The GLACIATION Reference Metadata Model makes data ingestion and processing interoperable inside the GLACIATION platform. Linked Data allows for a high level of flexibility and to tackle the variety and merging issues that emerge in heterogenous environments, especially due to the wide range of sensors and other data sources that the platform may integrate. The GLACIATION Reference Metadata Model is tailored to fit the specific purposes of the GLACIATION platform, while the GLACIATION use cases define the scope of the model for better interoperability.
+
+There are common metadata challenges for all use cases. This stems from the use of the Kubernetes orchestration system as a basis for the GLACIATION platform. In addition, common to the platform is the ingestion of data from other sources into the DKG that can then be used to affect processing decisions. There are direct data flows from sensors within the system, but also data and metadata from sources external to the system. This allows the system to react e.g. to environmental situations like weather or temperature, but also to requirements concerning security or privacy. Exemplary uses and specializations of the reference model to the GLACIATION use cases are also provided.
+
+The GLACIATION Metadata Reference Model can be used for scheduling and performing tasks. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources. It captures the assignment of time-constrained tasks to time constrained and energy consuming resources, that can satisfy various hard and soft constraints, even compositions of such constraints. The tasks can be monitored through various measuring resources using a variety of single or aggregated, predicted or real measurements
+
+
+The model is generic, by being both domain and application independent, describing the scheduling tasks, without providing specific solutions on how they can be solved. It can be easily adjusted to each of the current three GLACIATION use cases, covering also the Kubernetes orchestration and its Telemetry System deployed by the project. The proposed model makes it feasible to answer the competency queries defined by each of the Glaciation's use case.</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for GLACIATION Metadata Reference Model classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by GLACIATION Metadata Reference Model.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#AggregatedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement">AggregatedMeasurement</a></li>
+  <li><a href="#Aspect" title="https://glaciation-project.eu/MetadataReferenceModel/Aspect">Aspect</a></li>
+  <li><a href="#AssignedTask" title="https://glaciation-project.eu/MetadataReferenceModel/AssignedTask">AssignedTask</a></li>
+  <li><a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a></li>
+  <li><a href="#Constraint" title="https://glaciation-project.eu/MetadataReferenceModel/Constraint">Constraint</a></li>
+  <li><a href="#HardConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/HardConstraint">HardConstraint</a></li>
+  <li><a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a></li>
+  <li><a href="#MeasurementProperty" title="https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty">MeasurementProperty</a></li>
+  <li><a href="#MeasurementUnit" title="https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit">MeasurementUnit</a></li>
+  <li><a href="#MeasuringResource" title="https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource">MeasuringResource</a></li>
+  <li><a href="#Monitor" title="https://glaciation-project.eu/MetadataReferenceModel/Monitor">Monitor</a></li>
+  <li><a href="#NonWorkProducingResource" title="https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource">NonWorkProducingResource</a></li>
+  <li><a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a></li>
+  <li><a href="#Scheduler" title="https://glaciation-project.eu/MetadataReferenceModel/Scheduler">Scheduler</a></li>
+  <li><a href="#SoftConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint">SoftConstraint</a></li>
+  <li><a href="#SoftConstraintComposition" title="https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition">SoftConstraintComposition</a></li>
+  <li><a href="#Status" title="https://glaciation-project.eu/MetadataReferenceModel/Status">Status</a></li>
+  <li><a href="#SubmittedTask" title="https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask">SubmittedTask</a></li>
+  <li><a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a></li>
+  <li><a href="#WorkProducingResource" title="https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource">WorkProducingResource</a></li>
+ </ul>
+ <div class="entity" id="AggregatedMeasurement">
+  <h3>AggregatedMeasurement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement</p>
+  <div class="comment">
+   <span class="markdown">Represents any AggregatedMeasurement, by using an AggregatedFunction, a time interval and time step resolution.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#endingInterval" title="https://glaciation-project.eu/MetadataReferenceModel/endingInterval">endingInterval</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAggregatedFuntion" title="https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion">hasAggregatedFuntion</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#startingInterval" title="https://glaciation-project.eu/MetadataReferenceModel/startingInterval">startingInterval</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#timeStepResolution" title="https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution">timeStepResolution</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Aspect">
+  <h3>Aspect<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/Aspect</p>
+  <div class="comment">
+   <span class="markdown">It describes the Aspect of a Contstraint, e.g., time, power consumption.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasAspect" title="https://glaciation-project.eu/MetadataReferenceModel/hasAspect">hasAspect</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AssignedTask">
+  <h3>AssignedTask<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/AssignedTask</p>
+  <div class="comment">
+   <span class="markdown">An AssignedTask that will be performed by using some Resources and will be based on some Constraints.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#consumes" title="https://glaciation-project.eu/MetadataReferenceModel/consumes">consumes</a> <sup class="type-op" title="object property">op</sup>, <a href="#produces" title="https://glaciation-project.eu/MetadataReferenceModel/produces">produces</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#assigns" title="https://glaciation-project.eu/MetadataReferenceModel/assigns">assigns</a> <sup class="type-op" title="object property">op</sup>, <a href="#monitors" title="https://glaciation-project.eu/MetadataReferenceModel/monitors">monitors</a> <sup class="type-op" title="object property">op</sup>, <a href="#reschedules" title="https://glaciation-project.eu/MetadataReferenceModel/reschedules">reschedules</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Class">
+  <h3>Class<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/Class</p>
+  <div class="comment">
+   <span class="markdown">A generic Class for the GLACIATION project</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Aspect" title="https://glaciation-project.eu/MetadataReferenceModel/Aspect">Aspect</a> <sup class="type-c" title="class">c</sup>, <a href="#Constraint" title="https://glaciation-project.eu/MetadataReferenceModel/Constraint">Constraint</a> <sup class="type-c" title="class">c</sup>, <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>, <a href="#MeasurementProperty" title="https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty">MeasurementProperty</a> <sup class="type-c" title="class">c</sup>, <a href="#MeasurementUnit" title="https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit">MeasurementUnit</a> <sup class="type-c" title="class">c</sup>, <a href="#MeasuringResource" title="https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource">MeasuringResource</a> <sup class="type-c" title="class">c</sup>, <a href="#Monitor" title="https://glaciation-project.eu/MetadataReferenceModel/Monitor">Monitor</a> <sup class="type-c" title="class">c</sup>, <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a> <sup class="type-c" title="class">c</sup>, <a href="#Scheduler" title="https://glaciation-project.eu/MetadataReferenceModel/Scheduler">Scheduler</a> <sup class="type-c" title="class">c</sup>, <a href="#SoftConstraintComposition" title="https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition">SoftConstraintComposition</a> <sup class="type-c" title="class">c</sup>, <a href="#Status" title="https://glaciation-project.eu/MetadataReferenceModel/Status">Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasConfiguration" title="https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration">hasConfiguration</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDescription" title="https://glaciation-project.eu/MetadataReferenceModel/hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasID" title="https://glaciation-project.eu/MetadataReferenceModel/hasID">hasID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasStatus" title="https://glaciation-project.eu/MetadataReferenceModel/hasStatus">hasStatus</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Constraint">
+  <h3>Constraint<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/Constraint</p>
+  <div class="comment">
+   <span class="markdown">For representing the Constraint(s) of a Task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#HardConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/HardConstraint">HardConstraint</a> <sup class="type-c" title="class">c</sup>, <a href="#SoftConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint">SoftConstraint</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasAspect" title="https://glaciation-project.eu/MetadataReferenceModel/hasAspect">hasAspect</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/hasConstraint">hasConstraint</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatesToConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint">relatesToConstraint</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="HardConstraint">
+  <h3>HardConstraint<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/HardConstraint</p>
+  <div class="comment">
+   <span class="markdown">For representing the HardConstraints of a Task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Constraint" title="https://glaciation-project.eu/MetadataReferenceModel/Constraint">Constraint</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Measurement">
+  <h3>Measurement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/Measurement</p>
+  <div class="comment">
+   <span class="markdown">Represents any Measurement, e.g., for energy.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#AggregatedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement">AggregatedMeasurement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasTimestamp" title="https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp">hasTimestamp</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasValue" title="https://glaciation-project.eu/MetadataReferenceModel/hasValue">hasValue</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#measuredIn" title="https://glaciation-project.eu/MetadataReferenceModel/measuredIn">measuredIn</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatesToConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint">relatesToConstraint</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatesToMeasurementProperty" title="https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty">relatesToMeasurementProperty</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasResourceMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement">hasResourceMeasurement</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTaskMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement">hasTaskMeasurement</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTaskPredictedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement">hasTaskPredictedMeasurement</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTaskRealizedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement">hasTaskRealizedMeasurement</a> <sup class="type-op" title="object property">op</sup>, <a href="#makesMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement">makesMeasurement</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MeasurementProperty">
+  <h3>MeasurementProperty<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty</p>
+  <div class="comment">
+   <span class="markdown">Represents a MeasurementProperty, e.g., allocated CPU, energy, etc.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#relatesToMeasurementProperty" title="https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty">relatesToMeasurementProperty</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MeasurementUnit">
+  <h3>MeasurementUnit<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit</p>
+  <div class="comment">
+   <span class="markdown">Represents a MeasurementUnit, e.g., Kwh.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#measuredIn" title="https://glaciation-project.eu/MetadataReferenceModel/measuredIn">measuredIn</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MeasuringResource">
+  <h3>MeasuringResource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource</p>
+  <div class="comment">
+   <span class="markdown">It represents any WorkProducingResource that can perform Measurements.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>, <a href="#WorkProducingResource" title="https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource">WorkProducingResource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#makesMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement">makesMeasurement</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Monitor">
+  <h3>Monitor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/Monitor</p>
+  <div class="comment">
+   <span class="markdown">Represents an entity that monitors an AssignedTask.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#monitors" title="https://glaciation-project.eu/MetadataReferenceModel/monitors">monitors</a> <sup class="type-op" title="object property">op</sup>, <a href="#triggersReschedule" title="https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule">triggersReschedule</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="NonWorkProducingResource">
+  <h3>NonWorkProducingResource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource</p>
+  <div class="comment">
+   <span class="markdown">It represents any NonWorkProducingResource (e.g., dataset).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Resource">
+  <h3>Resource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/Resource</p>
+  <div class="comment">
+   <span class="markdown">It represents any Resource.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#NonWorkProducingResource" title="https://glaciation-project.eu/MetadataReferenceModel/NonWorkProducingResource">NonWorkProducingResource</a> <sup class="type-c" title="class">c</sup>, <a href="#WorkProducingResource" title="https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource">WorkProducingResource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasResourceMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement">hasResourceMeasurement</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSubResource" title="https://glaciation-project.eu/MetadataReferenceModel/hasSubResource">hasSubResource</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#consumes" title="https://glaciation-project.eu/MetadataReferenceModel/consumes">consumes</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSubResource" title="https://glaciation-project.eu/MetadataReferenceModel/hasSubResource">hasSubResource</a> <sup class="type-op" title="object property">op</sup>, <a href="#manages" title="https://glaciation-project.eu/MetadataReferenceModel/manages">manages</a> <sup class="type-op" title="object property">op</sup>, <a href="#produces" title="https://glaciation-project.eu/MetadataReferenceModel/produces">produces</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Scheduler">
+  <h3>Scheduler<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/Scheduler</p>
+  <div class="comment">
+   <span class="markdown">Responsible for Scheduling a SubmittedTask and for managing the Resources.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#assigns" title="https://glaciation-project.eu/MetadataReferenceModel/assigns">assigns</a> <sup class="type-op" title="object property">op</sup>, <a href="#manages" title="https://glaciation-project.eu/MetadataReferenceModel/manages">manages</a> <sup class="type-op" title="object property">op</sup>, <a href="#reschedules" title="https://glaciation-project.eu/MetadataReferenceModel/reschedules">reschedules</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#scheduledBy" title="https://glaciation-project.eu/MetadataReferenceModel/scheduledBy">scheduledBy</a> <sup class="type-op" title="object property">op</sup>, <a href="#triggersReschedule" title="https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule">triggersReschedule</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SoftConstraint">
+  <h3>SoftConstraint<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint</p>
+  <div class="comment">
+   <span class="markdown">For representing the SoftConstraints of a Task.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Constraint" title="https://glaciation-project.eu/MetadataReferenceModel/Constraint">Constraint</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#composedBy" title="https://glaciation-project.eu/MetadataReferenceModel/composedBy">composedBy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SoftConstraintComposition">
+  <h3>SoftConstraintComposition<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition</p>
+  <div class="comment">
+   <span class="markdown">It describes the composition of SoftConstraints, e.g., the order of soft constraings according to a given preference priority, Pareto, Pareto optimal, etc.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#composedBy" title="https://glaciation-project.eu/MetadataReferenceModel/composedBy">composedBy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasComposition" title="https://glaciation-project.eu/MetadataReferenceModel/hasComposition">hasComposition</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Status">
+  <h3>Status<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/Status</p>
+  <div class="comment">
+   <span class="markdown">Represents information about a specific Status over a given time interval.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#endTime" title="https://glaciation-project.eu/MetadataReferenceModel/endTime">endTime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#startTime" title="https://glaciation-project.eu/MetadataReferenceModel/startTime">startTime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#statusCode" title="https://glaciation-project.eu/MetadataReferenceModel/statusCode">statusCode</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasStatus" title="https://glaciation-project.eu/MetadataReferenceModel/hasStatus">hasStatus</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SubmittedTask">
+  <h3>SubmittedTask<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask</p>
+  <div class="comment">
+   <span class="markdown">A Submitted Task that will be processed by a Scheduler.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#scheduledBy" title="https://glaciation-project.eu/MetadataReferenceModel/scheduledBy">scheduledBy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Task">
+  <h3>Task<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/Task</p>
+  <div class="comment">
+   <span class="markdown">It describes any Task that has Constraints and a Status.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#AssignedTask" title="https://glaciation-project.eu/MetadataReferenceModel/AssignedTask">AssignedTask</a> <sup class="type-c" title="class">c</sup>, <a href="#SubmittedTask" title="https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask">SubmittedTask</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasComposition" title="https://glaciation-project.eu/MetadataReferenceModel/hasComposition">hasComposition</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/hasConstraint">hasConstraint</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTaskMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement">hasTaskMeasurement</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTaskPredictedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement">hasTaskPredictedMeasurement</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTaskRealizedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement">hasTaskRealizedMeasurement</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="WorkProducingResource">
+  <h3>WorkProducingResource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/WorkProducingResource</p>
+  <div class="comment">
+   <span class="markdown">It represents any WorkProducingResource, e.g., a node, a CPU, etc.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#MeasuringResource" title="https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource">MeasuringResource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#assigns" title="https://glaciation-project.eu/MetadataReferenceModel/assigns">assigns</a></li>
+  <li><a href="#composedBy" title="https://glaciation-project.eu/MetadataReferenceModel/composedBy">composedBy</a></li>
+  <li><a href="#consumes" title="https://glaciation-project.eu/MetadataReferenceModel/consumes">consumes</a></li>
+  <li><a href="#hasAspect" title="https://glaciation-project.eu/MetadataReferenceModel/hasAspect">hasAspect</a></li>
+  <li><a href="#hasComposition" title="https://glaciation-project.eu/MetadataReferenceModel/hasComposition">hasComposition</a></li>
+  <li><a href="#hasConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/hasConstraint">hasConstraint</a></li>
+  <li><a href="#hasResourceMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement">hasResourceMeasurement</a></li>
+  <li><a href="#hasStatus" title="https://glaciation-project.eu/MetadataReferenceModel/hasStatus">hasStatus</a></li>
+  <li><a href="#hasSubResource" title="https://glaciation-project.eu/MetadataReferenceModel/hasSubResource">hasSubResource</a></li>
+  <li><a href="#hasTaskMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement">hasTaskMeasurement</a></li>
+  <li><a href="#hasTaskPredictedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement">hasTaskPredictedMeasurement</a></li>
+  <li><a href="#hasTaskRealizedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement">hasTaskRealizedMeasurement</a></li>
+  <li><a href="#makesMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement">makesMeasurement</a></li>
+  <li><a href="#manages" title="https://glaciation-project.eu/MetadataReferenceModel/manages">manages</a></li>
+  <li><a href="#measuredIn" title="https://glaciation-project.eu/MetadataReferenceModel/measuredIn">measuredIn</a></li>
+  <li><a href="#monitors" title="https://glaciation-project.eu/MetadataReferenceModel/monitors">monitors</a></li>
+  <li><a href="#produces" title="https://glaciation-project.eu/MetadataReferenceModel/produces">produces</a></li>
+  <li><a href="#relatesToConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint">relatesToConstraint</a></li>
+  <li><a href="#relatesToMeasurementProperty" title="https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty">relatesToMeasurementProperty</a></li>
+  <li><a href="#reschedules" title="https://glaciation-project.eu/MetadataReferenceModel/reschedules">reschedules</a></li>
+  <li><a href="#scheduledBy" title="https://glaciation-project.eu/MetadataReferenceModel/scheduledBy">scheduledBy</a></li>
+  <li><a href="#triggersReschedule" title="https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule">triggersReschedule</a></li>
+ </ul>
+ <div class="entity" id="assigns">
+  <h3>assigns<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/assigns</p>
+  <div class="comment">
+   <span class="markdown">A relationship between a Scheduler and an AssignedTask.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Scheduler" title="https://glaciation-project.eu/MetadataReferenceModel/Scheduler">Scheduler</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AssignedTask" title="https://glaciation-project.eu/MetadataReferenceModel/AssignedTask">AssignedTask</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="composedBy">
+  <h3>composedBy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/composedBy</p>
+  <div class="comment">
+   <span class="markdown">For keeping information about the SoftConstraints that are included in a Composition.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SoftConstraintComposition" title="https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition">SoftConstraintComposition</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SoftConstraint" title="https://glaciation-project.eu/MetadataReferenceModel/SoftConstraint">SoftConstraint</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="consumes">
+  <h3>consumes<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/consumes</p>
+  <div class="comment">
+   <span class="markdown">A property for recording the Resource(s) of each AssignedTask.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AssignedTask" title="https://glaciation-project.eu/MetadataReferenceModel/AssignedTask">AssignedTask</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAspect">
+  <h3>hasAspect<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasAspect</p>
+  <div class="comment">
+   <span class="markdown">For keeping information about the Aspect of each Constraint, e.g., time, power consumption.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Constraint" title="https://glaciation-project.eu/MetadataReferenceModel/Constraint">Constraint</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Aspect" title="https://glaciation-project.eu/MetadataReferenceModel/Aspect">Aspect</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasComposition">
+  <h3>hasComposition<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasComposition</p>
+  <div class="comment">
+   <span class="markdown">For keeping information about the Composition of the SoftConstraints of a Task.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SoftConstraintComposition" title="https://glaciation-project.eu/MetadataReferenceModel/SoftConstraintComposition">SoftConstraintComposition</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasConstraint">
+  <h3>hasConstraint<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasConstraint</p>
+  <div class="comment">
+   <span class="markdown">A relationship for recording all the Constraints of a Task.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Constraint" title="https://glaciation-project.eu/MetadataReferenceModel/Constraint">Constraint</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasResourceMeasurement">
+  <h3>hasResourceMeasurement<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasResourceMeasurement</p>
+  <div class="comment">
+   <span class="markdown">A relationship between a Resource and a Measurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasStatus">
+  <h3>hasStatus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasStatus</p>
+  <div class="comment">
+   <span class="markdown">A relationship between any Class and its Status.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Status" title="https://glaciation-project.eu/MetadataReferenceModel/Status">Status</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSubResource">
+  <h3>hasSubResource<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasSubResource</p>
+  <div class="comment">
+   <span class="markdown">Relationships for recording the SubResource(s) of each Resource (e.g, the hardware of a node).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTaskMeasurement">
+  <h3>hasTaskMeasurement<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement</p>
+  <div class="comment">
+   <span class="markdown">A relationship between a Task and a Measurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#hasTaskPredictedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement">hasTaskPredictedMeasurement</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTaskRealizedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement">hasTaskRealizedMeasurement</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTaskPredictedMeasurement">
+  <h3>hasTaskPredictedMeasurement<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasTaskPredictedMeasurement</p>
+  <div class="comment">
+   <span class="markdown">A relationship for recording the PredictedMeasurements of a Task.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#hasTaskMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement">hasTaskMeasurement</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTaskRealizedMeasurement">
+  <h3>hasTaskRealizedMeasurement<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasTaskRealizedMeasurement</p>
+  <div class="comment">
+   <span class="markdown">A relationship for recording the RealizedMeasurements (actual measurements) of a Task.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#hasTaskMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/hasTaskMeasurement">hasTaskMeasurement</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel/Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="makesMeasurement">
+  <h3>makesMeasurement<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/makesMeasurement</p>
+  <div class="comment">
+   <span class="markdown">A relationship between a MeasuringResource and a Measurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MeasuringResource" title="https://glaciation-project.eu/MetadataReferenceModel/MeasuringResource">MeasuringResource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="manages">
+  <h3>manages<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/manages</p>
+  <div class="comment">
+   <span class="markdown">A relationship between a Scheduler and a Resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Scheduler" title="https://glaciation-project.eu/MetadataReferenceModel/Scheduler">Scheduler</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="measuredIn">
+  <h3>measuredIn<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/measuredIn</p>
+  <div class="comment">
+   <span class="markdown">For recording the MeasurimentUnit of each Measurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#MeasurementUnit" title="https://glaciation-project.eu/MetadataReferenceModel/MeasurementUnit">MeasurementUnit</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="monitors">
+  <h3>monitors<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/monitors</p>
+  <div class="comment">
+   <span class="markdown">For recording which Monitor tracks an AssignedTask.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Monitor" title="https://glaciation-project.eu/MetadataReferenceModel/Monitor">Monitor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AssignedTask" title="https://glaciation-project.eu/MetadataReferenceModel/AssignedTask">AssignedTask</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="produces">
+  <h3>produces<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/produces</p>
+  <div class="comment">
+   <span class="markdown">For keeping information about the production Resource, e.g., the output, of an AssignedTask.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AssignedTask" title="https://glaciation-project.eu/MetadataReferenceModel/AssignedTask">AssignedTask</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel/Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="relatesToConstraint">
+  <h3>relatesToConstraint<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/relatesToConstraint</p>
+  <div class="comment">
+   <span class="markdown">For keeping information about the Constraint that each Measurement relates to.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Constraint" title="https://glaciation-project.eu/MetadataReferenceModel/Constraint">Constraint</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="relatesToMeasurementProperty">
+  <h3>relatesToMeasurementProperty<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/relatesToMeasurementProperty</p>
+  <div class="comment">
+   <span class="markdown">For recording the MeasurementProperty of each Measurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#MeasurementProperty" title="https://glaciation-project.eu/MetadataReferenceModel/MeasurementProperty">MeasurementProperty</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="reschedules">
+  <h3>reschedules<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/reschedules</p>
+  <div class="comment">
+   <span class="markdown">A relationship between a Scheduler and an AssignedTask that concerns rescheduling.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Scheduler" title="https://glaciation-project.eu/MetadataReferenceModel/Scheduler">Scheduler</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AssignedTask" title="https://glaciation-project.eu/MetadataReferenceModel/AssignedTask">AssignedTask</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="scheduledBy">
+  <h3>scheduledBy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/scheduledBy</p>
+  <div class="comment">
+   <span class="markdown">A relationship between a SubmittedTask and a Scheduler.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SubmittedTask" title="https://glaciation-project.eu/MetadataReferenceModel/SubmittedTask">SubmittedTask</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Scheduler" title="https://glaciation-project.eu/MetadataReferenceModel/Scheduler">Scheduler</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="triggersReschedule">
+  <h3>triggersReschedule<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/triggersReschedule</p>
+  <div class="comment">
+   <span class="markdown">A triggered event relationship about Rescheduling from a Monitor.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Monitor" title="https://glaciation-project.eu/MetadataReferenceModel/Monitor">Monitor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Scheduler" title="https://glaciation-project.eu/MetadataReferenceModel/Scheduler">Scheduler</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#endingInterval" title="https://glaciation-project.eu/MetadataReferenceModel/endingInterval">endingInterval</a></li>
+  <li><a href="#endTime" title="https://glaciation-project.eu/MetadataReferenceModel/endTime">endTime</a></li>
+  <li><a href="#hasAggregatedFuntion" title="https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion">hasAggregatedFuntion</a></li>
+  <li><a href="#hasConfiguration" title="https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration">hasConfiguration</a></li>
+  <li><a href="#hasDescription" title="https://glaciation-project.eu/MetadataReferenceModel/hasDescription">hasDescription</a></li>
+  <li><a href="#hasID" title="https://glaciation-project.eu/MetadataReferenceModel/hasID">hasID</a></li>
+  <li><a href="#hasTimestamp" title="https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp">hasTimestamp</a></li>
+  <li><a href="#hasValue" title="https://glaciation-project.eu/MetadataReferenceModel/hasValue">hasValue</a></li>
+  <li><a href="#startingInterval" title="https://glaciation-project.eu/MetadataReferenceModel/startingInterval">startingInterval</a></li>
+  <li><a href="#startTime" title="https://glaciation-project.eu/MetadataReferenceModel/startTime">startTime</a></li>
+  <li><a href="#statusCode" title="https://glaciation-project.eu/MetadataReferenceModel/statusCode">statusCode</a></li>
+  <li><a href="#timeStepResolution" title="https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution">timeStepResolution</a></li>
+ </ul>
+ <div class="entity" id="endingInterval">
+  <h3>endingInterval<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/endingInterval</p>
+  <div class="comment">
+   <span class="markdown">The ending interval time of an AggregatedMeasurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AggregatedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement">AggregatedMeasurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date Time Stamp</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="endTime">
+  <h3>endTime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/endTime</p>
+  <div class="comment">
+   <span class="markdown">The end time of a Status of any Class.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Status" title="https://glaciation-project.eu/MetadataReferenceModel/Status">Status</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date Time Stamp</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAggregatedFuntion">
+  <h3>hasAggregatedFuntion<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasAggregatedFuntion</p>
+  <div class="comment">
+   <span class="markdown">The AggregatedFunction of an AggregatedMeasurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AggregatedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement">AggregatedMeasurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasConfiguration">
+  <h3>hasConfiguration<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasConfiguration</p>
+  <div class="comment">
+   <span class="markdown">The Configuration of any instance of a Class, e.g., Task, Resource, etc.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDescription">
+  <h3>hasDescription<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasDescription</p>
+  <div class="comment">
+   <span class="markdown">The Description of any entity.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasID">
+  <h3>hasID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasID</p>
+  <div class="comment">
+   <span class="markdown">The ID of any entity.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel/Class">Class</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTimestamp">
+  <h3>hasTimestamp<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasTimestamp</p>
+  <div class="comment">
+   <span class="markdown">The date and time of a Measurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date Time Stamp</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasValue">
+  <h3>hasValue<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/hasValue</p>
+  <div class="comment">
+   <span class="markdown">The Value of a Measurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel/Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="startingInterval">
+  <h3>startingInterval<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/startingInterval</p>
+  <div class="comment">
+   <span class="markdown">The starting interval time of an AggregatedMeasurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AggregatedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement">AggregatedMeasurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date Time Stamp</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="startTime">
+  <h3>startTime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/startTime</p>
+  <div class="comment">
+   <span class="markdown">The date and time of a Status.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Status" title="https://glaciation-project.eu/MetadataReferenceModel/Status">Status</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTimeStamp" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTimeStamp">date Time Stamp</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="statusCode">
+  <h3>statusCode<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/statusCode</p>
+  <div class="comment">
+   <span class="markdown">The status code of a Status.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Status" title="https://glaciation-project.eu/MetadataReferenceModel/Status">Status</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="timeStepResolution">
+  <h3>timeStepResolution<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel/timeStepResolution</p>
+  <div class="comment">
+   <span class="markdown">The time step resolution of an AggregatedMeasurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#AggregatedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel/AggregatedMeasurement">AggregatedMeasurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract"> <span>abstract</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/contributor" title="http://purl.org/dc/elements/1.1/contributor"> <span>contributor</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/issued" title="http://purl.org/dc/elements/1.1/issued"> <span>issued</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri"> <span>preferred Namespace Uri</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/prefferedNamespacePrefix" title="http://purl.org/vocab/vann/prefferedNamespacePrefix"> <span>preffered Namespace Prefix</span> </a></li>
+  <li><a href="#http://purl.org/ontology/bibo/status" title="http://purl.org/ontology/bibo/status"> <span>status</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/abstract">
+  <h3>abstract<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/contributor">
+  <h3>contributor<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/contributor</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/created">
+  <h3>created<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/issued">
+  <h3>issued<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/issued</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+  <h3>preferred Namespace Uri<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/prefferedNamespacePrefix">
+  <h3>preffered Namespace Prefix<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/prefferedNamespacePrefix</p>
+ </div>
+ <div class="entity" id="http://purl.org/ontology/bibo/status">
+  <h3>status<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/ontology/bibo/status</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

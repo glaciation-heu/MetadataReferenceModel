@@ -1,0 +1,482 @@
+[
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#CPU",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Denotes a CPU (e.g., of a node)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "CPU"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Cluster",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A cluster consisting of a set of worker machines called nodes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Cluster"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Container",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A ready to run software package containing everything to run an application"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Container"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DaemonSetWorkload",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A workload providing facilities to nodes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Daemon Set Workload"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DeploymentWorkload",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A managing stateless workload"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Deployment Workload"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#GPU",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Denotes a GPU (e.g., of a node)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GPU"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#JobWorkload",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A workload with tasks that run to completion only once"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Job Workload"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Denotes the network (e.g., of a node)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Network"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Node",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A node, e.g., a virtual or physical machine"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Node"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#POD",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Smallest deployable units of computing that one can create and manage in Kubernetes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "POD"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#RAM",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Denotes a RAM (e.g., of a node)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "RAM"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#StatefulSetWorkload",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A managing stateful workload"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Stateful Set Workload"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Storage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Denotes the Storage (e.g., of a node)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Storage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A workload is an application running on Kubernetes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Workload"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#Task"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasArchitecture",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Architecture of Work producing resources."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasArchitecture"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasContainerImage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Image of POD or Container"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Container"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasImage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasHostName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Host Name of a network"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasHostName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasNetworkIP",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Network IP of a network"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasNetworkIP"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasPort",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Port of POD"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#POD"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasPort"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasSoftwareVersion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Software Version of Node"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Node"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasSoftwareVersion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  }
+]

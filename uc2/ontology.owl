@@ -1,0 +1,523 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://glaciation-project.eu/MetadataReferenceModel/uc2#> .
+
+
+#################################################################
+#    Data Properties
+#################################################################
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPatternType
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPatternType> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Pattern type of Projector" ;
+                                                               rdfs:label "hasPatternType" .	
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasIlluminatingComponent
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasIlluminatingComponent> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Illuminating Component of Projector" ;
+                                                               rdfs:label "hasIlluminatingComponent" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserController
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserController> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Laser Controller of Projector" ;
+                                                               rdfs:label "hasLaserController" .															   
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasOpticalPower
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasOpticalPower> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Optical Power of Projector" ;
+                                                               rdfs:label "hasOpticalPower" .															   
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserWaveLength
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserWaveLength> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Laser Wave Length of Projector" ;
+                                                               rdfs:label "hasLaserWaveLength" .															   
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserCompliance
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserCompliance> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Laser Compliance of Projector" ;
+                                                               rdfs:label "hasLaserCompliance" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfProjection
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfProjection> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Horizontal Field Of Projection" ;
+                                                               rdfs:label "hasHorizontalFieldOfProjection" .
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfProjection
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfProjection> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Vertical Field Of Projection" ;
+                                                               rdfs:label "hasVerticalFieldOfProjection" .
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfProjection
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfProjection> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Diagonal Field Of Projection" ;
+                                                               rdfs:label "hasDiagonalFieldOfProjection" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageResolution
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageResolution> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#CameraSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Image Resolution of camera sensor" ;
+                                                               rdfs:label "hasImageResolution" .	
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSensorAspectRatio
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSensorAspectRatio> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Sensor Aspect Ratio" ;
+                                                               rdfs:label "hasSensorAspectRatio" .
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFormat
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFormat> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Format of  Sensor" ;
+                                                               rdfs:label "hasFormat" .															   
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFnumber
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFnumber> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "has F number of Dell Sensor" ;
+                                                               rdfs:label "hasFnumber" .															   
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocalLength
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocalLength> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Focal Length of Dell Sensor" ;
+                                                               rdfs:label "hasFocalLength" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFilterType
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFilterType> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Filter Type of Dell Sensor" ;
+                                                               rdfs:label "hasFilterType" .															   
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocus
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocus> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Focus of Dell Sensor" ;
+                                                               rdfs:label "hasFocus" .															   
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasShutterType
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasShutterType> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Shutter type of Dell Sensor" ;
+                                                               rdfs:label "hasShutterType" .	
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSignalinterface
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSignalinterface> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Signal interface of Dell Sensor" ;
+                                                               rdfs:label "hasSignalinterface" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfView
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfView> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Horizontal field of view of Dell Sensor" ;
+                                                               rdfs:label "hasHorizontalFieldOfView" .
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfView
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfView> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Vertical field of view of Dell Sensor" ;
+                                                               rdfs:label "hasVerticalFieldOfView" .
+
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfView
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfView> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Diagonal field of view of Dell Sensor" ;
+                                                               rdfs:label "hasDiagonalFieldOfView" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDistortion
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDistortion> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Distortion of Dell Sensor" ;
+                                                               rdfs:label "hasDistortion" .
+															   
+															   
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageSensor
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageSensor> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Image Sensor of Colour Sensor" ;
+                                                               rdfs:label "hasImageSensor" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasColorImageSignalProcessor
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasColorImageSignalProcessor> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Color Image Signal Processor Colour Sensor" ;
+                                                               rdfs:label "hasColorImageSignalProcessor" .
+													
+															   
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageActivePixels
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageActivePixels> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Image Active Pixels of Colour Sensor" ;
+                                                               rdfs:label "hasImageActivePixels" .
+														   
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasProductName
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasProductName> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The product name of a robot" ;
+                                                               rdfs:label "hasProductName" .	
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMotorReductionRatio
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMotorReductionRatio> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The motor reduction ratio of a robot" ;
+                                                               rdfs:label "hasMotorReductionRatio" .	
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxSpeed
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxSpeed> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The max speed of a robot" ;
+                                                               rdfs:label "hasMaxSpeed" .															   
+															   
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWeight
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWeight> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The weight of a robot" ;
+                                                               rdfs:label "hasWeight" .
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxPayload
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxPayload> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The Max Payload of a robot" ;
+                                                               rdfs:label "hasMaxPayload" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSize
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSize> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The size of a robot" ;
+                                                               rdfs:label "hasSize" .
+															   
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMinimalTurningRadius
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMinimalTurningRadius> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The minimal turning radius of a robot" ;
+                                                               rdfs:label "hasMinimalTurningRadius" .
+															   
+															    
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasBatteryLife
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasBatteryLife> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The battery life of a robot" ;
+                                                               rdfs:label "hasBatteryLife" .
+															   
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPowerSupply
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPowerSupply> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The power supply of a robot" ;
+                                                               rdfs:label "hasPowerSupply" .															   
+															   
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSteeringGear
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSteeringGear> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The steering gear of a robot" ;
+                                                               rdfs:label "hasSteeringGear" .															   
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWheels
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWheels> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The wheels of a robot" ;
+                                                               rdfs:label "hasWheels" .															   
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasEncoder
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasEncoder> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The encoder of a robot" ;
+                                                               rdfs:label "hasEncoder" .															   
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSuspensionSystem
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSuspensionSystem> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The suspension system of a robot" ;
+                                                               rdfs:label "hasSuspensionSystem" .															   
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasControlInterface
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasControlInterface> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The control interface" ;
+                                                               rdfs:label "hasControlInterface" .
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasController
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasController> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The controller of a robot" ;
+                                                               rdfs:label "hasController" .															   
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasUSB
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasUSB> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The usb of a robot" ;
+                                                               rdfs:label "hasUSB" .	 
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataURN
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataURN> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Data URN" ;
+                                                               rdfs:label "hasDataURN" .															   											   												  
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataLocation
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataLocation> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Data Location" ;
+                                                               rdfs:label "hasDataLocation" .															   											   												  
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataFormat
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataFormat> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Data Format" ;
+                                                               rdfs:label "hasDataFormat" .
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimagesFolder
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimagesFolder> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "RGB images folder" ;
+                                                               rdfs:label "hasRGBimagesFolder" .
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageResolution
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageResolution> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "RGB image Resolution" ;
+                                                               rdfs:label "hasRGBimageResolution" .
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageFramerate
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageFramerate> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "RGB image framerate" ;
+                                                               rdfs:label "hasRGBimageFramerate" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImagesFolder
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImagesFolder> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Depth Images Folder" ;
+                                                               rdfs:label "hasDepthImagesFolder" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageResolution
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageResolution> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Depth Image Resolution" ;
+                                                               rdfs:label "hasDepthImageResolution" .  
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageFrameRate
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageFrameRate> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Depth Image Frame Rate" ;
+                                                               rdfs:label "hasDepthImageFrameRate" .
+															   
+															   
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImagesFolder
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImagesFolder> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "3D point Cloud Images Folder" ;
+                                                               rdfs:label "has3DpointCloudImagesFolder" .
+															     
+															   
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageResolution
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageResolution> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "3D point Cloud Image Resolution" ;
+                                                               rdfs:label "has3DpointCloudImageResolution" .  
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageFrameRate  
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageFrameRate> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "3D point Cloud Image Frame Rate" ;
+                                                               rdfs:label "has3DpointCloudImageFrameRate" .															  
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageAnnotationsFolder  
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageAnnotationsFolder> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Image Annotations Folder" ;
+                                                               rdfs:label "hasImageAnnotationsFolder" .   
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#Resource> ;
+                                                                     rdfs:comment "A Dell Resource" ;
+                                                                     rdfs:label "DellResource" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#Image
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Image> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource> ;
+                                                                     rdfs:comment "A produced image" ;
+                                                                     rdfs:label "Image" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#DataPoint
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DataPoint> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource> ;
+                                                                     rdfs:comment "A Data Point" ;
+                                                                     rdfs:label "A data point" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> ;
+ 								     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource> ;
+                                                                     rdfs:comment "A Dell Sensor" ;
+                                                                     rdfs:label "DellSensor" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#CameraSensor
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#CameraSensor> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> ;
+                                                                     rdfs:comment "A Camera Sensor" ;
+                                                                     rdfs:label "CameraSensor" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> ;
+ 								     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource> ;
+                                                                     rdfs:comment "Projector" ;
+                                                                     rdfs:label "Projector" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> ;
+ 								     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource> ;
+                                                                     rdfs:comment "A Colour Sensor" ;
+                                                                     rdfs:label "ColourSensor" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> ;
+ 								     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource> ;
+                                                                     rdfs:comment "A Robot" ;
+                                                                     rdfs:label "Robot" .

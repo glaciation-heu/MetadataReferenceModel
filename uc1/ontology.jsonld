@@ -1,0 +1,477 @@
+[
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A badge for being read from a turnstile reader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Badge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#Resource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A scanning task where a badge is read from a turnstile reader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ScanningTask"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A turnstile reader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "TurnstileReader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#Resource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#badgeEnabled",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Boolean value for storing if the badge enabled from the turnstile reader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "badgeEnabled"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#hasActivationDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Reader activation date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader"
+      },
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasReaderActivationDate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeIdentifier",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Identifier Badge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasBadgeIdentifier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Badge Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasBadgeType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#hasDataConcentratorServer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Server hosted in CED that collects data from remote readers"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDataConcentratorServer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Reader Code of TurnstileReader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasReaderCode"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderHead",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Has unique Reader identifier used in timestamp XML."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasReaderHead"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Use of the Reader, e.g., presence detection or canteen access."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasReaderType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#hasRegion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Geographical region where the reader is installed"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDataConcentratorServer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestamp",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Unique timestamp"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader"
+      },
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask"
+      },
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasTimestampIdentifier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestampDirection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Direction of the timestamp, left to right or right to left"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasTimestampDirection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#readBadge",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A task when a badge read"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "readBadge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#usedTurnstileReader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The used Turnstile Reader for a given scanning task"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "usedTurnstileReader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  }
+]

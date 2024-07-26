@@ -1,0 +1,1856 @@
+[
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#CameraSensor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Camera Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "CameraSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Colour Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ColourSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      },
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DataPoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Data Point"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "A data point"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Dell Resource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#Resource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      },
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Image",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A produced image"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Image"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      },
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      },
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageFrameRate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "3D point Cloud Image Frame Rate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has3DpointCloudImageFrameRate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageResolution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "3D point Cloud Image Resolution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has3DpointCloudImageResolution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImagesFolder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "3D point Cloud Images Folder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has3DpointCloudImagesFolder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasBatteryLife",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The battery life of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasBatteryLife"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasColorImageSignalProcessor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Color Image Signal Processor Colour Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasColorImageSignalProcessor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasControlInterface",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The control interface"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasControlInterface"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasController",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The controller of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasController"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataFormat",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Data Format"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDataFormat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataLocation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Data Location"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDataLocation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataURN",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Data URN"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDataURN"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageFrameRate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Depth Image Frame Rate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDepthImageFrameRate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageResolution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Depth Image Resolution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDepthImageResolution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImagesFolder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Depth Images Folder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDepthImagesFolder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfProjection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Diagonal Field Of Projection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDiagonalFieldOfProjection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfView",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Diagonal field of view of Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDiagonalFieldOfView"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDistortion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Distortion of Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDistortion"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasEncoder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The encoder of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasEncoder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFilterType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Filter Type of Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasFilterType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFnumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "has F number of Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasFnumber"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocalLength",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Focal Length of Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasFocalLength"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Focus of Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasFocus"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFormat",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Format of  Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasFormat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfProjection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Horizontal Field Of Projection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasHorizontalFieldOfProjection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfView",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Horizontal field of view of Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasHorizontalFieldOfView"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasIlluminatingComponent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Illuminating Component of Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasIlluminatingComponent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageActivePixels",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Image Active Pixels of Colour Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasImageActivePixels"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageAnnotationsFolder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Image Annotations Folder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasImageAnnotationsFolder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageResolution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Image Resolution of camera sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#CameraSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasImageResolution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageSensor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Image Sensor of Colour Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasImageSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserCompliance",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Laser Compliance of Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasLaserCompliance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserController",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Laser Controller of Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasLaserController"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserWaveLength",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Laser Wave Length of Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasLaserWaveLength"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxPayload",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The Max Payload of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasMaxPayload"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxSpeed",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The max speed of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasMaxSpeed"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMinimalTurningRadius",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The minimal turning radius of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasMinimalTurningRadius"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMotorReductionRatio",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The motor reduction ratio of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasMotorReductionRatio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasOpticalPower",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optical Power of Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasOpticalPower"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPatternType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Pattern type of Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasPatternType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPowerSupply",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The power supply of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasPowerSupply"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasProductName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The product name of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasProductName"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageFramerate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "RGB image framerate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasRGBimageFramerate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageResolution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "RGB image Resolution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasRGBimageResolution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimagesFolder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "RGB images folder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasRGBimagesFolder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSensorAspectRatio",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Sensor Aspect Ratio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasSensorAspectRatio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasShutterType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Shutter type of Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasShutterType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSignalinterface",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Signal interface of Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasSignalinterface"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSize",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The size of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasSize"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSteeringGear",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The steering gear of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasSteeringGear"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSuspensionSystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The suspension system of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasSuspensionSystem"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasUSB",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The usb of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasUSB"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfProjection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Vertical Field Of Projection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasVerticalFieldOfProjection"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfView",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Vertical field of view of Dell Sensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasVerticalFieldOfView"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWeight",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The weight of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasWeight"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWheels",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The wheels of a robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasWheels"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ]
+  }
+]

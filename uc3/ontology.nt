@@ -1,0 +1,70 @@
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasPrivacyMechanism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasPrivacyMechanism> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasPrivacyMechanism> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasPrivacyMechanism> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasPrivacyMechanism> <http://www.w3.org/2000/01/rdf-schema#comment> "The Differential Privacy (DP) mechanism to apply. Alternatives: Laplace, Gaussian, Geometric" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasPrivacyMechanism> <http://www.w3.org/2000/01/rdf-schema#label> "hasPrivacyMechanism" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasEpsilon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasEpsilon> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasEpsilon> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasEpsilon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasEpsilon> <http://www.w3.org/2000/01/rdf-schema#comment> "Privacy parameter of DP" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasEpsilon> <http://www.w3.org/2000/01/rdf-schema#label> "hasEpsilon" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasDelta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasDelta> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasDelta> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasDelta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasDelta> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameter to allow negligible DP violation probability." .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasDelta> <http://www.w3.org/2000/01/rdf-schema#label> "hasDelta" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSensitivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSensitivity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSensitivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSensitivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSensitivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum absolute result difference on neighbouring inputs, implicitly defines the function for which the mechanism is applied." .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSensitivity> <http://www.w3.org/2000/01/rdf-schema#label> "hasSensitivity" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasTargetColumn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasTargetColumn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasTargetColumn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasTargetColumn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasTargetColumn> <http://www.w3.org/2000/01/rdf-schema#comment> "Optionally, in case the data consists of multiple columns, such as CSV, the column to be sanitized can be explicitly defined." .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasTargetColumn> <http://www.w3.org/2000/01/rdf-schema#label> "hasTargetColumn" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprotocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprotocol> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprotocol> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprotocol> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprotocol> <http://www.w3.org/2000/01/rdf-schema#comment> "Protocol to realize MPC, additive secret sharing, Shamir secret sharing, replicated secret sharing" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprotocol> <http://www.w3.org/2000/01/rdf-schema#label> "hasMPCprotocol" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasNumberOfMPCparties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasNumberOfMPCparties> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasNumberOfMPCparties> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasNumberOfMPCparties> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasNumberOfMPCparties> <http://www.w3.org/2000/01/rdf-schema#comment> "Sometimes implicitly defined by mpc_protocol" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasNumberOfMPCparties> <http://www.w3.org/2000/01/rdf-schema#label> "hasNumberOfMPCparties" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSecurityModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSecurityModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSecurityModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSecurityModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSecurityModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Sometimes implicitly defined by mpc protocol" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSecurityModel> <http://www.w3.org/2000/01/rdf-schema#label> "hasSecurityModel" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasModulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasModulus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasModulus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasModulus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasModulus> <http://www.w3.org/2000/01/rdf-schema#comment> "the modulus for the MPC" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasModulus> <http://www.w3.org/2000/01/rdf-schema#label> "hasModulus" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCconnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCconnection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCconnection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCconnection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCconnection> <http://www.w3.org/2000/01/rdf-schema#comment> "URL, IP addresses of the computing parties as they perform a distributed, interactive computation that requires exchanging messages, e.g., to update computation state. " .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCconnection> <http://www.w3.org/2000/01/rdf-schema#label> "hasMPCconnection" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprogram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprogram> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprogram> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprogram> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprogram> <http://www.w3.org/2000/01/rdf-schema#comment> "Code (or name of pre-defined program) to be computed in MPC." .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprogram> <http://www.w3.org/2000/01/rdf-schema#label> "hasMPCprogram" .
+<https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> .
+<https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload> <http://www.w3.org/2000/01/rdf-schema#comment> "A multi-party computation workload" .
+<https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload> <http://www.w3.org/2000/01/rdf-schema#label> "MPCworkload" .

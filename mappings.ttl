@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix glc: <https://glaciation-project.eu/MetadataReferenceModel/> .
+@prefix saref: <https://saref.etsi.org/core/> .
+
+
+<http://www.w3.org/ns/dcat#Dataset> rdfs:subClassOf glc:NonWorkProducingResource .
+glc:AssignedTask rdfs:subClassOf saref:FeatureOfInterest . 
+glc:Resource rdfs:subClassOf saref:FeatureOfInterest . 
+glc:MeasuringResource  rdfs:subClassOf saref:Device . 
+glc:Measurement rdfs:subClassOf saref:Measurement .
+glc:MeasurementUnit rdfs:subClassOf saref:UnitOfMeasure .
+glc:MeasurementProperty rdfs:subClassOf saref:Property .
+glc:hasTaskMeasurement rdfs:subPropertyOf saref:hasMeasurement .
+glc:hasResourceMeasurement rdfs:subPropertyOf saref:hasMeasurement . 
+glc:makesMeasurement rdfs:subPropertyOf saref:makesMeasurement . 
+glc:hasTimestamp rdfs:subPropertyOf saref:hasTimestamp .
+glc:hasValue rdfs:subPropertyOf saref:hasValue .
+glc:measuredIn  rdfs:subPropertyOf saref:isMeasuredIn .
+glc:relatesToMeasurementProperty rdfs:subPropertyOf saref:relatesToProperty .

@@ -1,0 +1,92 @@
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasArchitecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasArchitecture> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasArchitecture> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasArchitecture> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasArchitecture> <http://www.w3.org/2000/01/rdf-schema#comment> "Architecture of Work producing resources." .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasArchitecture> <http://www.w3.org/2000/01/rdf-schema#label> "hasArchitecture" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasContainerImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasContainerImage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasContainerImage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Container> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasContainerImage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasContainerImage> <http://www.w3.org/2000/01/rdf-schema#comment> "Image of POD or Container" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasContainerImage> <http://www.w3.org/2000/01/rdf-schema#label> "hasImage" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasPort> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasPort> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#POD> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasPort> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasPort> <http://www.w3.org/2000/01/rdf-schema#comment> "Port of POD" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasPort> <http://www.w3.org/2000/01/rdf-schema#label> "hasPort" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasSoftwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Node> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Software Version of Node" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasSoftwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "hasSoftwareVersion" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasHostName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasHostName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasHostName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasHostName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasHostName> <http://www.w3.org/2000/01/rdf-schema#comment> "Host Name of a network" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasHostName> <http://www.w3.org/2000/01/rdf-schema#label> "hasHostName" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasNetworkIP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasNetworkIP> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasNetworkIP> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasNetworkIP> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasNetworkIP> <http://www.w3.org/2000/01/rdf-schema#comment> "Network IP of a network" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasNetworkIP> <http://www.w3.org/2000/01/rdf-schema#label> "hasNetworkIP" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Task> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> <http://www.w3.org/2000/01/rdf-schema#comment> "A workload is an application running on Kubernetes" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> <http://www.w3.org/2000/01/rdf-schema#label> "Workload" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DeploymentWorkload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DeploymentWorkload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DeploymentWorkload> <http://www.w3.org/2000/01/rdf-schema#comment> "A managing stateless workload" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DeploymentWorkload> <http://www.w3.org/2000/01/rdf-schema#label> "Deployment Workload" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#StatefulSetWorkload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#StatefulSetWorkload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#StatefulSetWorkload> <http://www.w3.org/2000/01/rdf-schema#comment> "A managing stateful workload" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#StatefulSetWorkload> <http://www.w3.org/2000/01/rdf-schema#label> "Stateful Set Workload" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DaemonSetWorkload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DaemonSetWorkload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DaemonSetWorkload> <http://www.w3.org/2000/01/rdf-schema#comment> "A workload providing facilities to nodes" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DaemonSetWorkload> <http://www.w3.org/2000/01/rdf-schema#label> "Daemon Set Workload" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#JobWorkload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#JobWorkload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#JobWorkload> <http://www.w3.org/2000/01/rdf-schema#comment> "A workload with tasks that run to completion only once" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#JobWorkload> <http://www.w3.org/2000/01/rdf-schema#label> "Job Workload" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Cluster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Cluster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Cluster> <http://www.w3.org/2000/01/rdf-schema#comment> "A cluster consisting of a set of worker machines called nodes" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Cluster> <http://www.w3.org/2000/01/rdf-schema#label> "Cluster" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Node> <http://www.w3.org/2000/01/rdf-schema#comment> "A node, e.g., a virtual or physical machine" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Node> <http://www.w3.org/2000/01/rdf-schema#label> "Node" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#POD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#POD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#POD> <http://www.w3.org/2000/01/rdf-schema#comment> "Smallest deployable units of computing that one can create and manage in Kubernetes" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#POD> <http://www.w3.org/2000/01/rdf-schema#label> "POD" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Container> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Container> <http://www.w3.org/2000/01/rdf-schema#comment> "A ready to run software package containing everything to run an application" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Container> <http://www.w3.org/2000/01/rdf-schema#label> "Container" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#CPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#CPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#CPU> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes a CPU (e.g., of a node)" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#CPU> <http://www.w3.org/2000/01/rdf-schema#label> "CPU" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#GPU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#GPU> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#GPU> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes a GPU (e.g., of a node)" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#GPU> <http://www.w3.org/2000/01/rdf-schema#label> "GPU" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#RAM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#RAM> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#RAM> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes a RAM (e.g., of a node)" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#RAM> <http://www.w3.org/2000/01/rdf-schema#label> "RAM" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Storage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Storage> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes the Storage (e.g., of a node)" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Storage> <http://www.w3.org/2000/01/rdf-schema#label> "Storage" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes the network (e.g., of a node)" .
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network> <http://www.w3.org/2000/01/rdf-schema#label> "Network" .

@@ -1,0 +1,101 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://glaciation-project.eu/MetadataReferenceModel/uc3#> .
+
+
+
+#################################################################
+#    Data Properties
+#################################################################
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasPrivacyMechanism> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "The Differential Privacy (DP) mechanism to apply. Alternatives: Laplace, Gaussian, Geometric" ;
+                                                               rdfs:label "hasPrivacyMechanism" .															   
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasEpsilon> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Privacy parameter of DP" ;
+                                                               rdfs:label "hasEpsilon" .															   
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasDelta> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Parameter to allow negligible DP violation probability." ;
+                                                               rdfs:label "hasDelta" .	
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSensitivity> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Maximum absolute result difference on neighbouring inputs, implicitly defines the function for which the mechanism is applied." ;
+                                                               rdfs:label "hasSensitivity" .
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasTargetColumn> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Optionally, in case the data consists of multiple columns, such as CSV, the column to be sanitized can be explicitly defined." ;
+                                                               rdfs:label "hasTargetColumn" .															   
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprotocol> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Protocol to realize MPC, additive secret sharing, Shamir secret sharing, replicated secret sharing" ;
+                                                               rdfs:label "hasMPCprotocol" .															   
+
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasNumberOfMPCparties> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:integer;
+                                                               rdfs:comment "Sometimes implicitly defined by mpc_protocol" ;
+                                                               rdfs:label "hasNumberOfMPCparties" .						
+
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasSecurityModel> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Sometimes implicitly defined by mpc protocol" ;
+                                                               rdfs:label "hasSecurityModel" .																					   
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasModulus> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "the modulus for the MPC" ;
+                                                               rdfs:label "hasModulus" .																					   
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCconnection> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "URL, IP addresses of the computing parties as they perform a distributed, interactive computation that requires exchanging messages, e.g., to update computation state. " ;
+                                                               rdfs:label "hasMPCconnection" .																					   
+
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprogram> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Code (or name of pre-defined program) to be computed in MPC." ;
+                                                               rdfs:label "hasMPCprogram" .																					   
+															   
+#################################################################
+#    Classes
+#################################################################
+
+###  https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload
+<https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> ;
+                                                                     rdfs:comment "A multi-party computation workload" ;
+                                                                     rdfs:label "MPCworkload" .

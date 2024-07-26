@@ -1,0 +1,93 @@
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#readBadge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#readBadge> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#readBadge> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#readBadge> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#readBadge> <http://www.w3.org/2000/01/rdf-schema#comment> "A task when a badge read" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#readBadge> <http://www.w3.org/2000/01/rdf-schema#label> "readBadge" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#usedTurnstileReader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#usedTurnstileReader> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#usedTurnstileReader> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#usedTurnstileReader> <http://www.w3.org/2000/01/rdf-schema#range> <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#usedTurnstileReader> <http://www.w3.org/2000/01/rdf-schema#comment> "The used Turnstile Reader for a given scanning task" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#usedTurnstileReader> <http://www.w3.org/2000/01/rdf-schema#label> "usedTurnstileReader" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Reader Code of TurnstileReader" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderCode> <http://www.w3.org/2000/01/rdf-schema#label> "hasReaderCode" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasActivationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasActivationDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasActivationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasActivationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasActivationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasActivationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Reader activation date" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasActivationDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasReaderActivationDate" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderType> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of the Reader, e.g., presence detection or canteen access." .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderType> <http://www.w3.org/2000/01/rdf-schema#label> "hasReaderType" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderHead> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderHead> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Has unique Reader identifier used in timestamp XML." .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasReaderHead> <http://www.w3.org/2000/01/rdf-schema#label> "hasReaderHead" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasDataConcentratorServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasDataConcentratorServer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasDataConcentratorServer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasDataConcentratorServer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasDataConcentratorServer> <http://www.w3.org/2000/01/rdf-schema#comment> "Server hosted in CED that collects data from remote readers" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasDataConcentratorServer> <http://www.w3.org/2000/01/rdf-schema#label> "hasDataConcentratorServer" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasRegion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographical region where the reader is installed" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasRegion> <http://www.w3.org/2000/01/rdf-schema#label> "hasDataConcentratorServer" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique timestamp" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimestampIdentifier" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestampDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestampDirection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestampDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestampDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestampDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Direction of the timestamp, left to right or right to left" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasTimestampDirection> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimestampDirection" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#badgeEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#badgeEnabled> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#badgeEnabled> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#badgeEnabled> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#badgeEnabled> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean value for storing if the badge enabled from the turnstile reader" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#badgeEnabled> <http://www.w3.org/2000/01/rdf-schema#label> "badgeEnabled" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier Badge" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "hasBadgeIdentifier" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeType> <http://www.w3.org/2000/01/rdf-schema#comment> "Badge Type" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#hasBadgeType> <http://www.w3.org/2000/01/rdf-schema#label> "hasBadgeType" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> <http://www.w3.org/2000/01/rdf-schema#comment> "A turnstile reader" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#TurnstileReader> <http://www.w3.org/2000/01/rdf-schema#label> "TurnstileReader" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> <http://www.w3.org/2000/01/rdf-schema#comment> "A badge for being read from a turnstile reader" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#Badge> <http://www.w3.org/2000/01/rdf-schema#label> "Badge" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> <http://www.w3.org/2000/01/rdf-schema#comment> "A scanning task where a badge is read from a turnstile reader" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc1#ScanningTask> <http://www.w3.org/2000/01/rdf-schema#label> "ScanningTask" .

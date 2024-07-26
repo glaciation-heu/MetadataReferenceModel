@@ -1,0 +1,360 @@
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPatternType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPatternType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPatternType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPatternType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPatternType> <http://www.w3.org/2000/01/rdf-schema#comment> "Pattern type of Projector" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPatternType> <http://www.w3.org/2000/01/rdf-schema#label> "hasPatternType" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasIlluminatingComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasIlluminatingComponent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasIlluminatingComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasIlluminatingComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasIlluminatingComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Illuminating Component of Projector" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasIlluminatingComponent> <http://www.w3.org/2000/01/rdf-schema#label> "hasIlluminatingComponent" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserController> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserController> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserController> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserController> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserController> <http://www.w3.org/2000/01/rdf-schema#comment> "Laser Controller of Projector" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserController> <http://www.w3.org/2000/01/rdf-schema#label> "hasLaserController" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasOpticalPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasOpticalPower> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasOpticalPower> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasOpticalPower> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasOpticalPower> <http://www.w3.org/2000/01/rdf-schema#comment> "Optical Power of Projector" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasOpticalPower> <http://www.w3.org/2000/01/rdf-schema#label> "hasOpticalPower" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserWaveLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserWaveLength> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserWaveLength> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserWaveLength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserWaveLength> <http://www.w3.org/2000/01/rdf-schema#comment> "Laser Wave Length of Projector" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserWaveLength> <http://www.w3.org/2000/01/rdf-schema#label> "hasLaserWaveLength" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserCompliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserCompliance> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserCompliance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserCompliance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserCompliance> <http://www.w3.org/2000/01/rdf-schema#comment> "Laser Compliance of Projector" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasLaserCompliance> <http://www.w3.org/2000/01/rdf-schema#label> "hasLaserCompliance" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfProjection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#comment> "Horizontal Field Of Projection" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#label> "hasHorizontalFieldOfProjection" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfProjection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#comment> "Vertical Field Of Projection" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#label> "hasVerticalFieldOfProjection" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfProjection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#comment> "Diagonal Field Of Projection" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfProjection> <http://www.w3.org/2000/01/rdf-schema#label> "hasDiagonalFieldOfProjection" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageResolution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageResolution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#CameraSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageResolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageResolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Image Resolution of camera sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageResolution> <http://www.w3.org/2000/01/rdf-schema#label> "hasImageResolution" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSensorAspectRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSensorAspectRatio> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSensorAspectRatio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSensorAspectRatio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSensorAspectRatio> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensor Aspect Ratio" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSensorAspectRatio> <http://www.w3.org/2000/01/rdf-schema#label> "hasSensorAspectRatio" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Format of  Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFormat> <http://www.w3.org/2000/01/rdf-schema#label> "hasFormat" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFnumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFnumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFnumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFnumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFnumber> <http://www.w3.org/2000/01/rdf-schema#comment> "has F number of Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFnumber> <http://www.w3.org/2000/01/rdf-schema#label> "hasFnumber" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocalLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocalLength> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocalLength> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocalLength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocalLength> <http://www.w3.org/2000/01/rdf-schema#comment> "Focal Length of Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocalLength> <http://www.w3.org/2000/01/rdf-schema#label> "hasFocalLength" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFilterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFilterType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFilterType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFilterType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFilterType> <http://www.w3.org/2000/01/rdf-schema#comment> "Filter Type of Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFilterType> <http://www.w3.org/2000/01/rdf-schema#label> "hasFilterType" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocus> <http://www.w3.org/2000/01/rdf-schema#comment> "Focus of Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasFocus> <http://www.w3.org/2000/01/rdf-schema#label> "hasFocus" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasShutterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasShutterType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasShutterType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasShutterType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasShutterType> <http://www.w3.org/2000/01/rdf-schema#comment> "Shutter type of Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasShutterType> <http://www.w3.org/2000/01/rdf-schema#label> "hasShutterType" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSignalinterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSignalinterface> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSignalinterface> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSignalinterface> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSignalinterface> <http://www.w3.org/2000/01/rdf-schema#comment> "Signal interface of Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSignalinterface> <http://www.w3.org/2000/01/rdf-schema#label> "hasSignalinterface" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#comment> "Horizontal field of view of Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasHorizontalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#label> "hasHorizontalFieldOfView" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#comment> "Vertical field of view of Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasVerticalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#label> "hasVerticalFieldOfView" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#comment> "Diagonal field of view of Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDiagonalFieldOfView> <http://www.w3.org/2000/01/rdf-schema#label> "hasDiagonalFieldOfView" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDistortion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDistortion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDistortion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDistortion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDistortion> <http://www.w3.org/2000/01/rdf-schema#comment> "Distortion of Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDistortion> <http://www.w3.org/2000/01/rdf-schema#label> "hasDistortion" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageSensor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageSensor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Image Sensor of Colour Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageSensor> <http://www.w3.org/2000/01/rdf-schema#label> "hasImageSensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasColorImageSignalProcessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasColorImageSignalProcessor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasColorImageSignalProcessor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasColorImageSignalProcessor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasColorImageSignalProcessor> <http://www.w3.org/2000/01/rdf-schema#comment> "Color Image Signal Processor Colour Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasColorImageSignalProcessor> <http://www.w3.org/2000/01/rdf-schema#label> "hasColorImageSignalProcessor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageActivePixels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageActivePixels> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageActivePixels> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageActivePixels> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageActivePixels> <http://www.w3.org/2000/01/rdf-schema#comment> "Image Active Pixels of Colour Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageActivePixels> <http://www.w3.org/2000/01/rdf-schema#label> "hasImageActivePixels" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasProductName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasProductName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasProductName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasProductName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasProductName> <http://www.w3.org/2000/01/rdf-schema#comment> "The product name of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasProductName> <http://www.w3.org/2000/01/rdf-schema#label> "hasProductName" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMotorReductionRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMotorReductionRatio> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMotorReductionRatio> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMotorReductionRatio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMotorReductionRatio> <http://www.w3.org/2000/01/rdf-schema#comment> "The motor reduction ratio of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMotorReductionRatio> <http://www.w3.org/2000/01/rdf-schema#label> "hasMotorReductionRatio" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxSpeed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxSpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "The max speed of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaxSpeed" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWeight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWeight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWeight> <http://www.w3.org/2000/01/rdf-schema#comment> "The weight of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWeight> <http://www.w3.org/2000/01/rdf-schema#label> "hasWeight" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxPayload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxPayload> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxPayload> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxPayload> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxPayload> <http://www.w3.org/2000/01/rdf-schema#comment> "The Max Payload of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMaxPayload> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaxPayload" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSize> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSize> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSize> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSize> <http://www.w3.org/2000/01/rdf-schema#comment> "The size of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSize> <http://www.w3.org/2000/01/rdf-schema#label> "hasSize" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMinimalTurningRadius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMinimalTurningRadius> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMinimalTurningRadius> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMinimalTurningRadius> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMinimalTurningRadius> <http://www.w3.org/2000/01/rdf-schema#comment> "The minimal turning radius of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasMinimalTurningRadius> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinimalTurningRadius" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasBatteryLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasBatteryLife> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasBatteryLife> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasBatteryLife> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasBatteryLife> <http://www.w3.org/2000/01/rdf-schema#comment> "The battery life of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasBatteryLife> <http://www.w3.org/2000/01/rdf-schema#label> "hasBatteryLife" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPowerSupply> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPowerSupply> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPowerSupply> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPowerSupply> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPowerSupply> <http://www.w3.org/2000/01/rdf-schema#comment> "The power supply of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasPowerSupply> <http://www.w3.org/2000/01/rdf-schema#label> "hasPowerSupply" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSteeringGear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSteeringGear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSteeringGear> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSteeringGear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSteeringGear> <http://www.w3.org/2000/01/rdf-schema#comment> "The steering gear of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSteeringGear> <http://www.w3.org/2000/01/rdf-schema#label> "hasSteeringGear" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWheels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWheels> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWheels> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWheels> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWheels> <http://www.w3.org/2000/01/rdf-schema#comment> "The wheels of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasWheels> <http://www.w3.org/2000/01/rdf-schema#label> "hasWheels" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasEncoder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasEncoder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasEncoder> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasEncoder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasEncoder> <http://www.w3.org/2000/01/rdf-schema#comment> "The encoder of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasEncoder> <http://www.w3.org/2000/01/rdf-schema#label> "hasEncoder" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSuspensionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSuspensionSystem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSuspensionSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSuspensionSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSuspensionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The suspension system of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasSuspensionSystem> <http://www.w3.org/2000/01/rdf-schema#label> "hasSuspensionSystem" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasControlInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasControlInterface> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasControlInterface> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasControlInterface> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasControlInterface> <http://www.w3.org/2000/01/rdf-schema#comment> "The control interface" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasControlInterface> <http://www.w3.org/2000/01/rdf-schema#label> "hasControlInterface" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasController> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasController> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasController> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasController> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasController> <http://www.w3.org/2000/01/rdf-schema#comment> "The controller of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasController> <http://www.w3.org/2000/01/rdf-schema#label> "hasController" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasUSB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasUSB> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasUSB> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasUSB> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasUSB> <http://www.w3.org/2000/01/rdf-schema#comment> "The usb of a robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasUSB> <http://www.w3.org/2000/01/rdf-schema#label> "hasUSB" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataURN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataURN> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataURN> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataURN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataURN> <http://www.w3.org/2000/01/rdf-schema#comment> "Data URN" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataURN> <http://www.w3.org/2000/01/rdf-schema#label> "hasDataURN" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Data Location" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hasDataLocation" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataFormat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Data Format" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDataFormat> <http://www.w3.org/2000/01/rdf-schema#label> "hasDataFormat" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimagesFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimagesFolder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimagesFolder> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimagesFolder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimagesFolder> <http://www.w3.org/2000/01/rdf-schema#comment> "RGB images folder" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimagesFolder> <http://www.w3.org/2000/01/rdf-schema#label> "hasRGBimagesFolder" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageResolution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageResolution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageResolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageResolution> <http://www.w3.org/2000/01/rdf-schema#comment> "RGB image Resolution" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageResolution> <http://www.w3.org/2000/01/rdf-schema#label> "hasRGBimageResolution" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageFramerate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageFramerate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageFramerate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageFramerate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageFramerate> <http://www.w3.org/2000/01/rdf-schema#comment> "RGB image framerate" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasRGBimageFramerate> <http://www.w3.org/2000/01/rdf-schema#label> "hasRGBimageFramerate" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImagesFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImagesFolder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImagesFolder> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImagesFolder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImagesFolder> <http://www.w3.org/2000/01/rdf-schema#comment> "Depth Images Folder" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImagesFolder> <http://www.w3.org/2000/01/rdf-schema#label> "hasDepthImagesFolder" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageResolution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageResolution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageResolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageResolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Depth Image Resolution" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageResolution> <http://www.w3.org/2000/01/rdf-schema#label> "hasDepthImageResolution" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageFrameRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageFrameRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageFrameRate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageFrameRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageFrameRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Depth Image Frame Rate" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasDepthImageFrameRate> <http://www.w3.org/2000/01/rdf-schema#label> "hasDepthImageFrameRate" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImagesFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImagesFolder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImagesFolder> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImagesFolder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImagesFolder> <http://www.w3.org/2000/01/rdf-schema#comment> "3D point Cloud Images Folder" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImagesFolder> <http://www.w3.org/2000/01/rdf-schema#label> "has3DpointCloudImagesFolder" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageResolution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageResolution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageResolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageResolution> <http://www.w3.org/2000/01/rdf-schema#comment> "3D point Cloud Image Resolution" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageResolution> <http://www.w3.org/2000/01/rdf-schema#label> "has3DpointCloudImageResolution" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageFrameRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageFrameRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageFrameRate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageFrameRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageFrameRate> <http://www.w3.org/2000/01/rdf-schema#comment> "3D point Cloud Image Frame Rate" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#has3DpointCloudImageFrameRate> <http://www.w3.org/2000/01/rdf-schema#label> "has3DpointCloudImageFrameRate" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageAnnotationsFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageAnnotationsFolder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageAnnotationsFolder> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageAnnotationsFolder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageAnnotationsFolder> <http://www.w3.org/2000/01/rdf-schema#comment> "Image Annotations Folder" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#hasImageAnnotationsFolder> <http://www.w3.org/2000/01/rdf-schema#label> "hasImageAnnotationsFolder" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A Dell Resource" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> <http://www.w3.org/2000/01/rdf-schema#label> "DellResource" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "A produced image" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DataPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DataPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DataPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A Data Point" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DataPoint> <http://www.w3.org/2000/01/rdf-schema#label> "A data point" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A Dell Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> <http://www.w3.org/2000/01/rdf-schema#label> "DellSensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#CameraSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#CameraSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellSensor> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#CameraSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A Camera Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#CameraSensor> <http://www.w3.org/2000/01/rdf-schema#label> "CameraSensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> <http://www.w3.org/2000/01/rdf-schema#comment> "Projector" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Projector> <http://www.w3.org/2000/01/rdf-schema#label> "Projector" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A Colour Sensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#ColourSensor> <http://www.w3.org/2000/01/rdf-schema#label> "ColourSensor" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/uc2#DellResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel/uc2#MeasuringResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> <http://www.w3.org/2000/01/rdf-schema#comment> "A Robot" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc2#Robot> <http://www.w3.org/2000/01/rdf-schema#label> "Robot" .

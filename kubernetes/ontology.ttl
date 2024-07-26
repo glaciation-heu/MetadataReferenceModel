@@ -1,0 +1,156 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#> .
+
+
+
+#################################################################
+#    Data Properties
+#################################################################
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasArchitecture
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasArchitecture> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> ;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Architecture of Work producing resources." ;
+                                                               rdfs:label "hasArchitecture" .
+
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasContainerImage
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasContainerImage> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Container> ;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Image of POD or Container" ;
+                                                               rdfs:label "hasImage" .
+
+
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasPort
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasPort> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#POD>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Port of POD" ;
+                                                               rdfs:label "hasPort" .
+
+### https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasSoftwareVersion  															   
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasSoftwareVersion> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Node>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Software Version of Node" ;
+                                                               rdfs:label "hasSoftwareVersion" .
+
+
+### https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasHostName														   
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasHostName> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Host Name of a network" ;
+                                                               rdfs:label "hasHostName" .
+
+### https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasNetworkIP															   
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#hasNetworkIP> rdf:type owl:DataProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network>;
+                                                               rdfs:range  xsd:string;
+                                                               rdfs:comment "Network IP of a network" ;
+                                                               rdfs:label "hasNetworkIP" .
+							
+															   
+#################################################################
+#    Classes
+#################################################################
+
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#Task> ;
+                                                                      rdfs:comment "A workload is an application running on Kubernetes" ;
+                                                                      rdfs:label "Workload" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DeploymentWorkload																
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DeploymentWorkload> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> ;
+                                                                      rdfs:comment "A managing stateless workload" ;
+                                                                      rdfs:label "Deployment Workload" .
+																	  
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#StatefulSetWorkload																
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#StatefulSetWorkload> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> ;
+                                                                      rdfs:comment "A managing stateful workload" ;
+                                                                      rdfs:label "Stateful Set Workload" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DaemonSetWorkload																
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#DaemonSetWorkload> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> ;
+                                                                      rdfs:comment "A workload providing facilities to nodes" ;
+                                                                      rdfs:label "Daemon Set Workload" .
+																	  
+																	  
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#JobWorkload																
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#JobWorkload> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Workload> ;
+                                                                      rdfs:comment "A workload with tasks that run to completion only once" ;
+                                                                      rdfs:label "Job Workload" .
+		
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Cluster
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Cluster> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> ;
+                                                                      rdfs:comment "A cluster consisting of a set of worker machines called nodes" ;
+                                                                      rdfs:label "Cluster" .
+																	  
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Node
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Node> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> ;
+                                                                      rdfs:comment "A node, e.g., a virtual or physical machine" ;
+                                                                      rdfs:label "Node" .
+																	
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#POD
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#POD> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> ;
+                                                                      rdfs:comment "Smallest deployable units of computing that one can create and manage in Kubernetes" ;
+                                                                      rdfs:label "POD" .
+
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Container																  
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Container> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> ;
+                                                                      rdfs:comment "A ready to run software package containing everything to run an application" ;
+                                                                      rdfs:label "Container" .
+																	  
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#CPU															  
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#CPU> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> ;
+                                                                      rdfs:comment "Denotes a CPU (e.g., of a node)" ;
+                                                                      rdfs:label "CPU" .
+																	  																	  
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#GPU															  
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#GPU> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> ;
+                                                                      rdfs:comment "Denotes a GPU (e.g., of a node)" ;
+                                                                      rdfs:label "GPU" .																	  
+																	
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#RAM														  
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#RAM> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> ;
+                                                                      rdfs:comment "Denotes a RAM (e.g., of a node)" ;
+                                                                      rdfs:label "RAM" .	
+																	  
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Storage													  
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Storage> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> ;
+                                                                      rdfs:comment "Denotes the Storage (e.g., of a node)" ;
+                                                                      rdfs:label "Storage" .																		  
+																
+###  https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network													  
+<https://glaciation-project.eu/MetadataReferenceModel/kubernetes#Network> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource> ;
+                                                                      rdfs:comment "Denotes the network (e.g., of a node)" ;
+                                                                      rdfs:label "Network" .	
+																	  
