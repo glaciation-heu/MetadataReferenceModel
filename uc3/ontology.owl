@@ -91,7 +91,7 @@
     <rdfs:label>hasMPCprogram</rdfs:label>
   </owl:DataProperty>
 
-  <owl:Class rdf:about="https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload">
+  <owl:Class rdf:about="https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload">
     <rdfs:subClassOf rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#AssignedTask"/>
     <rdfs:comment>A multi-party computation workload</rdfs:comment>
     <rdfs:label>MPCworkload</rdfs:label>
