@@ -341,7 +341,7 @@
     ]
   },
   {
-    "@id": "https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload",
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

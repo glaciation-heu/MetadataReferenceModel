@@ -64,7 +64,7 @@
 <https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprogram> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprogram> <http://www.w3.org/2000/01/rdf-schema#comment> "Code (or name of pre-defined program) to be computed in MPC." .
 <https://glaciation-project.eu/MetadataReferenceModel/uc3#hasMPCprogram> <http://www.w3.org/2000/01/rdf-schema#label> "hasMPCprogram" .
-<https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> .
-<https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload> <http://www.w3.org/2000/01/rdf-schema#comment> "A multi-party computation workload" .
-<https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload> <http://www.w3.org/2000/01/rdf-schema#label> "MPCworkload" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> <http://www.w3.org/2000/01/rdf-schema#comment> "A multi-party computation workload" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> <http://www.w3.org/2000/01/rdf-schema#label> "MPCworkload" .

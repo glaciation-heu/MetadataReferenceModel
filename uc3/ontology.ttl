@@ -95,7 +95,7 @@
 #################################################################
 
 ###  https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload
-<https://glaciation-project.eu/reference_model/useCase3Metadata/MPCworkload> rdf:type owl:Class ;
+<https://glaciation-project.eu/MetadataReferenceModel/uc3#MPCworkload> rdf:type owl:Class ;
                                                                      rdfs:subClassOf <https://glaciation-project.eu/MetadataReferenceModel#AssignedTask> ;
                                                                      rdfs:comment "A multi-party computation workload" ;
                                                                      rdfs:label "MPCworkload" .
