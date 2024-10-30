@@ -11,10 +11,10 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://glaciation-project.eu/MetadataReferenceModel">
-        <owl:versionIRI rdf:resource="https://glaciation-project.eu/MetadataReferenceModel/1.0.0/"/>
+        <owl:versionIRI rdf:resource="https://glaciation-project.eu/MetadataReferenceModel/1.1.0/"/>
         <dc:contributor xml:lang="en">&quot;Konstantin Tatarnikov&quot;, &quot;Guangyuan Piao&quot;, &quot;Alessio Chellini&quot;, &quot;Paolo Tartara&quot;, &quot;Péter Forgács&quot;, &quot; Jonas Böhler&quot;</dc:contributor>
         <dc:creator xml:lang="en">&quot;Michalis Mountantonakis&quot;, &quot;Panagiotis Papadakos&quot;, &quot;Rigo Wenning&quot;</dc:creator>
-        <dc:issued>&quot;2024-07-20&quot;</dc:issued>
+        <dc:issued>&quot;2024-10-30&quot;</dc:issued>
         <terms:abstract xml:lang="en">The Glaciation Reference Metadata Model (GLC-MRM) provides a conceptual model that allows making data ingestion and data processing interoperable for all the use cases of the Glaciation project. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources.</terms:abstract>
         <terms:created>&quot;2024-07-20&quot;</terms:created>
         <terms:description xml:lang="en">The GLACIATION platform develops a novel Distributed Knowledge Graph (DKG) that stretches across the edge-core-cloud architecture to reduce energy consumption, improving data processing and optimizing data movement operations. Towards this aim, the platform needs to consume the data and metadata that are fed into the DKG. The metadata can affect and inform the decision-making processes in the GLACIATION architecture and introduces the GLACIATION Metadata Reference Model that will be used for modelling the metadata in the DKG.
@@ -23,8 +23,7 @@ The GLACIATION Reference Metadata Model makes data ingestion and processing inte
 
 There are common metadata challenges for all use cases. This stems from the use of the Kubernetes orchestration system as a basis for the GLACIATION platform. In addition, common to the platform is the ingestion of data from other sources into the DKG that can then be used to affect processing decisions. There are direct data flows from sensors within the system, but also data and metadata from sources external to the system. This allows the system to react e.g. to environmental situations like weather or temperature, but also to requirements concerning security or privacy. Exemplary uses and specializations of the reference model to the GLACIATION use cases are also provided.
 
-The GLACIATION Metadata Reference Model can be used for scheduling and performing tasks. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources. It captures the assignment of time-constrained tasks to time constrained and energy consuming resources, that can satisfy various hard and soft constraints, even compositions of such constraints. The tasks can be monitored through various measuring resources using a variety of single or aggregated, predicted or real measurements
-
+The GLACIATION Metadata Reference Model can be used for scheduling and performing tasks. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources. It captures the assignment of time-constrained tasks to time constrained and energy consuming resources, that can satisfy various hard and soft constraints, even compositions of such constraints. The tasks can be monitored through various measuring resources using a variety of single or aggregated, predicted or real measurements.
 
 The model is generic, by being both domain and application independent, describing the scheduling tasks, without providing specific solutions on how they can be solved. It can be easily adjusted to each of the current three GLACIATION use cases, covering also the Kubernetes orchestration and its Telemetry System deployed by the project. The proposed model makes it feasible to answer the competency queries defined by each of the Glaciation&apos;s use case.</terms:description>
         <terms:license rdf:resource="https://www.apache.org/licenses/LICENSE-2.0"/>
@@ -33,7 +32,7 @@ The model is generic, by being both domain and application independent, describi
         <vann:preferredNamespaceUri rdf:resource="https://glaciation-project.eu/MetadataReferenceModel"/>
         <vann:prefferedNamespacePrefix>glc</vann:prefferedNamespacePrefix>
         <rdfs:label xml:lang="en">GLACIATION Metadata Reference Model</rdfs:label>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:versionInfo>1.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -178,6 +177,19 @@ The model is generic, by being both domain and application independent, describi
     
 
 
+    <!-- https://glaciation-project.eu/MetadataReferenceModel#consumesEnergyFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://glaciation-project.eu/MetadataReferenceModel#consumesEnergyFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"/>
+        <rdfs:range rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid"/>
+        <rdfs:comment>The grid where a work producing resource consumes energy from</rdfs:comment>
+        <rdfs:label>consumesEnergyFrom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://glaciation-project.eu/MetadataReferenceModel#hasAspect -->
 
 
@@ -291,6 +303,19 @@ The model is generic, by being both domain and application independent, describi
         <rdfs:range rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#Measurement"/>
         <rdfs:comment>A relationship for recording the RealizedMeasurements (actual measurements) of a Task.</rdfs:comment>
         <rdfs:label>hasTaskRealizedMeasurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://glaciation-project.eu/MetadataReferenceModel#isLocatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://glaciation-project.eu/MetadataReferenceModel#isLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"/>
+        <rdfs:range rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#Site"/>
+        <rdfs:comment>The location of a Work Producing Resource</rdfs:comment>
+        <rdfs:label>isLocatedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -659,6 +684,39 @@ The model is generic, by being both domain and application independent, describi
     
 
 
+    <!-- https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid -->
+
+
+    <owl:Class rdf:about="https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid">
+        <rdfs:subClassOf rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#EnergyResource"/>
+        <rdfs:comment>It represents an electrical grid</rdfs:comment>
+        <rdfs:label>Electrical Grid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://glaciation-project.eu/MetadataReferenceModel#EnergyPowerGenerationResource -->
+
+
+    <owl:Class rdf:about="https://glaciation-project.eu/MetadataReferenceModel#EnergyPowerGenerationResource">
+        <rdfs:subClassOf rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#EnergyResource"/>
+        <rdfs:comment>It represents an energy resource that generates power</rdfs:comment>
+        <rdfs:label>Energy Power Generation Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://glaciation-project.eu/MetadataReferenceModel#EnergyResource -->
+
+
+    <owl:Class rdf:about="https://glaciation-project.eu/MetadataReferenceModel#EnergyResource">
+        <rdfs:subClassOf rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource"/>
+        <rdfs:comment>It represents an energy resource</rdfs:comment>
+        <rdfs:label>Energy Resource</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://glaciation-project.eu/MetadataReferenceModel#HardConstraint -->
 
 
@@ -756,6 +814,17 @@ The model is generic, by being both domain and application independent, describi
         <rdfs:subClassOf rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#Class"/>
         <rdfs:comment>Responsible for Scheduling a SubmittedTask and for managing the Resources.</rdfs:comment>
         <rdfs:label>Scheduler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://glaciation-project.eu/MetadataReferenceModel#Site -->
+
+
+    <owl:Class rdf:about="https://glaciation-project.eu/MetadataReferenceModel#Site">
+        <rdfs:subClassOf rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#Class"/>
+        <rdfs:comment>It represents any Site, e.g., a location, an island, etc.</rdfs:comment>
+        <rdfs:label>Site</rdfs:label>
     </owl:Class>
     
 

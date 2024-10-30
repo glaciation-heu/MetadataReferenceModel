@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://glaciation-project.eu/MetadataReferenceModel","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://glaciation-project.eu/MetadataReferenceModel","name":"The Metadata Reference Model for the EU GLACIATION Project", "headline":"The Glaciation Reference Metadata Model (GLC-MRM) provides a conceptual model that allows making data ingestion and data processing interoperable for all the use cases of the Glaciation project. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources.", "dateReleased":""2024-07-20"", "version":"1.0.0", "license":"https://www.apache.org/licenses/LICENSE-2.0", "author":[{"@type":"Person","name":""Michalis Mountantonakis", "Panagiotis Papadakos", "Rigo Wenning""}], "contributor":[{"@type":"Person","name":""Konstantin Tatarnikov", "Guangyuan Piao", "Alessio Chellini", "Paolo Tartara", "Péter Forgács", " Jonas Böhler""}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://glaciation-project.eu/MetadataReferenceModel","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://glaciation-project.eu/MetadataReferenceModel","name":"The Metadata Reference Model for the EU GLACIATION Project", "headline":"The Glaciation Reference Metadata Model (GLC-MRM) provides a conceptual model that allows making data ingestion and data processing interoperable for all the use cases of the Glaciation project. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources.", "dateReleased":""2024-07-20"", "dateModified":""2024-10-30"", "version":"1.1.0", "license":"https://www.apache.org/licenses/LICENSE-2.0", "author":[{"@type":"Person","name":""Michalis Mountantonakis", "Panagiotis Papadakos", "Rigo Wenning""}], "contributor":[{"@type":"Person","name":""Konstantin Tatarnikov", "Guangyuan Piao", "Alessio Chellini", "Paolo Tartara", "Péter Forgács", " Jonas Böhler""}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -70,12 +70,15 @@ $(function(){
 
 
 <dl>
+<dt>Modified on: "2024-10-30"</dt>
 <dt>This version:</dt>
-<dd><a href="https://glaciation-project.eu/MetadataReferenceModel/1.0.0/">https://glaciation-project.eu/MetadataReferenceModel/1.0.0/</a></dd>
+<dd><a href="https://glaciation-project.eu/MetadataReferenceModel/1.1.0/">https://glaciation-project.eu/MetadataReferenceModel/1.1.0/</a></dd>
 <dt>Latest version:</dt>
 <dd><a href="https://glaciation-project.eu/MetadataReferenceModel">https://glaciation-project.eu/MetadataReferenceModel</a></dd>
+<dt>Previous version:</dt>
+<dd><a href="https://glaciation-project.eu/MetadataReferenceModel/1.0.0/">https://glaciation-project.eu/MetadataReferenceModel/1.0.0/</a></dd>
 <dt>Revision:</dt>
-<dd>1.0.0</dd>
+<dd>1.1.0</dd>
 <dt>Authors:</dt>
 <dd>"Michalis Mountantonakis", "Panagiotis Papadakos", "Rigo Wenning"</dd>
 
@@ -85,7 +88,7 @@ $(function(){
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank"><img src="https://img.shields.io/badge/License-https://www.apache.org/licenses/LICENSE_2.0-blue.svg" alt="https://www.apache.org/licenses/LICENSE-2.0" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>"Michalis Mountantonakis", "Panagiotis Papadakos", "Rigo Wenning". The Metadata Reference Model for the EU GLACIATION Project. Revision: 1.0.0. Retrieved from: https://glaciation-project.eu/MetadataReferenceModel/1.0.0/</dd>
+<dd>"Michalis Mountantonakis", "Panagiotis Papadakos", "Rigo Wenning". The Metadata Reference Model for the EU GLACIATION Project. Revision: 1.1.0. Retrieved from: https://glaciation-project.eu/MetadataReferenceModel/1.1.0/</dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
@@ -128,6 +131,18 @@ This ontology has the following classes and properties.</span>
          title="https://glaciation-project.eu/MetadataReferenceModel#Constraint">Constraint</a>
    </li>
    <li>
+      <a href="#ElectricalGrid"
+         title="https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid">Electrical Grid</a>
+   </li>
+   <li>
+      <a href="#EnergyPowerGenerationResource"
+         title="https://glaciation-project.eu/MetadataReferenceModel#EnergyPowerGenerationResource">Energy Power Generation Resource</a>
+   </li>
+   <li>
+      <a href="#EnergyResource"
+         title="https://glaciation-project.eu/MetadataReferenceModel#EnergyResource">Energy Resource</a>
+   </li>
+   <li>
       <a href="#HardConstraint"
          title="https://glaciation-project.eu/MetadataReferenceModel#HardConstraint">HardConstraint</a>
    </li>
@@ -162,6 +177,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Scheduler"
          title="https://glaciation-project.eu/MetadataReferenceModel#Scheduler">Scheduler</a>
+   </li>
+   <li>
+      <a href="#Site"
+         title="https://glaciation-project.eu/MetadataReferenceModel#Site">Site</a>
    </li>
    <li>
       <a href="#SoftConstraint"
@@ -203,6 +222,10 @@ This ontology has the following classes and properties.</span>
          title="https://glaciation-project.eu/MetadataReferenceModel#consumes">consumes</a>
    </li>
    <li>
+      <a href="#consumesEnergyFrom"
+         title="https://glaciation-project.eu/MetadataReferenceModel#consumesEnergyFrom">consumesEnergyFrom</a>
+   </li>
+   <li>
       <a href="#hasAspect"
          title="https://glaciation-project.eu/MetadataReferenceModel#hasAspect">hasAspect</a>
    </li>
@@ -237,6 +260,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasTaskRealizedMeasurement"
          title="https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement">hasTaskRealizedMeasurement</a>
+   </li>
+   <li>
+      <a href="#isLocatedIn"
+         title="https://glaciation-project.eu/MetadataReferenceModel#isLocatedIn">isLocatedIn</a>
    </li>
    <li>
       <a href="#makesMeasurement"
@@ -401,8 +428,7 @@ The GLACIATION Reference Metadata Model makes data ingestion and processing inte
 
 There are common metadata challenges for all use cases. This stems from the use of the Kubernetes orchestration system as a basis for the GLACIATION platform. In addition, common to the platform is the ingestion of data from other sources into the DKG that can then be used to affect processing decisions. There are direct data flows from sensors within the system, but also data and metadata from sources external to the system. This allows the system to react e.g. to environmental situations like weather or temperature, but also to requirements concerning security or privacy. Exemplary uses and specializations of the reference model to the GLACIATION use cases are also provided.
 
-The GLACIATION Metadata Reference Model can be used for scheduling and performing tasks. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources. It captures the assignment of time-constrained tasks to time constrained and energy consuming resources, that can satisfy various hard and soft constraints, even compositions of such constraints. The tasks can be monitored through various measuring resources using a variety of single or aggregated, predicted or real measurements
-
+The GLACIATION Metadata Reference Model can be used for scheduling and performing tasks. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources. It captures the assignment of time-constrained tasks to time constrained and energy consuming resources, that can satisfy various hard and soft constraints, even compositions of such constraints. The tasks can be monitored through various measuring resources using a variety of single or aggregated, predicted or real measurements.
 
 The model is generic, by being both domain and application independent, describing the scheduling tasks, without providing specific solutions on how they can be solved. It can be easily adjusted to each of the current three GLACIATION use cases, covering also the Kubernetes orchestration and its Telemetry System deployed by the project. The proposed model makes it feasible to answer the competency queries defined by each of the Glaciation's use case.</span></div>
    
@@ -418,6 +444,9 @@ This section provides details for each class and property defined by GLACIATION 
   <li><a href="#AssignedTask" title="https://glaciation-project.eu/MetadataReferenceModel#AssignedTask">AssignedTask</a></li>
   <li><a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel#Class">Class</a></li>
   <li><a href="#Constraint" title="https://glaciation-project.eu/MetadataReferenceModel#Constraint">Constraint</a></li>
+  <li><a href="#ElectricalGrid" title="https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid">Electrical Grid</a></li>
+  <li><a href="#EnergyPowerGenerationResource" title="https://glaciation-project.eu/MetadataReferenceModel#EnergyPowerGenerationResource">Energy Power Generation Resource</a></li>
+  <li><a href="#EnergyResource" title="https://glaciation-project.eu/MetadataReferenceModel#EnergyResource">Energy Resource</a></li>
   <li><a href="#HardConstraint" title="https://glaciation-project.eu/MetadataReferenceModel#HardConstraint">HardConstraint</a></li>
   <li><a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel#Measurement">Measurement</a></li>
   <li><a href="#MeasurementProperty" title="https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty">MeasurementProperty</a></li>
@@ -427,6 +456,7 @@ This section provides details for each class and property defined by GLACIATION 
   <li><a href="#NonWorkProducingResource" title="https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource">NonWorkProducingResource</a></li>
   <li><a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel#Resource">Resource</a></li>
   <li><a href="#Scheduler" title="https://glaciation-project.eu/MetadataReferenceModel#Scheduler">Scheduler</a></li>
+  <li><a href="#Site" title="https://glaciation-project.eu/MetadataReferenceModel#Site">Site</a></li>
   <li><a href="#SoftConstraint" title="https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint">SoftConstraint</a></li>
   <li><a href="#SoftConstraintComposition" title="https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition">SoftConstraintComposition</a></li>
   <li><a href="#Status" title="https://glaciation-project.eu/MetadataReferenceModel#Status">Status</a></li>
@@ -514,7 +544,7 @@ This section provides details for each class and property defined by GLACIATION 
     has sub-classes
    </dt>
    <dd>
-    <a href="#Aspect" title="https://glaciation-project.eu/MetadataReferenceModel#Aspect">Aspect</a> <sup class="type-c" title="class">c</sup>, <a href="#Constraint" title="https://glaciation-project.eu/MetadataReferenceModel#Constraint">Constraint</a> <sup class="type-c" title="class">c</sup>, <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel#Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>, <a href="#MeasurementProperty" title="https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty">MeasurementProperty</a> <sup class="type-c" title="class">c</sup>, <a href="#MeasurementUnit" title="https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit">MeasurementUnit</a> <sup class="type-c" title="class">c</sup>, <a href="#MeasuringResource" title="https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource">MeasuringResource</a> <sup class="type-c" title="class">c</sup>, <a href="#Monitor" title="https://glaciation-project.eu/MetadataReferenceModel#Monitor">Monitor</a> <sup class="type-c" title="class">c</sup>, <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel#Resource">Resource</a> <sup class="type-c" title="class">c</sup>, <a href="#Scheduler" title="https://glaciation-project.eu/MetadataReferenceModel#Scheduler">Scheduler</a> <sup class="type-c" title="class">c</sup>, <a href="#SoftConstraintComposition" title="https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition">SoftConstraintComposition</a> <sup class="type-c" title="class">c</sup>, <a href="#Status" title="https://glaciation-project.eu/MetadataReferenceModel#Status">Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Aspect" title="https://glaciation-project.eu/MetadataReferenceModel#Aspect">Aspect</a> <sup class="type-c" title="class">c</sup>, <a href="#Constraint" title="https://glaciation-project.eu/MetadataReferenceModel#Constraint">Constraint</a> <sup class="type-c" title="class">c</sup>, <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel#Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>, <a href="#MeasurementProperty" title="https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty">MeasurementProperty</a> <sup class="type-c" title="class">c</sup>, <a href="#MeasurementUnit" title="https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit">MeasurementUnit</a> <sup class="type-c" title="class">c</sup>, <a href="#MeasuringResource" title="https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource">MeasuringResource</a> <sup class="type-c" title="class">c</sup>, <a href="#Monitor" title="https://glaciation-project.eu/MetadataReferenceModel#Monitor">Monitor</a> <sup class="type-c" title="class">c</sup>, <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel#Resource">Resource</a> <sup class="type-c" title="class">c</sup>, <a href="#Scheduler" title="https://glaciation-project.eu/MetadataReferenceModel#Scheduler">Scheduler</a> <sup class="type-c" title="class">c</sup>, <a href="#Site" title="https://glaciation-project.eu/MetadataReferenceModel#Site">Site</a> <sup class="type-c" title="class">c</sup>, <a href="#SoftConstraintComposition" title="https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition">SoftConstraintComposition</a> <sup class="type-c" title="class">c</sup>, <a href="#Status" title="https://glaciation-project.eu/MetadataReferenceModel#Status">Status</a> <sup class="type-c" title="class">c</sup>, <a href="#Task" title="https://glaciation-project.eu/MetadataReferenceModel#Task">Task</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
@@ -554,6 +584,63 @@ This section provides details for each class and property defined by GLACIATION 
    </dt>
    <dd>
     <a href="#hasConstraint" title="https://glaciation-project.eu/MetadataReferenceModel#hasConstraint">hasConstraint</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatesToConstraint" title="https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint">relatesToConstraint</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ElectricalGrid">
+  <h3>Electrical Grid<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid</p>
+  <div class="comment">
+   <span class="markdown">It represents an electrical grid</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#EnergyResource" title="https://glaciation-project.eu/MetadataReferenceModel#EnergyResource">Energy Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#consumesEnergyFrom" title="https://glaciation-project.eu/MetadataReferenceModel#consumesEnergyFrom">consumesEnergyFrom</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EnergyPowerGenerationResource">
+  <h3>Energy Power Generation Resource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel#EnergyPowerGenerationResource</p>
+  <div class="comment">
+   <span class="markdown">It represents an energy resource that generates power</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#EnergyResource" title="https://glaciation-project.eu/MetadataReferenceModel#EnergyResource">Energy Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EnergyResource">
+  <h3>Energy Resource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel#EnergyResource</p>
+  <div class="comment">
+   <span class="markdown">It represents an energy resource</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#WorkProducingResource" title="https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource">WorkProducingResource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ElectricalGrid" title="https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid">Electrical Grid</a> <sup class="type-c" title="class">c</sup>, <a href="#EnergyPowerGenerationResource" title="https://glaciation-project.eu/MetadataReferenceModel#EnergyPowerGenerationResource">Energy Power Generation Resource</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -770,6 +857,27 @@ This section provides details for each class and property defined by GLACIATION 
    </dd>
   </dl>
  </div>
+ <div class="entity" id="Site">
+  <h3>Site<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel#Site</p>
+  <div class="comment">
+   <span class="markdown">It represents any Site, e.g., a location, an island, etc.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Class" title="https://glaciation-project.eu/MetadataReferenceModel#Class">Class</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isLocatedIn" title="https://glaciation-project.eu/MetadataReferenceModel#isLocatedIn">isLocatedIn</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="SoftConstraint">
   <h3>SoftConstraint<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint</p>
@@ -916,7 +1024,13 @@ This section provides details for each class and property defined by GLACIATION 
     has sub-classes
    </dt>
    <dd>
-    <a href="#MeasuringResource" title="https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource">MeasuringResource</a> <sup class="type-c" title="class">c</sup>
+    <a href="#EnergyResource" title="https://glaciation-project.eu/MetadataReferenceModel#EnergyResource">Energy Resource</a> <sup class="type-c" title="class">c</sup>, <a href="#MeasuringResource" title="https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource">MeasuringResource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#consumesEnergyFrom" title="https://glaciation-project.eu/MetadataReferenceModel#consumesEnergyFrom">consumesEnergyFrom</a> <sup class="type-op" title="object property">op</sup>, <a href="#isLocatedIn" title="https://glaciation-project.eu/MetadataReferenceModel#isLocatedIn">isLocatedIn</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -926,6 +1040,7 @@ This section provides details for each class and property defined by GLACIATION 
   <li><a href="#assigns" title="https://glaciation-project.eu/MetadataReferenceModel#assigns">assigns</a></li>
   <li><a href="#composedBy" title="https://glaciation-project.eu/MetadataReferenceModel#composedBy">composedBy</a></li>
   <li><a href="#consumes" title="https://glaciation-project.eu/MetadataReferenceModel#consumes">consumes</a></li>
+  <li><a href="#consumesEnergyFrom" title="https://glaciation-project.eu/MetadataReferenceModel#consumesEnergyFrom">consumesEnergyFrom</a></li>
   <li><a href="#hasAspect" title="https://glaciation-project.eu/MetadataReferenceModel#hasAspect">hasAspect</a></li>
   <li><a href="#hasComposition" title="https://glaciation-project.eu/MetadataReferenceModel#hasComposition">hasComposition</a></li>
   <li><a href="#hasConstraint" title="https://glaciation-project.eu/MetadataReferenceModel#hasConstraint">hasConstraint</a></li>
@@ -935,6 +1050,7 @@ This section provides details for each class and property defined by GLACIATION 
   <li><a href="#hasTaskMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement">hasTaskMeasurement</a></li>
   <li><a href="#hasTaskPredictedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement">hasTaskPredictedMeasurement</a></li>
   <li><a href="#hasTaskRealizedMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement">hasTaskRealizedMeasurement</a></li>
+  <li><a href="#isLocatedIn" title="https://glaciation-project.eu/MetadataReferenceModel#isLocatedIn">isLocatedIn</a></li>
   <li><a href="#makesMeasurement" title="https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement">makesMeasurement</a></li>
   <li><a href="#manages" title="https://glaciation-project.eu/MetadataReferenceModel#manages">manages</a></li>
   <li><a href="#measuredIn" title="https://glaciation-project.eu/MetadataReferenceModel#measuredIn">measuredIn</a></li>
@@ -1029,6 +1145,35 @@ This section provides details for each class and property defined by GLACIATION 
     </dt>
     <dd>
      <a href="#Resource" title="https://glaciation-project.eu/MetadataReferenceModel#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="consumesEnergyFrom">
+  <h3>consumesEnergyFrom<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel#consumesEnergyFrom</p>
+  <div class="comment">
+   <span class="markdown">The grid where a work producing resource consumes energy from</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#WorkProducingResource" title="https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource">WorkProducingResource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ElectricalGrid" title="https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid">Electrical Grid</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1296,6 +1441,35 @@ This section provides details for each class and property defined by GLACIATION 
     </dt>
     <dd>
      <a href="#Measurement" title="https://glaciation-project.eu/MetadataReferenceModel#Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isLocatedIn">
+  <h3>isLocatedIn<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://glaciation-project.eu/MetadataReferenceModel#isLocatedIn</p>
+  <div class="comment">
+   <span class="markdown">The location of a Work Producing Resource</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#WorkProducingResource" title="https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource">WorkProducingResource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Site" title="https://glaciation-project.eu/MetadataReferenceModel#Site">Site</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -2021,6 +2195,51 @@ This section provides details for each class and property defined by GLACIATION 
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 </div>
 </div>
+</div>
+   
+
+<!--CHANGELOG SECTION-->
+   <div id="changelog"><div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<details><summary><u>Added classes</u></summary>
+<ul><li><a href="#ElectricalGrid">https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid</a>
+<ul>
+<li>Added: SubClass of https://glaciation-project.eu/MetadataReferenceModel#EnergyResource</li>
+</ul>
+</li>
+<li><a href="#EnergyPowerGenerationResource">https://glaciation-project.eu/MetadataReferenceModel#EnergyPowerGenerationResource</a>
+<ul>
+<li>Added: SubClass of https://glaciation-project.eu/MetadataReferenceModel#EnergyResource</li>
+</ul>
+</li>
+<li><a href="#EnergyResource">https://glaciation-project.eu/MetadataReferenceModel#EnergyResource</a>
+<ul>
+<li>Added: SubClass of https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource</li>
+</ul>
+</li>
+<li><a href="#Site">https://glaciation-project.eu/MetadataReferenceModel#Site</a>
+<ul>
+<li>Added: SubClass of https://glaciation-project.eu/MetadataReferenceModel#Class</li>
+</ul>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Added object properties</u></summary>
+<ul><li><a href="#consumesEnergyFrom">https://glaciation-project.eu/MetadataReferenceModel#consumesEnergyFrom</a>
+<ul>
+<li>Added: Range https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid</li>
+<li>Added: domain https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource</li>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+<li><a href="#isLocatedIn">https://glaciation-project.eu/MetadataReferenceModel#isLocatedIn</a>
+<ul>
+<li>Added: Range https://glaciation-project.eu/MetadataReferenceModel#Site</li>
+<li>Added: domain https://glaciation-project.eu/MetadataReferenceModel#WorkProducingResource</li>
+<li>Added: SubProperty of http://www.w3.org/2002/07/owl#topObjectProperty</li>
+</ul>
+</li>
+</ul></details></div>
 </div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

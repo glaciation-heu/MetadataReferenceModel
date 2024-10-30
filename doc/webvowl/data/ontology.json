@@ -7,10 +7,10 @@
       "en" : "The Metadata Reference Model for the EU GLACIATION Project"
     },
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "version" : "1.0.0",
+    "version" : "1.1.0",
     "author" : [ "\"Michalis Mountantonakis\", \"Panagiotis Papadakos\", \"Rigo Wenning\"" ],
     "description" : {
-      "en" : "The GLACIATION platform develops a novel Distributed Knowledge Graph (DKG) that stretches across the edge-core-cloud architecture to reduce energy consumption, improving data processing and optimizing data movement operations. Towards this aim, the platform needs to consume the data and metadata that are fed into the DKG. The metadata can affect and inform the decision-making processes in the GLACIATION architecture and introduces the GLACIATION Metadata Reference Model that will be used for modelling the metadata in the DKG.\n\nThe GLACIATION Reference Metadata Model makes data ingestion and processing interoperable inside the GLACIATION platform. Linked Data allows for a high level of flexibility and to tackle the variety and merging issues that emerge in heterogenous environments, especially due to the wide range of sensors and other data sources that the platform may integrate. The GLACIATION Reference Metadata Model is tailored to fit the specific purposes of the GLACIATION platform, while the GLACIATION use cases define the scope of the model for better interoperability.\n\nThere are common metadata challenges for all use cases. This stems from the use of the Kubernetes orchestration system as a basis for the GLACIATION platform. In addition, common to the platform is the ingestion of data from other sources into the DKG that can then be used to affect processing decisions. There are direct data flows from sensors within the system, but also data and metadata from sources external to the system. This allows the system to react e.g. to environmental situations like weather or temperature, but also to requirements concerning security or privacy. Exemplary uses and specializations of the reference model to the GLACIATION use cases are also provided.\n\nThe GLACIATION Metadata Reference Model can be used for scheduling and performing tasks. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources. It captures the assignment of time-constrained tasks to time constrained and energy consuming resources, that can satisfy various hard and soft constraints, even compositions of such constraints. The tasks can be monitored through various measuring resources using a variety of single or aggregated, predicted or real measurements\n\n\nThe model is generic, by being both domain and application independent, describing the scheduling tasks, without providing specific solutions on how they can be solved. It can be easily adjusted to each of the current three GLACIATION use cases, covering also the Kubernetes orchestration and its Telemetry System deployed by the project. The proposed model makes it feasible to answer the competency queries defined by each of the Glaciation's use case."
+      "en" : "The GLACIATION platform develops a novel Distributed Knowledge Graph (DKG) that stretches across the edge-core-cloud architecture to reduce energy consumption, improving data processing and optimizing data movement operations. Towards this aim, the platform needs to consume the data and metadata that are fed into the DKG. The metadata can affect and inform the decision-making processes in the GLACIATION architecture and introduces the GLACIATION Metadata Reference Model that will be used for modelling the metadata in the DKG.\n\nThe GLACIATION Reference Metadata Model makes data ingestion and processing interoperable inside the GLACIATION platform. Linked Data allows for a high level of flexibility and to tackle the variety and merging issues that emerge in heterogenous environments, especially due to the wide range of sensors and other data sources that the platform may integrate. The GLACIATION Reference Metadata Model is tailored to fit the specific purposes of the GLACIATION platform, while the GLACIATION use cases define the scope of the model for better interoperability.\n\nThere are common metadata challenges for all use cases. This stems from the use of the Kubernetes orchestration system as a basis for the GLACIATION platform. In addition, common to the platform is the ingestion of data from other sources into the DKG that can then be used to affect processing decisions. There are direct data flows from sensors within the system, but also data and metadata from sources external to the system. This allows the system to react e.g. to environmental situations like weather or temperature, but also to requirements concerning security or privacy. Exemplary uses and specializations of the reference model to the GLACIATION use cases are also provided.\n\nThe GLACIATION Metadata Reference Model can be used for scheduling and performing tasks. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources. It captures the assignment of time-constrained tasks to time constrained and energy consuming resources, that can satisfy various hard and soft constraints, even compositions of such constraints. The tasks can be monitored through various measuring resources using a variety of single or aggregated, predicted or real measurements.\n\nThe model is generic, by being both domain and application independent, describing the scheduling tasks, without providing specific solutions on how they can be solved. It can be easily adjusted to each of the current three GLACIATION use cases, covering also the Kubernetes orchestration and its Telemetry System deployed by the project. The proposed model makes it feasible to answer the competency queries defined by each of the Glaciation's use case."
     },
     "labels" : {
       "en" : "GLACIATION Metadata Reference Model"
@@ -55,7 +55,7 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "1.0.0",
+        "value" : "1.1.0",
         "type" : "label"
       } ],
       "abstract" : [ {
@@ -73,7 +73,7 @@
       "issued" : [ {
         "identifier" : "issued",
         "language" : "undefined",
-        "value" : "\"2024-07-20\"",
+        "value" : "\"2024-10-30\"",
         "type" : "label"
       } ],
       "status" : [ {
@@ -89,103 +89,115 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
     "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "57",
+    "id" : "52",
     "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "58",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "65",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "23",
+    "id" : "21",
     "type" : "owl:Thing"
   }, {
     "id" : "6",
     "type" : "rdfs:Datatype"
   }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "69",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "67",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "73",
+    "id" : "72",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
-    "id" : "74",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "75",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "18",
+    "id" : "63",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "71",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "3",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "76",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "14",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "8",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "77",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "79",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -202,57 +214,18 @@
     "id" : "0",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask",
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#EnergyPowerGenerationResource",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "SubmittedTask",
-      "undefined" : "SubmittedTask"
+      "IRI-based" : "EnergyPowerGenerationResource",
+      "undefined" : "Energy Power Generation Resource"
     },
     "comment" : {
-      "undefined" : "A Submitted Task that will be processed by a Scheduler."
+      "undefined" : "It represents an energy resource that generates power"
     },
-    "id" : "15",
-    "superClasses" : [ "16" ]
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MeasurementUnit",
-      "undefined" : "MeasurementUnit"
-    },
-    "comment" : {
-      "undefined" : "Represents a MeasurementUnit, e.g., Kwh."
-    },
-    "id" : "44",
-    "superClasses" : [ "20" ]
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SoftConstraint",
-      "undefined" : "SoftConstraint"
-    },
-    "comment" : {
-      "undefined" : "For representing the SoftConstraints of a Task."
-    },
-    "id" : "45",
-    "superClasses" : [ "10" ]
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MeasurementProperty",
-      "undefined" : "MeasurementProperty"
-    },
-    "comment" : {
-      "undefined" : "Represents a MeasurementProperty, e.g., allocated CPU, energy, etc."
-    },
-    "id" : "47",
-    "superClasses" : [ "20" ]
+    "id" : "11",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Class",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -261,11 +234,11 @@
       "IRI-based" : "Class",
       "undefined" : "Class"
     },
-    "subClasses" : [ "10", "57", "4", "58", "59", "54", "16", "44", "1", "47", "11", "51" ],
+    "subClasses" : [ "57", "15", "58", "9", "8", "52", "4", "56", "54", "45", "1", "49", "47" ],
     "comment" : {
       "undefined" : "A generic Class for the GLACIATION project"
     },
-    "id" : "20"
+    "id" : "17"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Task",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -274,12 +247,12 @@
       "IRI-based" : "Task",
       "undefined" : "Task"
     },
-    "subClasses" : [ "49", "15" ],
+    "subClasses" : [ "20", "14" ],
     "comment" : {
       "undefined" : "It describes any Task that has Constraints and a Status."
     },
-    "id" : "16",
-    "superClasses" : [ "20" ]
+    "id" : "15",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraintComposition",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -291,8 +264,8 @@
     "comment" : {
       "undefined" : "It describes the composition of SoftConstraints, e.g., the order of soft constraings according to a given preference priority, Pareto, Pareto optimal, etc."
     },
-    "id" : "57",
-    "superClasses" : [ "20" ]
+    "id" : "52",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Resource",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -301,28 +274,29 @@
       "IRI-based" : "Resource",
       "undefined" : "Resource"
     },
-    "subClasses" : [ "18", "3" ],
+    "subClasses" : [ "3", "62" ],
     "comment" : {
       "undefined" : "It represents any Resource."
     },
     "id" : "4",
-    "superClasses" : [ "20" ]
+    "superClasses" : [ "17" ]
   }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Status",
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#EnergyResource",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Status",
-      "undefined" : "Status"
+      "IRI-based" : "EnergyResource",
+      "undefined" : "Energy Resource"
     },
+    "subClasses" : [ "63", "11" ],
     "comment" : {
-      "undefined" : "Represents information about a specific Status over a given time interval."
+      "undefined" : "It represents an energy resource"
     },
-    "id" : "58",
-    "superClasses" : [ "20" ]
+    "id" : "12",
+    "superClasses" : [ "62" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "64",
+    "id" : "65",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -330,7 +304,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "23",
+    "id" : "21",
     "label" : {
       "undefined" : "Thing"
     }
@@ -344,14 +318,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "69",
+    "id" : "68",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "67",
+    "id" : "69",
     "label" : {
       "IRI-based" : "integer"
     }
@@ -366,8 +340,8 @@
     "comment" : {
       "undefined" : "For representing the HardConstraints of a Task."
     },
-    "id" : "73",
-    "superClasses" : [ "10" ]
+    "id" : "72",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Monitor",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -379,19 +353,137 @@
     "comment" : {
       "undefined" : "Represents an entity that monitors an AssignedTask."
     },
+    "id" : "57",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#ElectricalGrid",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectricalGrid",
+      "undefined" : "Electrical Grid"
+    },
+    "comment" : {
+      "undefined" : "It represents an electrical grid"
+    },
+    "id" : "63",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Aspect",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aspect",
+      "undefined" : "Aspect"
+    },
+    "comment" : {
+      "undefined" : "It describes the Aspect of a Contstraint, e.g., time, power consumption."
+    },
+    "id" : "9",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AssignedTask",
+      "undefined" : "AssignedTask"
+    },
+    "comment" : {
+      "undefined" : "An AssignedTask that will be performed by using some Resources and will be based on some Constraints."
+    },
+    "id" : "20",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Measurement",
+      "undefined" : "Measurement"
+    },
+    "subClasses" : [ "0" ],
+    "comment" : {
+      "undefined" : "Represents any Measurement, e.g., for energy."
+    },
+    "id" : "1",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#SubmittedTask",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubmittedTask",
+      "undefined" : "SubmittedTask"
+    },
+    "comment" : {
+      "undefined" : "A Submitted Task that will be processed by a Scheduler."
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#MeasurementUnit",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasurementUnit",
+      "undefined" : "MeasurementUnit"
+    },
+    "comment" : {
+      "undefined" : "Represents a MeasurementUnit, e.g., Kwh."
+    },
+    "id" : "45",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#SoftConstraint",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftConstraint",
+      "undefined" : "SoftConstraint"
+    },
+    "comment" : {
+      "undefined" : "For representing the SoftConstraints of a Task."
+    },
     "id" : "59",
-    "superClasses" : [ "20" ]
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#MeasurementProperty",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasurementProperty",
+      "undefined" : "MeasurementProperty"
+    },
+    "comment" : {
+      "undefined" : "Represents a MeasurementProperty, e.g., allocated CPU, energy, etc."
+    },
+    "id" : "49",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Status",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Status",
+      "undefined" : "Status"
+    },
+    "comment" : {
+      "undefined" : "Represents information about a specific Status over a given time interval."
+    },
+    "id" : "56",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "74",
+    "id" : "86",
     "label" : {
       "IRI-based" : "dateTimeStamp"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "75",
+    "id" : "77",
     "label" : {
       "IRI-based" : "string"
     }
@@ -406,12 +498,12 @@
     "comment" : {
       "undefined" : "It represents any NonWorkProducingResource (e.g., dataset)."
     },
-    "id" : "18",
+    "id" : "3",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "21",
+    "id" : "18",
     "label" : {
       "IRI-based" : "string"
     }
@@ -430,60 +522,60 @@
       "IRI-based" : "WorkProducingResource",
       "undefined" : "WorkProducingResource"
     },
-    "subClasses" : [ "51" ],
+    "subClasses" : [ "12", "47" ],
     "comment" : {
       "undefined" : "It represents any WorkProducingResource, e.g., a node, a CPU, etc."
     },
-    "id" : "3",
+    "id" : "62",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "76",
+    "id" : "74",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "14",
+    "id" : "92",
     "label" : {
       "IRI-based" : "dateTimeStamp"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "8",
+    "id" : "90",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "77",
+    "id" : "96",
     "label" : {
       "IRI-based" : "dateTimeStamp"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "79",
+    "id" : "98",
     "label" : {
       "IRI-based" : "dateTimeStamp"
     }
   }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Aspect",
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Site",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Aspect",
-      "undefined" : "Aspect"
+      "IRI-based" : "Site",
+      "undefined" : "Site"
     },
     "comment" : {
-      "undefined" : "It describes the Aspect of a Contstraint, e.g., time, power consumption."
+      "undefined" : "It represents any Site, e.g., a location, an island, etc."
     },
-    "id" : "11",
-    "superClasses" : [ "20" ]
+    "id" : "58",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Constraint",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -492,25 +584,12 @@
       "IRI-based" : "Constraint",
       "undefined" : "Constraint"
     },
-    "subClasses" : [ "73", "45" ],
+    "subClasses" : [ "72", "59" ],
     "comment" : {
       "undefined" : "For representing the Constraint(s) of a Task."
     },
-    "id" : "10",
-    "superClasses" : [ "20" ]
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#AssignedTask",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AssignedTask",
-      "undefined" : "AssignedTask"
-    },
-    "comment" : {
-      "undefined" : "An AssignedTask that will be performed by using some Resources and will be based on some Constraints."
-    },
-    "id" : "49",
-    "superClasses" : [ "16" ]
+    "id" : "8",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Scheduler",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -523,21 +602,7 @@
       "undefined" : "Responsible for Scheduling a SubmittedTask and for managing the Resources."
     },
     "id" : "54",
-    "superClasses" : [ "20" ]
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#Measurement",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Measurement",
-      "undefined" : "Measurement"
-    },
-    "subClasses" : [ "0" ],
-    "comment" : {
-      "undefined" : "Represents any Measurement, e.g., for energy."
-    },
-    "id" : "1",
-    "superClasses" : [ "20" ]
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#MeasuringResource",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -549,8 +614,8 @@
     "comment" : {
       "undefined" : "It represents any WorkProducingResource that can perform Measurements."
     },
-    "id" : "51",
-    "superClasses" : [ "20", "3" ]
+    "id" : "47",
+    "superClasses" : [ "17", "62" ]
   } ],
   "property" : [ {
     "id" : "2",
@@ -560,30 +625,24 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "7",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "9",
     "type" : "owl:objectProperty"
   }, {
     "id" : "13",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "17",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "19",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "22",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "12",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "41",
+    "id" : "10",
     "type" : "owl:objectProperty"
   }, {
     "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "46",
@@ -595,7 +654,7 @@
     "id" : "50",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "52",
+    "id" : "51",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "53",
@@ -604,116 +663,92 @@
     "id" : "55",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "56",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "27",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "28",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "31",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "33",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "60",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "34",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "35",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "37",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "61",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "65",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "66",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "68",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "70",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "24",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "25",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "30",
+    "id" : "26",
     "type" : "owl:objectProperty"
   }, {
     "id" : "29",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "36",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "78",
-    "type" : "owl:disjointWith"
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "40",
-    "type" : "owl:objectProperty"
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "80",
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "42",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "26",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "81",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "82",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "83",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "32",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "72",
+    "id" : "23",
     "type" : "owl:objectProperty"
   }, {
     "id" : "38",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "39",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "84",
+    "id" : "78",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "85",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "86",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "87",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "88",
     "type" : "rdfs:SubClassOf"
@@ -721,13 +756,61 @@
     "id" : "89",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "90",
-    "type" : "rdfs:SubClassOf"
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "2"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#startingInterval",
@@ -744,243 +827,155 @@
     "attributes" : [ "datatype" ],
     "id" : "5"
   }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasValue",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "hasValue",
-      "undefined" : "hasValue"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The Value of a Measurement."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "7"
-  }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasAspect",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "hasAspect",
       "undefined" : "hasAspect"
     },
-    "superproperty" : [ "12" ],
-    "domain" : "10",
+    "superproperty" : [ "10" ],
+    "domain" : "8",
     "comment" : {
       "undefined" : "For keeping information about the Aspect of each Constraint, e.g., time, power consumption."
     },
     "attributes" : [ "object" ],
-    "id" : "9"
+    "id" : "7"
   }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "14",
-    "label" : {
-      "IRI-based" : "hasTimestamp",
-      "undefined" : "hasTimestamp"
-    },
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "The date and time of a Measurement."
-    },
-    "attributes" : [ "datatype" ],
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "13"
-  }, {
-    "range" : "4",
-    "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "17"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasConfiguration",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "21",
+    "range" : "18",
     "label" : {
       "IRI-based" : "hasConfiguration",
       "undefined" : "hasConfiguration"
     },
-    "domain" : "20",
+    "domain" : "17",
     "comment" : {
       "undefined" : "The Configuration of any instance of a Class, e.g., Task, Resource, etc."
     },
     "attributes" : [ "datatype" ],
-    "id" : "19"
+    "id" : "16"
   }, {
-    "range" : "16",
-    "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "22"
+    "range" : "15",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "23",
+    "range" : "21",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "23",
-    "subproperty" : [ "24", "25", "26", "27", "9", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "12"
+    "domain" : "21",
+    "subproperty" : [ "22", "23", "24", "25", "7", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "10"
   }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "relatesToConstraint",
-      "undefined" : "relatesToConstraint"
-    },
-    "superproperty" : [ "12" ],
+    "range" : "17",
     "domain" : "1",
-    "comment" : {
-      "undefined" : "For keeping information about the Constraint that each Measurement relates to."
-    },
-    "attributes" : [ "object" ],
-    "id" : "41"
-  }, {
-    "range" : "20",
-    "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "43"
   }, {
-    "range" : "20",
+    "range" : "17",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "17",
     "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "46"
   }, {
-    "range" : "16",
+    "range" : "17",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "48"
   }, {
-    "range" : "20",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "17",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "50"
   }, {
-    "range" : "20",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "52"
+    "range" : "17",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
   }, {
-    "range" : "20",
+    "range" : "17",
     "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "53"
   }, {
-    "range" : "20",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "17",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "55"
-  }, {
-    "range" : "20",
-    "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "56"
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#monitors",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "49",
-    "label" : {
-      "IRI-based" : "monitors",
-      "undefined" : "monitors"
-    },
-    "superproperty" : [ "12" ],
-    "domain" : "59",
-    "comment" : {
-      "undefined" : "For recording which Monitor tracks an AssignedTask."
-    },
-    "attributes" : [ "object" ],
-    "id" : "27"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasComposition",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "57",
+    "range" : "52",
     "label" : {
       "IRI-based" : "hasComposition",
       "undefined" : "hasComposition"
     },
-    "superproperty" : [ "12" ],
-    "domain" : "16",
+    "superproperty" : [ "10" ],
+    "domain" : "15",
     "comment" : {
       "undefined" : "For keeping information about the Composition of the SoftConstraints of a Task."
     },
     "attributes" : [ "object" ],
-    "id" : "28"
+    "id" : "26"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#composedBy",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "45",
+    "range" : "59",
     "label" : {
       "IRI-based" : "composedBy",
       "undefined" : "composedBy"
     },
-    "superproperty" : [ "12" ],
-    "domain" : "57",
+    "superproperty" : [ "10" ],
+    "domain" : "52",
     "comment" : {
       "undefined" : "For keeping information about the SoftConstraints that are included in a Composition."
     },
     "attributes" : [ "object" ],
-    "id" : "31"
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasResourceMeasurement",
-      "undefined" : "hasResourceMeasurement"
-    },
-    "superproperty" : [ "12" ],
-    "domain" : "4",
-    "comment" : {
-      "undefined" : "A relationship between a Resource and a Measurement."
-    },
-    "attributes" : [ "object" ],
-    "id" : "33"
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasTaskRealizedMeasurement",
-      "undefined" : "hasTaskRealizedMeasurement"
-    },
-    "superproperty" : [ "24" ],
-    "domain" : "16",
-    "comment" : {
-      "undefined" : "A relationship for recording the RealizedMeasurements (actual measurements) of a Task."
-    },
-    "attributes" : [ "object" ],
-    "id" : "60"
+    "id" : "29"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#reschedules",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "49",
+    "range" : "20",
     "label" : {
       "IRI-based" : "reschedules",
       "undefined" : "reschedules"
     },
-    "superproperty" : [ "12" ],
+    "superproperty" : [ "10" ],
     "domain" : "54",
     "comment" : {
       "undefined" : "A relationship between a Scheduler and an AssignedTask that concerns rescheduling."
     },
     "attributes" : [ "object" ],
-    "id" : "34"
+    "id" : "33"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#measuredIn",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "44",
+    "range" : "45",
     "label" : {
       "IRI-based" : "measuredIn",
       "undefined" : "measuredIn"
     },
-    "superproperty" : [ "12" ],
+    "superproperty" : [ "10" ],
     "domain" : "1",
     "comment" : {
       "undefined" : "For recording the MeasurimentUnit of each Measurement."
     },
     "attributes" : [ "object" ],
-    "id" : "35"
+    "id" : "34"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#produces",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -989,52 +984,38 @@
       "IRI-based" : "produces",
       "undefined" : "produces"
     },
-    "superproperty" : [ "12" ],
-    "domain" : "49",
+    "superproperty" : [ "10" ],
+    "domain" : "20",
     "comment" : {
       "undefined" : "For keeping information about the production Resource, e.g., the output, of an AssignedTask."
     },
     "attributes" : [ "object" ],
-    "id" : "37"
+    "id" : "36"
   }, {
-    "range" : "20",
+    "range" : "17",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "17",
     "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
-    "range" : "20",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "62"
+    "range" : "17",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
   }, {
-    "range" : "20",
-    "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "63"
-  }, {
-    "range" : "20",
-    "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "65"
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#statusCode",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "67",
-    "label" : {
-      "IRI-based" : "statusCode",
-      "undefined" : "statusCode"
-    },
-    "domain" : "58",
-    "comment" : {
-      "undefined" : "The status code of a Status."
-    },
-    "attributes" : [ "datatype" ],
+    "range" : "17",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "66"
   }, {
-    "range" : "20",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "68"
+    "range" : "17",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasDescription",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -1043,122 +1024,56 @@
       "IRI-based" : "hasDescription",
       "undefined" : "hasDescription"
     },
-    "domain" : "20",
+    "domain" : "17",
     "comment" : {
       "undefined" : "The Description of any entity."
     },
     "attributes" : [ "datatype" ],
     "id" : "70"
   }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasTaskMeasurement",
-      "undefined" : "hasTaskMeasurement"
-    },
-    "superproperty" : [ "12" ],
-    "domain" : "16",
-    "subproperty" : [ "60", "72" ],
-    "comment" : {
-      "undefined" : "A relationship between a Task and a Measurement."
-    },
-    "attributes" : [ "object" ],
-    "id" : "24"
-  }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasConstraint",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "10",
+    "range" : "8",
     "label" : {
       "IRI-based" : "hasConstraint",
       "undefined" : "hasConstraint"
     },
-    "superproperty" : [ "12" ],
-    "domain" : "16",
+    "superproperty" : [ "10" ],
+    "domain" : "15",
     "comment" : {
       "undefined" : "A relationship for recording all the Constraints of a Task."
     },
     "attributes" : [ "object" ],
-    "id" : "25"
+    "id" : "23"
   }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule",
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#consumesEnergyFrom",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "54",
+    "range" : "63",
     "label" : {
-      "IRI-based" : "triggersReschedule",
-      "undefined" : "triggersReschedule"
+      "IRI-based" : "consumesEnergyFrom",
+      "undefined" : "consumesEnergyFrom"
     },
-    "superproperty" : [ "12" ],
-    "domain" : "59",
+    "superproperty" : [ "10" ],
+    "domain" : "62",
     "comment" : {
-      "undefined" : "A triggered event relationship about Rescheduling from a Monitor."
+      "undefined" : "The grid where a work producing resource consumes energy from"
     },
     "attributes" : [ "object" ],
-    "id" : "30"
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "relatesToMeasurementProperty",
-      "undefined" : "relatesToMeasurementProperty"
-    },
-    "superproperty" : [ "12" ],
-    "domain" : "1",
-    "comment" : {
-      "undefined" : "For recording the MeasurementProperty of each Measurement."
-    },
-    "attributes" : [ "object" ],
-    "id" : "29"
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#scheduledBy",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "54",
-    "label" : {
-      "IRI-based" : "scheduledBy",
-      "undefined" : "scheduledBy"
-    },
-    "superproperty" : [ "12" ],
-    "domain" : "15",
-    "comment" : {
-      "undefined" : "A relationship between a SubmittedTask and a Scheduler."
-    },
-    "attributes" : [ "object" ],
-    "id" : "36"
-  }, {
-    "range" : "16",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "78"
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#assigns",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "49",
-    "label" : {
-      "IRI-based" : "assigns",
-      "undefined" : "assigns"
-    },
-    "superproperty" : [ "12" ],
-    "domain" : "54",
-    "comment" : {
-      "undefined" : "A relationship between a Scheduler and an AssignedTask."
-    },
-    "attributes" : [ "object" ],
-    "id" : "40"
+    "id" : "38"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasID",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "76",
+    "range" : "74",
     "label" : {
       "IRI-based" : "hasID",
       "undefined" : "hasID"
     },
-    "domain" : "20",
+    "domain" : "17",
     "comment" : {
       "undefined" : "The ID of any entity."
     },
     "attributes" : [ "datatype" ],
-    "id" : "80"
+    "id" : "73"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#consumes",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -1167,32 +1082,17 @@
       "IRI-based" : "consumes",
       "undefined" : "consumes"
     },
-    "superproperty" : [ "12" ],
-    "domain" : "49",
+    "superproperty" : [ "10" ],
+    "domain" : "20",
     "comment" : {
       "undefined" : "A property for recording the Resource(s) of each AssignedTask."
     },
     "attributes" : [ "object" ],
     "id" : "42"
   }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasSubResource",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "hasSubResource",
-      "undefined" : "hasSubResource"
-    },
-    "superproperty" : [ "12" ],
-    "domain" : "4",
-    "comment" : {
-      "undefined" : "Relationships for recording the SubResource(s) of each Resource (e.g, the hardware of a node)."
-    },
-    "attributes" : [ "object" ],
-    "id" : "26"
-  }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#timeStepResolution",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "69",
+    "range" : "68",
     "label" : {
       "IRI-based" : "timeStepResolution",
       "undefined" : "timeStepResolution"
@@ -1202,25 +1102,11 @@
       "undefined" : "The time step resolution of an AggregatedMeasurement."
     },
     "attributes" : [ "datatype" ],
-    "id" : "81"
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#startTime",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "77",
-    "label" : {
-      "IRI-based" : "startTime",
-      "undefined" : "startTime"
-    },
-    "domain" : "58",
-    "comment" : {
-      "undefined" : "The date and time of a Status."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "82"
+    "id" : "75"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasAggregatedFuntion",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "75",
+    "range" : "77",
     "label" : {
       "IRI-based" : "hasAggregatedFuntion",
       "undefined" : "hasAggregatedFuntion"
@@ -1230,52 +1116,37 @@
       "undefined" : "The AggregatedFunction of an AggregatedMeasurement."
     },
     "attributes" : [ "datatype" ],
-    "id" : "83"
+    "id" : "76"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#isLocatedIn",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "isLocatedIn",
+      "undefined" : "isLocatedIn"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "62",
+    "comment" : {
+      "undefined" : "The location of a Work Producing Resource"
+    },
+    "attributes" : [ "object" ],
+    "id" : "31"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasStatus",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "58",
+    "range" : "56",
     "label" : {
       "IRI-based" : "hasStatus",
       "undefined" : "hasStatus"
     },
-    "superproperty" : [ "12" ],
-    "domain" : "20",
+    "superproperty" : [ "10" ],
+    "domain" : "17",
     "comment" : {
       "undefined" : "A relationship between any Class and its Status."
     },
     "attributes" : [ "object" ],
-    "id" : "32"
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "hasTaskPredictedMeasurement",
-      "undefined" : "hasTaskPredictedMeasurement"
-    },
-    "superproperty" : [ "24" ],
-    "domain" : "16",
-    "comment" : {
-      "undefined" : "A relationship for recording the PredictedMeasurements of a Task."
-    },
-    "attributes" : [ "object" ],
-    "id" : "72"
-  }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#manages",
-    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "manages",
-      "undefined" : "manages"
-    },
-    "superproperty" : [ "12" ],
-    "domain" : "54",
-    "comment" : {
-      "undefined" : "A relationship between a Scheduler and a Resource."
-    },
-    "attributes" : [ "object" ],
-    "id" : "38"
+    "id" : "30"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#makesMeasurement",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
@@ -1284,8 +1155,8 @@
       "IRI-based" : "makesMeasurement",
       "undefined" : "makesMeasurement"
     },
-    "superproperty" : [ "12" ],
-    "domain" : "51",
+    "superproperty" : [ "10" ],
+    "domain" : "47",
     "comment" : {
       "undefined" : "A relationship between a MeasuringResource and a Measurement."
     },
@@ -1294,27 +1165,47 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "64",
+    "range" : "65",
     "label" : {
       "IRI-based" : "topDataProperty"
     },
-    "domain" : "23",
-    "attributes" : [ "external", "datatype" ],
+    "domain" : "21",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "78"
+  }, {
+    "range" : "8",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "62",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "8",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "12",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "4",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "84"
-  }, {
-    "range" : "10",
-    "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "85"
-  }, {
-    "range" : "3",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "86"
   }, {
     "iri" : "https://glaciation-project.eu/MetadataReferenceModel#endingInterval",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "74",
+    "range" : "86",
     "label" : {
       "IRI-based" : "endingInterval",
       "undefined" : "endingInterval"
@@ -1324,30 +1215,272 @@
       "undefined" : "The ending interval time of an AggregatedMeasurement."
     },
     "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "range" : "62",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "87"
   }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "88"
   }, {
-    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#endTime",
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasValue",
     "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
-    "range" : "79",
+    "range" : "90",
     "label" : {
-      "IRI-based" : "endTime",
-      "undefined" : "endTime"
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
     },
-    "domain" : "58",
+    "domain" : "1",
     "comment" : {
-      "undefined" : "The end time of a Status of any Class."
+      "undefined" : "The Value of a Measurement."
     },
     "attributes" : [ "datatype" ],
     "id" : "89"
   }, {
-    "range" : "10",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "90"
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasTimestamp",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasTimestamp",
+      "undefined" : "hasTimestamp"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The date and time of a Measurement."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#relatesToConstraint",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "relatesToConstraint",
+      "undefined" : "relatesToConstraint"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "For keeping information about the Constraint that each Measurement relates to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#monitors",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "monitors",
+      "undefined" : "monitors"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "57",
+    "comment" : {
+      "undefined" : "For recording which Monitor tracks an AssignedTask."
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasResourceMeasurement",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasResourceMeasurement",
+      "undefined" : "hasResourceMeasurement"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A relationship between a Resource and a Measurement."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskRealizedMeasurement",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasTaskRealizedMeasurement",
+      "undefined" : "hasTaskRealizedMeasurement"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "A relationship for recording the RealizedMeasurements (actual measurements) of a Task."
+    },
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#statusCode",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "statusCode",
+      "undefined" : "statusCode"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "The status code of a Status."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskMeasurement",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasTaskMeasurement",
+      "undefined" : "hasTaskMeasurement"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "15",
+    "subproperty" : [ "93", "95" ],
+    "comment" : {
+      "undefined" : "A relationship between a Task and a Measurement."
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#triggersReschedule",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "triggersReschedule",
+      "undefined" : "triggersReschedule"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "57",
+    "comment" : {
+      "undefined" : "A triggered event relationship about Rescheduling from a Monitor."
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#relatesToMeasurementProperty",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "relatesToMeasurementProperty",
+      "undefined" : "relatesToMeasurementProperty"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "For recording the MeasurementProperty of each Measurement."
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#scheduledBy",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "scheduledBy",
+      "undefined" : "scheduledBy"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "A relationship between a SubmittedTask and a Scheduler."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "range" : "15",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#assigns",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "assigns",
+      "undefined" : "assigns"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "54",
+    "comment" : {
+      "undefined" : "A relationship between a Scheduler and an AssignedTask."
+    },
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasSubResource",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasSubResource",
+      "undefined" : "hasSubResource"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relationships for recording the SubResource(s) of each Resource (e.g, the hardware of a node)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#startTime",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "startTime",
+      "undefined" : "startTime"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "The date and time of a Status."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#hasTaskPredictedMeasurement",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasTaskPredictedMeasurement",
+      "undefined" : "hasTaskPredictedMeasurement"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "A relationship for recording the PredictedMeasurements of a Task."
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#manages",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "manages",
+      "undefined" : "manages"
+    },
+    "superproperty" : [ "10" ],
+    "domain" : "54",
+    "comment" : {
+      "undefined" : "A relationship between a Scheduler and a Resource."
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://glaciation-project.eu/MetadataReferenceModel#endTime",
+    "baseIri" : "https://glaciation-project.eu/MetadataReferenceModel",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "endTime",
+      "undefined" : "endTime"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "The end time of a Status of any Class."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "100"
   } ]
 }
