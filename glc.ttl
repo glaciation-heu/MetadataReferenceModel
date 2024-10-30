@@ -11,10 +11,10 @@
 @base <https://glaciation-project.eu/MetadataReferenceModel#> .
 
 <https://glaciation-project.eu/MetadataReferenceModel> rdf:type owl:Ontology ;
-                                                        owl:versionIRI <https://glaciation-project.eu/MetadataReferenceModel/1.0.0/> ;
+                                                        owl:versionIRI <https://glaciation-project.eu/MetadataReferenceModel/1.1.0/> ;
                                                         dce:contributor "\"Konstantin Tatarnikov\", \"Guangyuan Piao\", \"Alessio Chellini\", \"Paolo Tartara\", \"Péter Forgács\", \" Jonas Böhler\""@en ;
                                                         dce:creator "\"Michalis Mountantonakis\", \"Panagiotis Papadakos\", \"Rigo Wenning\""@en ;
-                                                        dce:issued "\"2024-07-20\"" ;
+                                                        dce:issued "\"2024-10-30\"" ;
                                                         dct:abstract "The Glaciation Reference Metadata Model (GLC-MRM) provides a conceptual model that allows making data ingestion and data processing interoperable for all the use cases of the Glaciation project. The model can be considered as a general conceptualization of a tasks scheduling problem that considers various measuring indicators over the deployed resources."@en ;
                                                         dct:created "\"2024-07-20\"" ;
                                                         dct:description """The GLACIATION platform develops a novel Distributed Knowledge Graph (DKG) that stretches across the edge-core-cloud architecture to reduce energy consumption, improving data processing and optimizing data movement operations. Towards this aim, the platform needs to consume the data and metadata that are fed into the DKG. The metadata can affect and inform the decision-making processes in the GLACIATION architecture and introduces the GLACIATION Metadata Reference Model that will be used for modelling the metadata in the DKG.
@@ -32,7 +32,7 @@ The model is generic, by being both domain and application independent, describi
                                                         vann:preferredNamespaceUri <https://glaciation-project.eu/MetadataReferenceModel> ;
                                                         vann:prefferedNamespacePrefix "glc" ;
                                                         rdfs:label "GLACIATION Metadata Reference Model"@en ;
-                                                        owl:versionInfo "1.0.0" .
+                                                        owl:versionInfo "1.1.0" .
 
 #################################################################
 #    Annotation properties
