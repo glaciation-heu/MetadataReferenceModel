@@ -1,0 +1,145 @@
+[
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#string"
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Class"
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#DataProperty"
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource"
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel#Resource"
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionAlgorithm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#Resource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An anomaly detection algorithm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AnomalyDetectionAlgorithm"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionDataset",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "An Anomaly Detection Dataset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "AnomalyDetectionDataset"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc4#SCADA_Dataset",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A SCADA Dataset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "SCADA Dataset"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc4#hasAlgorithmType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionAlgorithm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The type of algorithm used for anomaly detection (Isolation Forest, SVM, Rules-based)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasAlgorithmType"
+      }
+    ]
+  },
+  {
+    "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc4#hasDetectedType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DataProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionDataset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The detected type after running the anomaly detection algorithm (Extreme Value, Spike, Jump, Disconnect)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "hasDetectedType"
+      }
+    ]
+  }
+]

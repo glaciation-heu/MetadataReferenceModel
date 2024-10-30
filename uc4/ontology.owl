@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:DataProperty rdf:about="https://glaciation-project.eu/MetadataReferenceModel/uc4#hasAlgorithmType">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdfs:domain>
+      <owl:Class rdf:about="https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionAlgorithm">
+        <rdfs:subClassOf rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#Resource"/>
+        <rdfs:comment>An anomaly detection algorithm</rdfs:comment>
+        <rdfs:label>AnomalyDetectionAlgorithm</rdfs:label>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The type of algorithm used for anomaly detection (Isolation Forest, SVM, Rules-based)</rdfs:comment>
+    <rdfs:label>hasAlgorithmType</rdfs:label>
+  </owl:DataProperty>
+
+  <owl:DataProperty rdf:about="https://glaciation-project.eu/MetadataReferenceModel/uc4#hasDetectedType">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdfs:domain>
+      <owl:Class rdf:about="https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionDataset">
+        <rdfs:subClassOf rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource"/>
+        <rdfs:comment>An Anomaly Detection Dataset</rdfs:comment>
+        <rdfs:label>AnomalyDetectionDataset</rdfs:label>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The detected type after running the anomaly detection algorithm (Extreme Value, Spike, Jump, Disconnect)</rdfs:comment>
+    <rdfs:label>hasDetectedType</rdfs:label>
+  </owl:DataProperty>
+
+  <owl:Class rdf:about="https://glaciation-project.eu/MetadataReferenceModel/uc4#SCADA_Dataset">
+    <rdfs:subClassOf rdf:resource="https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource"/>
+    <rdfs:comment>A SCADA Dataset</rdfs:comment>
+    <rdfs:label>SCADA Dataset</rdfs:label>
+  </owl:Class>
+
+</rdf:RDF>

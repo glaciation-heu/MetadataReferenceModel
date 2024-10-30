@@ -1,0 +1,24 @@
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasAlgorithmType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasAlgorithmType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasAlgorithmType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionAlgorithm> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasAlgorithmType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasAlgorithmType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of algorithm used for anomaly detection (Isolation Forest, SVM, Rules-based)" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasAlgorithmType> <http://www.w3.org/2000/01/rdf-schema#label> "hasAlgorithmType" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasDetectedType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasDetectedType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasDetectedType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionDataset> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasDetectedType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasDetectedType> <http://www.w3.org/2000/01/rdf-schema#comment> "The detected type after running the anomaly detection algorithm (Extreme Value, Spike, Jump, Disconnect)" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#hasDetectedType> <http://www.w3.org/2000/01/rdf-schema#label> "hasDetectedType" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionAlgorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionAlgorithm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#Resource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionAlgorithm> <http://www.w3.org/2000/01/rdf-schema#comment> "An anomaly detection algorithm" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionAlgorithm> <http://www.w3.org/2000/01/rdf-schema#label> "AnomalyDetectionAlgorithm" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#SCADA_Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#SCADA_Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#SCADA_Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A SCADA Dataset" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#SCADA_Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "SCADA Dataset" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionDataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://glaciation-project.eu/MetadataReferenceModel#NonWorkProducingResource> .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "An Anomaly Detection Dataset" .
+<https://glaciation-project.eu/MetadataReferenceModel/uc4#AnomalyDetectionDataset> <http://www.w3.org/2000/01/rdf-schema#label> "AnomalyDetectionDataset" .
